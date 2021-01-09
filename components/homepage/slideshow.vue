@@ -7,46 +7,46 @@
       <div id="slider" class="slider">
         <no-ssr>
           <vue-tiny-slider v-bind="tinySliderOptions">
-            <div>
-              <img src="images-slider/img-slide-1.jpg" alt="" />
-              <div class="slider-content">
-                <div class="tp-caption big-heading sft">
-                  DENEME 1
-                </div>
-                <div class="tp-caption sub-heading sft">
-                  We Build Your Dream
-                </div>
-                <div class="tp-caption sfb">
-                  <a class="btn-slider link-class" href="/">More Detail</a>
-                </div>
+            <div class="tini-item">
+              <div class="slotholder">
+                <img src="images-slider/img-slide-1.jpg" alt="Slider image" class="defaultimg" />
+              </div>
+              <div class="tp-caption big-heading sft">
+                DENEME 1
+              </div>
+              <div class="tp-caption sub-heading sft">
+                We Build Your Dream
+              </div>
+              <div class="tp-caption sfb">
+                <a class="btn-slider link-class" href="/">More Detail</a>
               </div>
             </div>
-            <div>
-              <img src="images-slider/img-slide-1.jpg" alt="" />
-              <div class="slider-content">
-                <div class="tp-caption big-heading sft">
-                  DENEME 2
-                </div>
-                <div class="tp-caption sub-heading sft">
-                  We Build Your Dream
-                </div>
-                <div class="tp-caption btn-slider sfb">
-                  <div class="btn-slider"><a class="link-class " href="#">More Detail</a></div>
-                </div>
+            <div class="tini-item">
+              <div class="slotholder">
+                <img src="images-slider/img-slide-1.jpg" alt="Slider image" class="defaultimg" />
+              </div>
+              <div class="tp-caption big-heading sft">
+                DENEME 1
+              </div>
+              <div class="tp-caption sub-heading sft">
+                We Build Your Dream
+              </div>
+              <div class="tp-caption sfb">
+                <a class="btn-slider link-class" href="/">More Detail</a>
               </div>
             </div>
-            <div>
-              <img src="images-slider/img-slide-1.jpg" alt="" />
-              <div class="slider-content">
-                <div class="tp-caption big-heading sft">
-                  DENEME 3
-                </div>
-                <div class="tp-caption sub-heading sft">
-                  We Build Your Dream
-                </div>
-                <div class="tp-caption btn-slider sfb">
-                  <div class="btn-slider"><a class="link-class " href="#">More Detail</a></div>
-                </div>
+            <div class="tini-item">
+              <div class="slotholder">
+                <img src="images-slider/img-slide-1.jpg" alt="Slider image" class="defaultimg" />
+              </div>
+              <div class="tp-caption big-heading sft">
+                DENEME 1
+              </div>
+              <div class="tp-caption sub-heading sft">
+                We Build Your Dream
+              </div>
+              <div class="tp-caption sfb">
+                <a class="btn-slider link-class" href="/">More Detail</a>
               </div>
             </div>
           </vue-tiny-slider>
@@ -98,22 +98,10 @@ export default {
         controlsContainer: false,
         nav: false,
         controlsText: ["", ""],
-        speed: 400
-      },
-      tinyCarauselOptions: {
-        autoplay: true,
-        autoplayTimeout: 2000,
-        spead: 400,
+        speed: 400,
+        animateIn: "tns-fadeIn",
         loop: true,
-        gutter: 10,
-        mouseDrag: true,
-        center: true,
-        items: 4,
-        swipeAngle: false,
-        controlsContainer: false,
-        nav: false,
-        controlsText: ["", ""],
-        speed: 400
+        rewind: true
       }
     }
   }
@@ -121,8 +109,54 @@ export default {
 </script>
 
 <style>
-.fullwidthbanner-container{
+.tini-item{
   height: calc(100vh - 41px);
+  position: relative;
+}
+.tini-item .tp-caption{
+  position: absolute;
+  z-index: 100;
+}
+.tini-item .big-heading{
+  left: 37px;
+  top: 38%;
+  font-size: 35px;
+}
+.tini-item .sub-heading{
+  left: 37px;
+  top: 45%;
+  font-size: 26px;
+}
+.tini-item .sfb{
+  left: 35.6719px;
+  top: 60%;
+  font-size: 9px;
+  color: #FFFFFF;
+}
+.tini-item img.defaultimg, .slotholder{
+  height: 100%;
+  width: 100%;
+}
+@media(max-width:320px) {
+  .tini-item{
+    height: 100vh;
+  }
+  .tini-item .big-heading {
+    font-size: 14pt;
+    letter-spacing: 1px;
+  }
+  .tini-item .sub-heading{
+    font-size: 11pt;
+    letter-spacing: 1px;
+  }
+}
+@media(max-width: 768px) {
+  .tini-item{
+    height: 100vh;
+  }
+}
+.fullwidthbanner-container{
+  height: 100%;
   overflow: hidden;
   transition: height 1s ease;
 }
@@ -167,5 +201,11 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media(max-width:320px) {
+  #home h1 {
+    font-size: 22pt;
+    letter-spacing: 1px;
+  }
 }
 </style>
