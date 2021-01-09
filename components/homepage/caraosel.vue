@@ -1,3 +1,29 @@
+<i18n>
+{
+  "tr": {
+    "doktor-bilgi": "DOKTORDAN BİLGİ AL",
+    "devami": "DEVAMI",
+    "sorular": "SIKÇA SORULAN SORULAR",
+    "randevu": "RANDEVU ALIN",
+    "biz": "BİZİ TANIYIN"
+  },
+  "en": {
+    "doktor-bilgi": "GET INFO. FROM THE DOCTOR",
+    "devami": "READ MORE",
+    "sorular": "FREQUENTLY ASKED QUESTIONS",
+    "randevu": "MAKE AN APPOINTMENT",
+    "biz": "GET TO KNOW US"
+  },
+  "de": {
+    "doktor-bilgi": "ERHALTEN SIE INFO. VOM ARZT",
+    "devami": "MEHR",
+    "sorular": "HÄUFIG GESTELLTE FRAGEN",
+    "randevu": "EINEN TERMIN MACHEN",
+    "biz": "LERNE UNS KENNEN"
+  }
+}
+</i18n>
+
 <template>
    <!-- gallery-home -->
     <div class="bot-home">
@@ -7,56 +33,45 @@
             <vue-tiny-slider v-bind="tinyCarauselOptions">
               <div class="gal-home big-img">
                 <div class="hovereffect">
-                  <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg" />
+                  <img :alt="$t('doktor-bilgi')" class="img-responsive" src="image/doctor-info.jpg" />
                   <div class="overlay">
-                    <h3>FONDATION BUILDING
+                    <h3>{{ $t('doktor-bilgi') }}
                       <span class="devider"></span>
                     </h3>
-                    <p>MORE DETAIL</p>
+                    <p>{{ $t('devami') }}</p>
                   </div>
                 </div>
               </div>
               <div class="gal-home big-img">
                 <div class="hovereffect">
-                  <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg" />
+                  <img :alt="$t('sorular')" class="img-responsive" src="image/faq.jpg" />
                   <div class="overlay">
-                    <h3>FONDATION BUILDING
+                    <h3>{{ $t('sorular') }}
                       <span class="devider"></span>
                     </h3>
-                    <p>MORE DETAIL</p>
+                    <p>{{ $t('devami') }}</p>
                   </div>
                 </div>
               </div>
               <div class="gal-home big-img">
                 <div class="hovereffect">
-                  <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg" />
+                  <img :alt="$t('randevu')" class="img-responsive" src="image/tenth-appointment.jpg" />
                   <div class="overlay">
-                    <h3>FONDATION BUILDING
+                    <h3>{{ $t('randevu') }}
                       <span class="devider"></span>
                     </h3>
-                    <p>MORE DETAIL</p>
+                    <p>{{ $t('devami') }}</p>
                   </div>
                 </div>
               </div>
               <div class="gal-home big-img">
                 <div class="hovereffect">
-                  <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg" />
+                  <img :alt="$t('biz')" class="img-responsive" src="image/image-galery.jpg" />
                   <div class="overlay">
-                    <h3>FONDATION BUILDING
+                    <h3>{{ $t('biz') }}
                       <span class="devider"></span>
                     </h3>
-                    <p>MORE DETAIL</p>
-                  </div>
-                </div>
-              </div>
-              <div class="gal-home big-img">
-                <div class="hovereffect">
-                  <img alt="imageportofolio" class="img-responsive" src="img/gallery-home/img1.jpg" />
-                  <div class="overlay">
-                    <h3>FONDATION BUILDING
-                      <span class="devider"></span>
-                    </h3>
-                    <p>MORE DETAIL</p>
+                    <p>{{ $t('devami') }}</p>
                   </div>
                 </div>
               </div>

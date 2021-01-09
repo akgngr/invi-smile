@@ -9,16 +9,16 @@
           <vue-tiny-slider v-bind="tinySliderOptions">
             <div class="tini-item">
               <div class="slotholder">
-                <img src="images-slider/img-slide-1.jpg" alt="Slider image" class="defaultimg" />
+                <img src="images-slider/lamina-veneer.png" alt="Slider image" class="defaultimg" />
               </div>
               <div class="tp-caption big-heading sft">
-                DENEME 1
+                LAMİNA VENEER
               </div>
               <div class="tp-caption sub-heading sft">
-                We Build Your Dream
+                Hem dişleriniz koruyun hemde gülüşünüzü.
               </div>
               <div class="tp-caption sfb">
-                <a class="btn-slider link-class" href="/">More Detail</a>
+                <a class="btn-slider link-class" href="/">Devamını Oku</a>
               </div>
             </div>
             <div class="tini-item">
@@ -109,7 +109,7 @@ export default {
 </script>
 
 <style>
-.slider .tns-slider{
+.slider .tns-slider, .slider .tns-outer{
   height: 100vh;
 }
 .slider .tns-ovh, .tini-item{
@@ -121,20 +121,31 @@ export default {
   z-index: 100;
 }
 .tini-item .big-heading{
-  left: 37px;
-  top: 38%;
-  font-size: 35px;
+  left: 9%;
+  top: 25%;
+  font-size: 53px;
 }
 .tini-item .sub-heading{
-  left: 37px;
-  top: 45%;
-  font-size: 26px;
+  left: 9%;
+  top: 38%;
+  font-size: 40px;
 }
 .tini-item .sfb{
-  left: 35px;
+  left: 9%;
   top: 55%;
-  font-size: 9px;
+  font-size: 14px;
+}
+.tini-item .sfb a{
   color: #FFFFFF;
+}
+.tini-item .sfb a:hover {
+  color: #111111;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0);
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .tini-item img.defaultimg, .slotholder{
   height: 100%;

@@ -7,7 +7,8 @@
     "tedaviler": "Treatments",
     "anlasmali": "Contracted Institutions",
     "iletisim": "Contact",
-    "hakkimizda": "About Us"
+    "hakkimizda": "About Us",
+    "randevu": "Get Appointment"
   },
   "tr": {
     "anasayfa": "Anasayfa",
@@ -16,7 +17,8 @@
     "tedaviler": "Tedaviler",
     "anlasmali": "Anlaşmalı Kurumlar",
     "iletisim": "İletişim",
-    "hakkimizda": "Hakkımızda"
+    "hakkimizda": "Hakkımızda",
+    "randevu": "Randevu AL"
   },
   "de": {
     "anasayfa": "Home",
@@ -25,7 +27,8 @@
     "tedaviler": "Behandlungen",
     "anlasmali": "Vertragsinstitutionen",
     "iletisim": "Kontakt",
-    "hakkimizda": "Über uns"
+    "hakkimizda": "Über uns",
+    "randevu": "Termin machen"
   }
 }
 </i18n>
@@ -44,7 +47,7 @@
             <span class="icon icon-bar"></span></button>
 
           <!-- logo -->
-          <a class="navbar-brand" href="index.html"><img alt="logo" src="img/logo.png"></a>
+          <a class="navbar-brand" href="index.html"><img alt="logo" src="image/logo.png"></a>
 
           <!-- mainmenu start -->
           <div class="menu-init" id="main-menu">
@@ -103,7 +106,7 @@
                     <li><a href="contact-1.html">Contact - 1</a></li>
                   </ul>
                 </li>
-                <li class="btn"><a class="popup-form" href="#subwrap">Get a Quote</a></li>
+                <li class="btn"><a class="popup-form" href="#subwrap">{{ $t('randevu') }}</a></li>
               </ul>
             </nav>
           </div>
