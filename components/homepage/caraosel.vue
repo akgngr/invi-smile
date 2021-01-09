@@ -100,15 +100,18 @@ export default {
         controlsPosition: "bottom",
         slideBy: "page",
         autoplayHoverPause: true,
-        autoplayText: false,
         responsive: {
-          320: {
+          576: {
             edgePadding: 0,
             items: 1,
             fixedWidth: 320,
             gutter: 0
           },
           768: {
+            items: 2,
+            fixedWidth: 420
+          },
+          992: {
             items: 3,
             fixedWidth: 293
           }

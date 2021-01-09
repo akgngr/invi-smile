@@ -49,3 +49,9 @@ html {
 .bottomtexts-example p,
 #topheader-to-offset p	{ font-size:13px; line-height:18px; color:#fff; font-family:Arial; font-weight:300;}
 
+.container-xxl, container { width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; }
+@media (min-width: 1400px) {
+  .container-xxl {
+    max-width: 1320px;
+  }
+}

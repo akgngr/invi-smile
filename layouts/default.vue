@@ -6,7 +6,6 @@
       <HeaderField />
       <Nuxt />
     </div>
-    <SteapWork />
     <Gorusler />
     <Doktorlar />
     <FooterField />
@@ -22,7 +21,6 @@ import Subscribe from '~/components/subscribe'
 import Subnav from '~/components/homepage/subnav'
 import Doktorlar from '~/components/homepage/doktorlar'
 import Gorusler from '~/components/homepage/gorusler'
-import SteapWork from '~/components/homepage/steap-work'
 // import About from '~/components/homepage/about'
 
 export default {
@@ -33,8 +31,7 @@ export default {
     Subscribe,
     Subnav,
     Doktorlar,
-    Gorusler,
-    SteapWork
+    Gorusler
   },
   head: {
     link: [

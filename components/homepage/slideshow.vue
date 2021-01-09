@@ -109,7 +109,10 @@ export default {
 </script>
 
 <style>
-.tini-item{
+.slider .tns-slider{
+  height: 100vh;
+}
+.slider .tns-ovh, .tini-item{
   height: calc(100vh - 41px);
   position: relative;
 }
@@ -128,8 +131,8 @@ export default {
   font-size: 26px;
 }
 .tini-item .sfb{
-  left: 35.6719px;
-  top: 60%;
+  left: 35px;
+  top: 55%;
   font-size: 9px;
   color: #FFFFFF;
 }
@@ -167,6 +170,13 @@ export default {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+.slider .tns-controls button{
+  display: none;
+}
+.slider:hover .tns-controls button{
+  display: block;
+  transition: opacity 0.2s;
 }
 .tns-autowidth {
   display: block;
