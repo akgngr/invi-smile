@@ -4,12 +4,12 @@
     <!-- team -->
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-md-offset-3 col-sm-6 ">
           <div class="team-wrapper">
-            <img alt="team img 1" class="img-responsive" src="img/team-img1.jpg">
+            <img alt="team img 4" class="img-responsive" src="image/tancan-uysal.webp">
             <div class="team-des">
-              <h3>John Doe</h3>
-              <span>Project Manager</span>
+              <h3>Prof. Dr. Tancan Uysal</h3>
+              <span>Ortodonti Uzmanı</span>
               <a href="#"><span class="ti-facebook"></span></a>
               <a href="#"><span class="ti-twitter"></span></a>
               <a href="#"><span class="ti-linkedin"></span></a>
@@ -18,34 +18,10 @@
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="team-wrapper">
-            <img alt="team img 4" class="img-responsive" src="img/team-img4.jpg">
+            <img alt="team img 1" class="img-responsive" src="image/banu-uysal.webp">
             <div class="team-des">
-              <h3>Renita</h3>
-              <span>Project Director</span>
-              <a href="#"><span class="ti-facebook"></span></a>
-              <a href="#"><span class="ti-twitter"></span></a>
-              <a href="#"><span class="ti-linkedin"></span></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="team-wrapper">
-            <img alt="team img 3" class="img-responsive" src="img/team-img3.jpg">
-            <div class="team-des">
-              <h3> Steve Makelew</h3>
-              <span>C E O</span>
-              <a href="#"><span class="ti-facebook"></span></a>
-              <a href="#"><span class="ti-twitter"></span></a>
-              <a href="#"><span class="ti-linkedin"></span></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="team-wrapper">
-            <img alt="team img 4" class="img-responsive" src="img/team-img2.jpg">
-            <div class="team-des">
-              <h3>Jess Parker</h3>
-              <span>Bussines Dev</span>
+              <h3>Yrd. Doç. Dr. Banu Uysal</h3>
+              <span>Endodonti Uzmanı</span>
               <a href="#"><span class="ti-facebook"></span></a>
               <a href="#"><span class="ti-twitter"></span></a>
               <a href="#"><span class="ti-linkedin"></span></a>

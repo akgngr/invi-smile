@@ -1,7 +1,7 @@
 /* CSS Document */
 
 
-/* 
+/*
 *
 *
 [Table of contents]
@@ -31,12 +31,12 @@
 	projects / #projects-wrap
 	team / .team-wrapper
 	contact / .contactbg
-	subscribe / #subwrap 
+	subscribe / #subwrap
 	address / .wrapaddres
 	footer / .subfooter
 	social-icons / .social-icons
 	totop / #totop
-	Blog  / .blog-simple 
+	Blog  / .blog-simple
 	Blog comment / #blog-comment
 	owl slider home / #owl-slider-home
 	general popup / .white-popup-block
@@ -174,7 +174,7 @@ list-style: none;
 -o-transition: all 0.3s ease;
 transition: all 0.3s ease;
 }
-button:hover{ 
+button:hover{
 border: none;
 -moz-transition: all 0.3s ease;
 -ms-transition: all 0.3s ease;
@@ -1096,8 +1096,8 @@ li>a:only-child:after {
   width: 100%;
   height: auto;
   padding: 10px 0 0 0;
-  margin-top:-200px;
-  margin-bottom:-100px;
+  /* margin-top:-200px;
+  margin-bottom:-100px; */
   text-align: center;
   z-index:999;
 }
@@ -1359,8 +1359,8 @@ li>a:only-child:after {
   min-height:500px;
   height:100%;
   padding: 15% 0 15% 0;
-  background-size:cover; 
-  background-position:center center; 
+  background-size:cover;
+  background-position:center center;
   background-repeat:no-repeat;
 }
 
@@ -1878,7 +1878,7 @@ ul#services-list{padding-left:0px;}
      margin: 0 auto;
      text-align: center;
     }
-	
+
 /******* projects detail 2 ******/
 #projectsBig .item{
 	margin:0;
@@ -1896,11 +1896,11 @@ ul#services-list{padding-left:0px;}
 	opacity:0.5;
 }
 /* button next prev */
-.pro-btn{ 
+.pro-btn{
 padding:10px 0 10px 0;
 margin:10px 0 10px 0;
-text-align:center;  
-background:#ccc; 
+text-align:center;
+background:#ccc;
 color:#fff;
 cursor:pointer;
 -webkit-transition: all 0.3s ease;
@@ -1909,7 +1909,7 @@ cursor:pointer;
 transition: all 0.2s ease;
 }
 .pro-btn:hover{
-	background:#999; 
+	background:#999;
 	-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -2372,7 +2372,7 @@ textarea:focus:-ms-input-placeholder {
     border: 2px solid #31aae2 !important;
     box-shadow: none;
     }
-	
+
 .user-message textarea {
     min-height: 195px;
     padding-top: 12px;
@@ -2427,8 +2427,8 @@ textarea:focus:-ms-input-placeholder {
   text-align: center;
   color: #fff;
   background: url(../img/sub-bg.jpg);
-  background-size:cover; 
-  background-position:center center; 
+  background-size:cover;
+  background-position:center center;
   background-repeat:no-repeat;
   padding: 70px 0 70px 0;
   -webkit-border-radius: 20px;
@@ -2827,7 +2827,7 @@ footer.white {
   margin-bottom: 30px;
   position: relative;
   width: 100%;
-  padding: 15px 15px 15px 0px; 
+  padding: 15px 15px 15px 0px;
   float: right;
   letter-spacing:.3px;
 }
@@ -2970,7 +2970,7 @@ cursor:pointer;
 -moz-transition: all 0.3s ease;
 -ms-transition: all 0.3s ease;
 -o-transition: all 0.3s ease;
-transition: all 0.3s ease; 
+transition: all 0.3s ease;
 }
 
 .bottom-article a.btn:hover{
@@ -3048,15 +3048,15 @@ aside .widget, .widget {
 	display:inline-block;
 	padding:6px 12px;
 	margin-top:0px;
-	margin-bottom:-4px; 
-	margin-left:0px; 
+	margin-bottom:-4px;
+	margin-left:0px;
 	font-size:14px;
 	font-weight:400;
 	line-height:2;
 	text-align:center;
 	white-space:nowrap;
-    vertical-align:middle; 
-    background:#ff6600; 
+    vertical-align:middle;
+    background:#ff6600;
     color:#fff;
 	-webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
@@ -3123,7 +3123,7 @@ aside .widget, .widget {
   margin-bottom: 5px;
 }
 .comment-info .c-name {
-  font-size:12pt;	
+  font-size:12pt;
   display: block;
   font-weight: 500;
   line-height:normal;
@@ -3138,11 +3138,11 @@ aside .widget, .widget {
   border-left: solid 1px #efefef;
 }
 .comment-info .c-reply a {
-  font-weight: 400;	
+  font-weight: 400;
   font-size: 10pt;
 }
 .comment-info .c-date {
-  display:inline;	
+  display:inline;
   font-size: 10pt;
   font-weight: 400;
 }
@@ -3150,7 +3150,7 @@ aside .widget, .widget {
 
 /* comment form */
 #comment-form-wrapper h6{ font-size:10pt; letter-spacing:.1px; margin-bottom:30px;}
-#comment-form-wrapper { 
+#comment-form-wrapper {
   margin: 50px 0 50px 0;
   padding: 0px;
 }
@@ -3194,7 +3194,7 @@ font-weight:400;
 letter-spacing:1px;
 margin-top:15px;
 padding:10px 20px 10px 20px;
-border:1px solid rgba(255,255,255, 0); 
+border:1px solid rgba(255,255,255, 0);
 background:#ff6600;
 }
 
@@ -3214,7 +3214,7 @@ select.form-control, select.form-control:hover, select.form-control:focus, input
 
 
 /*
-  Owl Carousel 
+  Owl Carousel
 */
 
 .owl-theme .owl-controls .owl-buttons div {

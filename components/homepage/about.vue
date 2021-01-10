@@ -9,38 +9,20 @@
       <!-- space home end -->
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="wrap-news onStep" data-animation="fadeInLeft" data-time="300">
-              <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
-              <h3>Design & build</h3>
-              <p>Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. </p>
+          <div class="col-md-6">
+            <div class="wrap-news onStep">
+              <h2>Hakkımızda</h2>
+              <span><strong>Pros' Estetik Ağız ve Diş Sağlığı Polikliniği</strong></span>
+              <p>Pros’ Estetik Dental ve Medikal Ltd. Şti tarafından, Prof. Dr. Tancan UYSAL ve Yrd. Doç. Dr. Banu UYSAL ortak girişimiyle 2020 yılında açılan Ağız ve Diş Sağlığı Polikliniğimiz Alsancak’ta hizmet vermeye başlamıştır.</p>
+              <p> Tüm diş hekimliği uzmanlık branşlarından oluşan akademisyen kadrosuyla, tam kapsamlı 6 diş ünitesi ile 500 metrekare modern çalışma alanıyla ulusal ve uluslararası alanda hizmet vermektedir.</p>
               <a class="link-class" href="service-2.html">
-                MORE DETAIL
+                DEVAMINI OKU
                 <span class="devider"></span>
               </a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="wrap-news onStep" data-animation="fadeInRight" data-time="600">
-              <img alt="imageportofolio" class="img-responsive" src="img/img-news1.jpg">
-              <h3>Renovation</h3>
-              <p>Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. </p>
-              <a class="link-class" href="service-3.html">
-                MORE DETAIL
-                <span class="devider"></span>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrap-news onStep" data-animation="fadeInRight" data-time="900">
-              <img alt="imageportofolio" class="img-responsive" src="img/img-news2.jpg">
-              <h3>Tiling & painting</h3>
-              <p>Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. </p>
-              <a class="link-class" href="service-4.html">
-                MORE DETAIL
-                <span class="devider"></span>
-              </a>
-            </div>
+          <div class="col-md-6">
+            <img src="/image/about.png" alt="About Invismile">
           </div>
         </div>
       </div>

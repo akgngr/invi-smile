@@ -1,3 +1,22 @@
+<i18n>
+{
+  "tr": {
+    "valian": "LAMİNA VENEER",
+    "valian_aciklama": "Hem dişleriniz koruyun hemde gülüşünüzü.",
+    "devami": "Devamını Oku"
+  },
+  "en": {
+    "valian": "LAMINA VENEER",
+    "valian_aciklama": "Protect both your teeth and your smile.",
+    "devami": "Read More"
+  },
+  "de": {
+    "valian": "LAMINA FURNIER",
+    "valian_aciklama": "Schützen Sie sowohl Ihre Zähne als auch Ihr Lächeln.",
+    "devami": "Weiterlesen"
+  }
+}
+</i18n>
 <template>
   <!-- home -->
   <!-- background slider -->
@@ -12,41 +31,13 @@
                 <img src="images-slider/lamina-veneer.png" alt="Slider image" class="defaultimg" />
               </div>
               <div class="tp-caption big-heading sft">
-                LAMİNA VENEER
+                {{ $t('valian') }}
               </div>
               <div class="tp-caption sub-heading sft">
-                Hem dişleriniz koruyun hemde gülüşünüzü.
+                {{ $t('valian_aciklama') }}
               </div>
               <div class="tp-caption sfb">
-                <a class="btn-slider link-class" href="/">Devamını Oku</a>
-              </div>
-            </div>
-            <div class="tini-item">
-              <div class="slotholder">
-                <img src="images-slider/img-slide-1.jpg" alt="Slider image" class="defaultimg" />
-              </div>
-              <div class="tp-caption big-heading sft">
-                DENEME 1
-              </div>
-              <div class="tp-caption sub-heading sft">
-                We Build Your Dream
-              </div>
-              <div class="tp-caption sfb">
-                <a class="btn-slider link-class" href="/">More Detail</a>
-              </div>
-            </div>
-            <div class="tini-item">
-              <div class="slotholder">
-                <img src="images-slider/img-slide-1.jpg" alt="Slider image" class="defaultimg" />
-              </div>
-              <div class="tp-caption big-heading sft">
-                DENEME 1
-              </div>
-              <div class="tp-caption sub-heading sft">
-                We Build Your Dream
-              </div>
-              <div class="tp-caption sfb">
-                <a class="btn-slider link-class" href="/">More Detail</a>
+                <a class="btn-slider link-class" href="/">{{ $t('devami') }}</a>
               </div>
             </div>
           </vue-tiny-slider>
@@ -138,7 +129,7 @@ export default {
 .tini-item .sfb a{
   color: #FFFFFF;
 }
-.tini-item .sfb a:hover {
+.tini-item .sfb a:hover{
   color: #111111;
   background: #fff;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -164,7 +155,7 @@ export default {
     letter-spacing: 1px;
   }
 }
-@media(max-width: 768px) {
+@media(max-width: 768px){
   .tini-item{
     height: 100vh;
   }

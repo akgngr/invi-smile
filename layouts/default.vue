@@ -1,37 +1,16 @@
 <template>
   <div>
     <Loader />
-    <div class="layout">
-      <Subnav />
-      <HeaderField />
-      <Nuxt />
-    </div>
-    <Gorusler />
-    <Doktorlar />
-    <FooterField />
-    <Subscribe />
+    <Nuxt />
   </div>
 </template>
 
 <script>
-import HeaderField from '~/components/header-field'
-import FooterField from '~/components/footer-field'
 import Loader from '~/components/loader'
-import Subscribe from '~/components/subscribe'
-import Subnav from '~/components/homepage/subnav'
-import Doktorlar from '~/components/homepage/doktorlar'
-import Gorusler from '~/components/homepage/gorusler'
-// import About from '~/components/homepage/about'
 
 export default {
   components: {
-    FooterField,
-    HeaderField,
-    Loader,
-    Subscribe,
-    Subnav,
-    Doktorlar,
-    Gorusler
+    Loader
   },
   head: {
     link: [
@@ -54,23 +33,6 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'css/animated-on3step.css',
-        media: 'screen'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'css/owl.carousel.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'css/owl.theme.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'css/owl.transitions.css'
-      },
-      {
-        rel: 'stylesheet',
         href: 'css/on3step-style.css'
       },
       {
@@ -84,10 +46,6 @@ export default {
       },
       {
         src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
-      },
-      {
-        ssr: false,
-        src: 'rs-plugin/js/jquery.themepunch.revolution.min.js'
       },
       {
         ssr: false,
