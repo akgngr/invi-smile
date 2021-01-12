@@ -60,19 +60,7 @@ $(window).on("load", function() {
       });
     } else {
       // scroll navigation
-      $(".scroll-link").on('click', function(e) {
-        var id = $(this).attr('href');
-        var $id = $(id);
-        if ($id.length === 0) {
-          return;
-        }
-        e.preventDefault();
-        var offSet = -1;
-        var targetOffset = $(id).offset().top - offSet;
-        bodyScroll.animate({
-          scrollTop: targetOffset
-        }, 800);
-      });
+
     }
 
     // mobile icon

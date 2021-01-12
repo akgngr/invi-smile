@@ -64,16 +64,6 @@ export default {
           rel: "stylesheet",
           href:
             "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css"
-        },
-        {
-          rel: "stylesheet",
-          href:
-            "rs-plugin/css/settings.css"
-        },
-        {
-          rel: "stylesheet",
-          href:
-            "rs-plugin/css/settings-ie8.css"
         }
       ]
     }

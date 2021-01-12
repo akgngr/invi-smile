@@ -96,4 +96,11 @@ export default {
     // Replace <jquery.version> with the jquery version you want.
     "jquery": "<jquery.version>"
   },
+  router: {
+    base: '/',
+    linkActiveClass: 'active-link'
+  },
+  server: {
+    port: 9090,
+  }
 };

@@ -5,6 +5,7 @@
     <Slideshow />
     <About />
     <Doktorlar />
+    <Tedaviler />
     <Gorusler />
     <FooterField />
     <Subscribe />
@@ -19,6 +20,7 @@ import Subnav from '~/components/homepage/subnav'
 import Doktorlar from '~/components/homepage/doktorlar'
 import Gorusler from '~/components/homepage/gorusler'
 import About from '~/components/homepage/about'
+import Tedaviler from '~/components/homepage/tedaviler'
 
 export default {
   name: 'homepage',
@@ -30,25 +32,26 @@ export default {
     Subnav,
     Doktorlar,
     Gorusler,
-    About
+    About,
+    Tedaviler
   },
   head: {
     link: [
       {
         rel: 'stylesheet',
-        href: 'css/rev-settings.css'
+        href: process.env.HOST || 'css/rev-settings.css'
       },
       {
         rel: 'stylesheet',
-        href: 'css/owl.carousel.css'
+        href: process.env.HOST || 'css/owl.carousel.css'
       },
       {
         rel: 'stylesheet',
-        href: 'css/owl.theme.css'
+        href: process.env.HOST || 'css/owl.theme.css'
       },
       {
         rel: 'stylesheet',
-        href: 'css/owl.transitions.css'
+        href: process.env.HOST || 'css/owl.transitions.css'
       }
     ]
   }

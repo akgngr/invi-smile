@@ -20,24 +20,24 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'css/themify-icons.css'
+        href: process.env.HOST || '/css/themify-icons.css'
       },
       {
         rel: 'stylesheet',
-        href: 'css/fullscreen.css',
+        href: process.env.HOST || 'css/fullscreen.css',
         media: 'screen'
       },
       {
         rel: 'stylesheet',
-        href: 'css/rev-settings.css'
+        href: process.env.HOST || 'css/rev-settings.css'
       },
       {
         rel: 'stylesheet',
-        href: 'css/on3step-style.css'
+        href: process.env.HOST || 'css/on3step-style.css'
       },
       {
         rel: 'stylesheet',
-        href: 'css/queries-on3step.css'
+        href: process.env.HOST || 'css/queries-on3step.css'
       }
     ],
     script: [
@@ -48,7 +48,7 @@ export default {
         src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
       },
       {
-        ssr: false,
+        ssr: true,
         src: 'js/on3step.js'
       }
     ]

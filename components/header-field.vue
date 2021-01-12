@@ -36,10 +36,9 @@
 <template>
   <div>
     <!-- nav -->
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top" :class="{'sticky-nav': !showNavbar}">
       <div class="container">
         <div class="row">
-
           <!-- menu mobile display -->
           <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
             <span class="icon icon-bar"></span>
@@ -63,14 +62,14 @@
                     <li><a href="intro/index.html">INTRO</a></li>
                   </ul>
                 </li>
-                <li><a href="#">{{ $t('kurumsal')}}</a>
+                <li><a href="#">{{ $t('kurumsal') }}</a>
                   <ul>
                     <li><a href="about.html">{{ $t('hakkimizda') }}</a></li>
                     <li><a href="about-2.html">About Us - 2</a></li>
                     <li><a href="about-3.html">Our History</a></li>
                   </ul>
                 </li>
-                <li><a href="#">{{ $t('doktorlar')}}</a>
+                <li><a href="#">{{ $t('doktorlar') }}</a>
                   <ul>
                     <li><a href="service.html">CONSULTING BUILDING</a></li>
                     <li><a href="service-1.html">ARCHITECTURE BUILDING</a></li>
@@ -121,6 +120,35 @@
 
 <script>
 export default {
-  name: 'header-field'
+  name: 'header-field',
+  data() {
+    return {
+      showNavbar: true,
+      lastScrollPosition: 0
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.onScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.onScroll)
+  },
+  methods: {
+    onScroll() {
+      // Get the current scroll position
+      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+      // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
+      // if (currentScrollPosition < 0) {
+      //  return
+      // }
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 50) {
+        return
+      }
+      // Here we determine whether we need to show or hide the navbar
+      this.showNavbar = currentScrollPosition < this.lastScrollPosition
+      // Set the current scroll position as the last scroll position
+      this.lastScrollPosition = currentScrollPosition
+    }
+  }
 }
 </script>

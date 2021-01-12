@@ -4,7 +4,7 @@
     <!-- team -->
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-md-offset-3 col-sm-6 ">
+        <div class="col-md-4 col-md-offset-2 col-sm-6 ">
           <div class="team-wrapper">
             <img alt="team img 4" class="img-responsive" src="image/tancan-uysal.webp">
             <div class="team-des">
@@ -16,7 +16,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="team-wrapper">
             <img alt="team img 1" class="img-responsive" src="image/banu-uysal.webp">
             <div class="team-des">

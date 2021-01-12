@@ -1,5 +1,6 @@
 export default {
   welcome: 'Hoş geldiniz',
   about: 'Hakkımızda',
-  description: 'Hakkımızda sayfası'
+  description: 'Hakkımızda sayfası',
+  devami: "DEVAMINI OKU"
 }
