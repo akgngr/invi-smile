@@ -23,7 +23,6 @@ import About from '~/components/homepage/about'
 import Tedaviler from '~/components/homepage/tedaviler'
 
 export default {
-  name: 'homepage',
   layout: 'default',
   components: {
     FooterField,

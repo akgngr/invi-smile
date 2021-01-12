@@ -53,18 +53,11 @@
             <nav id="menu-center">
               <ul>
                 <li>
-                  <a class="actived" href="#">{{ $t('anasayfa') }}</a>
-                  <ul>
-                    <li><a href="index-rev-slider.html">Index Rev Slider</a></li>
-                    <li><a href="index-slider.html">Index Slider</a></li>
-                    <li><a href="index.html">Slider Text</a></li>
-                    <li><a href="index-white.html">Index White</a></li>
-                    <li><a href="intro/index.html">INTRO</a></li>
-                  </ul>
+                  <nuxt-link class="actived" :to="localePath('/')">{{ $t('anasayfa') }}</nuxt-link>
                 </li>
                 <li><a href="#">{{ $t('kurumsal') }}</a>
                   <ul>
-                    <li><a href="about.html">{{ $t('hakkimizda') }}</a></li>
+                    <li><nuxt-link :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link></li>
                     <li><a href="about-2.html">About Us - 2</a></li>
                     <li><a href="about-3.html">Our History</a></li>
                   </ul>

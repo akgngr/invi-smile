@@ -113,7 +113,7 @@
           <vue-tiny-slider v-bind="tinyTedaviOptions">
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/dental-implant-cerrahisi.jpg">
                 <h3>{{ $t('ted1_baslik') }}</h3>
                 <p>{{ $t('ted1_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -124,7 +124,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/invismile-check-up.webp">
                 <h3>{{ $t('ted2_baslik') }}</h3>
                 <p>{{ $t('ted2_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -135,7 +135,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/kanal-tedavisi.webp">
                 <h3>{{ $t('ted3_baslik') }}</h3>
                 <p>{{ $t('ted3_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -146,7 +146,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/lazerle-estetik-dolgu.webp">
                 <h3>{{ $t('ted4_baslik') }}</h3>
                 <p>{{ $t('ted4_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -157,7 +157,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/dijital-gulus-tasarimi.webp">
                 <h3>{{ $t('ted5_baslik') }}</h3>
                 <p>{{ $t('ted5_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -168,7 +168,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/seffaf-plaklarla-ortodontik-tedaviler.webp">
                 <h3>{{ $t('ted6_baslik') }}</h3>
                 <p>{{ $t('ted6_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -179,7 +179,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/estetik-lamina-veneerler.webp">
                 <h3>{{ $t('ted7_baslik') }}</h3>
                 <p>{{ $t('ted7_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -190,7 +190,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/zirkonyum-porselen-kaplama.webp">
                 <h3>{{ $t('ted8_baslik') }}</h3>
                 <p>{{ $t('ted8_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -201,7 +201,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/dis-sikma-bruksizm-tedavisi.webp">
                 <h3>{{ $t('ted9_baslik') }}</h3>
                 <p>{{ $t('ted9_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -212,7 +212,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/cocuk-dis-hekimligi-pedodonti-.webp">
                 <h3>{{ $t('ted10_baslik') }}</h3>
                 <p>{{ $t('ted10_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -223,7 +223,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/radyoloji.webp">
                 <h3>{{ $t('ted11_baslik') }}</h3>
                 <p>{{ $t('ted11_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -234,7 +234,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/cene-eklemi-tme-tedavisi.webp">
                 <h3>{{ $t('ted12_baslik') }}</h3>
                 <p>{{ $t('ted12_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -245,7 +245,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/dis-beyazlatma-bleaching-.webp">
                 <h3>{{ $t('ted13_baslik') }}</h3>
                 <p>{{ $t('ted13_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -256,7 +256,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/diseti-tedavileri-periodontoloji-.webp">
                 <h3>{{ $t('ted14_baslik') }}</h3>
                 <p>{{ $t('ted14_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -267,7 +267,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="img/img-news.jpg">
+                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/gorunmez-tellerle-ortodonti.webp">
                 <h3>{{ $t('ted15_baslik') }}</h3>
                 <p>{{ $t('ted15_acik') }}</p>
                 <a class="link-class" href="service-2.html">
@@ -290,9 +290,9 @@ export default {
     return {
       tinyTedaviOptions: {
         autoplay: true,
-        spead: 400,
+        spead: 800,
         mouseDrag: true,
-        items: 4,
+        items: 5,
         swipeAngle: false,
         nav: false,
         controlsText: ["", ""],
@@ -303,6 +303,7 @@ export default {
         controlsPosition: "bottom",
         slideBy: "page",
         autoplayHoverPause: true,
+        gutter: 50,
         responsive: {
           375: {
             edgePadding: 0,
@@ -323,6 +324,10 @@ export default {
 </script>
 
 <style>
+.tedaviler .item{
+  padding-right: 1rem !important;
+  padding-left: 1rem;
+}
 .tedaviler .container{
   position: relative;
 }
