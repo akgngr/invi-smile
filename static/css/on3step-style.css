@@ -768,7 +768,7 @@ nav a::before {
   transition: max-width 0.5s;
   white-space: nowrap;
 }
-nav a.actived {
+nav a.nuxt-link-exact-active {
   color: #af8442;
 }
 nav ul ul {
@@ -966,7 +966,7 @@ li>a:only-child:after {
   transition: max-width 0.5s;
   white-space: nowrap;
 }
-.white nav a.actived {
+.white nav a.nuxt-link-exact-active {
   color: #af8442;
 }
 .white nav ul ul {
@@ -1950,7 +1950,7 @@ transition: all 0.2s ease;
   height: auto;
   padding: 90px 0 90px 0;
   overflow-x: hidden;
-  background: url(../img/testi-bg.jpg)top fixed;
+  background: url(../image/testimonials.jpg)top fixed;
   color: #fff;
   -webkit-background-size: cover;
   -moz-background-size: cover;

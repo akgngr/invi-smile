@@ -1,6 +1,7 @@
 import webpack from 'webpack'
 
 export default {
+  loading: '~/components/loader.vue',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: "nuxt-invismile",
@@ -16,11 +17,6 @@ export default {
       { rel: "apple-touch-icon", sizes: "114x114", type: "image/x-icon", href: "/apple-touch-icon-114x114.png" },
 
     ]
-  },
-  loadingIndicator: {
-    name: 'folding-cube',
-    color: '#3B8070',
-    background: 'red'
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],

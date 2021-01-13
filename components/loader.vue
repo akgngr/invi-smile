@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="loading" class="loading-page">
     <!-- preloader -->
     <div class="bg-preloader">
     </div>
@@ -15,6 +15,16 @@
 
 <script>
 export default {
-  name: 'loader'
+  data: () => ({
+    loading: false
+  }),
+  methods: {
+    start() {
+      this.loading = true
+    },
+    finish() {
+      this.loading = false
+    }
+  }
 }
 </script>

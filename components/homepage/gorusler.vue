@@ -18,47 +18,49 @@
 <div>
   <!-- Gorusler -->
   <section id="testi" class="testi-page">
-    <div class="container">
-      <div class="row">
-        <no-ssr>
-          <vue-tiny-slider v-bind="tinyTestiOptions">
-            <div class="item col-md-12">
-              <blockquote>
-                <h3>sa...</h3>
-                <p>Ortodontik tedaviye başlamam icin bu yaşıma kadar beklemiş ve bi türlü cesaret edememiştim. Tancan hocam en büyük şansım bu hususta .. tedavim çok iyi sonuçlar verdi. Tancan hocam iyi ki var.. güzel gülüşümüzün mimarı.. teşekkürler</p>
-                <small>{{ $t('hasta') }} <cite title="Source Title">{{ $t('gorus') }}</cite></small>
-              </blockquote>
-            </div>
-            <div class="item col-md-12">
-              <blockquote>
-                <h3>ev...m</h3>
-                <p>Dişlerimdeki çarpaşıklık için gittiğim doktorumla tedavime başladığımdan bu yana hiç bir sıkıntım yok.Çok memnunum,tedavimin nasıl olacağı ,süreç ve sonuçları ile ilgili bilgileri beni çok memnun etti.Her zaman Güler yüzlü ve ilgili bir doktor.</p>
-                <small>{{ $t('hasta') }} <cite title="Source Title">{{ $t('gorus') }}</cite></small>
-              </blockquote>
-            </div>
-            <div class="item col-md-12">
-              <blockquote>
-                <h3>ay...a</h3>
-                <p>Şeffaf plak telsiz tadavi bizim açımızdan bir sorun yok tancan hocamızdan çok memnunuz tedavi sürecinin olumlu biteceğine inanıyoruz ve tancan hocamiza güveniyoruz.</p>
-                <small>{{ $t('hasta') }} <cite title="Source Title">{{ $t('gorus') }}</cite></small>
-              </blockquote>
-            </div>
-            <div class="item col-md-12">
-              <blockquote>
-                <h3>mü....</h3>
-                <p>Tancan Hoca ile invisalign tedavi sürecine başladık. Daha önce ortodonti tedavi görmüş biri olarak tekrar aynı sürece girme konusunda endişelerim vardı. Tancan hoca bu konuda çok güven veren ve her detayını paylaşan biri. Ölçülerim yeni alındı ve plaklarımın gelmesini bekliyorum. Tedavi süresince görüşlerimi paylaşacağım. Daha önce yanlış ortodonti tedavisi uygulanan biri olarak bu süreci tekrar deneyimleyeceğim ve paylaşacağım.</p>
-                <small>{{ $t('hasta') }} <cite title="Source Title">{{ $t('gorus') }}</cite></small>
-              </blockquote>
-            </div>
-            <div class="item col-md-12">
-              <blockquote>
-                <h3>gü...l</h3>
-                <p>İşini çok fazla severek yapan ve hastalarına gerçekten ilgisini gösteren bir ortodontist. Ben diş teli tedavisi görüyorum açıkçası çok korkuyordum fakat hocamız beni çok rahatlattı ve yaklaşık 1.5 yıldır kullandığım diş teli tedavimin sonuna gelmiş bulunmaktayım.Kendisini gönül rahatlığıyla herkese öneririm.Hayatımda yaptığım en güzel ‘iyi ki’lerde geliyorsunuz hocam.</p>
-                <small>{{ $t('hasta') }} <cite title="Source Title">{{ $t('gorus') }}</cite></small>
-              </blockquote>
-            </div>
-          </vue-tiny-slider>
-        </no-ssr>
+    <div class="golge">
+      <div class="container">
+        <div class="row">
+          <no-ssr>
+            <vue-tiny-slider v-bind="tinyTestiOptions">
+              <div class="item col-md-12">
+                <blockquote>
+                  <h3>sa...</h3>
+                  <p>Ortodontik tedaviye başlamam icin bu yaşıma kadar beklemiş ve bi türlü cesaret edememiştim. Tancan hocam en büyük şansım bu hususta .. tedavim çok iyi sonuçlar verdi. Tancan hocam iyi ki var.. güzel gülüşümüzün mimarı.. teşekkürler</p>
+                  <small>{{ $t('hasta') }} <cite title="Source Title">{{ $t('gorus') }}</cite></small>
+                </blockquote>
+              </div>
+              <div class="item col-md-12">
+                <blockquote>
+                  <h3>ev...m</h3>
+                  <p>Dişlerimdeki çarpaşıklık için gittiğim doktorumla tedavime başladığımdan bu yana hiç bir sıkıntım yok.Çok memnunum,tedavimin nasıl olacağı ,süreç ve sonuçları ile ilgili bilgileri beni çok memnun etti.Her zaman Güler yüzlü ve ilgili bir doktor.</p>
+                  <small>{{ $t('hasta') }} <cite title="Source Title">{{ $t('gorus') }}</cite></small>
+                </blockquote>
+              </div>
+              <div class="item col-md-12">
+                <blockquote>
+                  <h3>ay...a</h3>
+                  <p>Şeffaf plak telsiz tadavi bizim açımızdan bir sorun yok tancan hocamızdan çok memnunuz tedavi sürecinin olumlu biteceğine inanıyoruz ve tancan hocamiza güveniyoruz.</p>
+                  <small>{{ $t('hasta') }} <cite title="Source Title">{{ $t('gorus') }}</cite></small>
+                </blockquote>
+              </div>
+              <div class="item col-md-12">
+                <blockquote>
+                  <h3>mü....</h3>
+                  <p>Tancan Hoca ile invisalign tedavi sürecine başladık. Daha önce ortodonti tedavi görmüş biri olarak tekrar aynı sürece girme konusunda endişelerim vardı. Tancan hoca bu konuda çok güven veren ve her detayını paylaşan biri. Ölçülerim yeni alındı ve plaklarımın gelmesini bekliyorum. Tedavi süresince görüşlerimi paylaşacağım. Daha önce yanlış ortodonti tedavisi uygulanan biri olarak bu süreci tekrar deneyimleyeceğim ve paylaşacağım.</p>
+                  <small>{{ $t('hasta') }} <cite title="Source Title">{{ $t('gorus') }}</cite></small>
+                </blockquote>
+              </div>
+              <div class="item col-md-12">
+                <blockquote>
+                  <h3>gü...l</h3>
+                  <p>İşini çok fazla severek yapan ve hastalarına gerçekten ilgisini gösteren bir ortodontist. Ben diş teli tedavisi görüyorum açıkçası çok korkuyordum fakat hocamız beni çok rahatlattı ve yaklaşık 1.5 yıldır kullandığım diş teli tedavimin sonuna gelmiş bulunmaktayım.Kendisini gönül rahatlığıyla herkese öneririm.Hayatımda yaptığım en güzel ‘iyi ki’lerde geliyorsunuz hocam.</p>
+                  <small>{{ $t('hasta') }} <cite title="Source Title">{{ $t('gorus') }}</cite></small>
+                </blockquote>
+              </div>
+            </vue-tiny-slider>
+          </no-ssr>
+        </div>
       </div>
     </div>
   </section>
@@ -93,6 +95,19 @@ export default {
 </script>
 
 <style>
+.tns-horizontal.tns-subpixel>.tns-item{
+  vertical-align: middle;
+}
+.testi-page, section.testi-page{
+  padding: 0 !important;
+}
+.testi-page .golge{
+  background: #3f3f3f;
+  opacity: 0.6;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  height: 100%;
+}
 .testi-page .container{
   position: relative;
 }

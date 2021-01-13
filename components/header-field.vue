@@ -53,7 +53,7 @@
             <nav id="menu-center">
               <ul>
                 <li>
-                  <nuxt-link class="actived" :to="localePath('/')">{{ $t('anasayfa') }}</nuxt-link>
+                  <nuxt-link :to="localePath('/')">{{ $t('anasayfa') }}</nuxt-link>
                 </li>
                 <li><a href="#">{{ $t('kurumsal') }}</a>
                   <ul>
@@ -131,14 +131,14 @@ export default {
       // Get the current scroll position
       const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
       // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
-      // if (currentScrollPosition < 0) {
-      //  return
-      // }
+      if (currentScrollPosition < 0) {
+        return
+      }
       if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 50) {
         return
       }
       // Here we determine whether we need to show or hide the navbar
-      this.showNavbar = currentScrollPosition < this.lastScrollPosition
+      // this.showNavbar = currentScrollPosition < this.lastScrollPosition
       // Set the current scroll position as the last scroll position
       this.lastScrollPosition = currentScrollPosition
     }

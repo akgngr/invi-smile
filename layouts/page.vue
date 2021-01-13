@@ -13,6 +13,7 @@ import Subscribe from '~/components/subscribe'
 import Subnav from '~/components/homepage/subnav'
 import HeaderField from '~/components/header-field'
 import FooterField from '~/components/footer-field'
+
 export default {
   components: {
     Subscribe,
@@ -69,3 +70,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>

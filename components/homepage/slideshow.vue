@@ -28,7 +28,7 @@
           <vue-tiny-slider v-bind="tinySliderOptions">
             <div class="tini-item">
               <div class="slotholder">
-                <img src="images-slider/lamina-veneer.png" alt="Slider image" class="defaultimg" />
+                <img src="images-slider/lamina-veneer.webp" alt="Slider image" class="defaultimg" />
               </div>
               <div class="tp-caption big-heading sft">
                 {{ $t('valian') }}
