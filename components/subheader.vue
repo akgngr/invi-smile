@@ -48,6 +48,11 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
+#subheader{
+  background-image: url("/image/subheader.jpg");
+  background-position: top right fixed;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 </style>

@@ -36,10 +36,10 @@
               <span class="devider-cont"></span>
               <p>Pros’ Estetik Dental ve Medikal Ltd. Şti tarafından, Prof. Dr. Tancan UYSAL ve Yrd. Doç. Dr. Banu UYSAL ortak girişimiyle 2020 yılında açılan Ağız ve Diş Sağlığı Polikliniğimiz Alsancak’ta hizmet vermeye başlamıştır.</p>
               <p> Tüm diş hekimliği uzmanlık branşlarından oluşan akademisyen kadrosuyla, tam kapsamlı 6 diş ünitesi ile 500 metrekare modern çalışma alanıyla ulusal ve uluslararası alanda hizmet vermektedir.</p>
-              <a class="link-class" href="service-2.html">
+              <nuxt-link class="link-class" :to="localePath('hakkimizda')">
                 {{ $t('devami') }}
                 <span class="devider"></span>
-              </a>
+              </nuxt-link>
             </div>
           </div>
           <div class="col-md-6">

@@ -3,31 +3,43 @@
   "en": {
     "anasayfa": "Home",
     "kurumsal": "Business",
+    "hakkimizda": "About Us",
+    "misyonumuz": "Our Mission",
+    "vizyonumuz": "Our vision",
+    "kalite-politikamiz": "Our Quality Policy",
+    "degerlerimiz": "Our Values",
     "doktorlar": "Doctors",
     "tedaviler": "Treatments",
     "anlasmali": "Contracted Institutions",
     "iletisim": "Contact",
-    "hakkimizda": "About Us",
     "randevu": "Get Appointment"
   },
   "tr": {
     "anasayfa": "Anasayfa",
     "kurumsal": "Kurumsal",
+    "hakkimizda": "Hakkımızda",
+    "misyonumuz": "Misyonumuz",
+    "vizyonumuz": "Vizyonumuz",
+    "kalite-politikamiz": "Kalite Politikamız",
+    "degerlerimiz": "Değerlerimiz",
     "doktorlar": "Doktorlar",
     "tedaviler": "Tedaviler",
     "anlasmali": "Anlaşmalı Kurumlar",
     "iletisim": "İletişim",
-    "hakkimizda": "Hakkımızda",
     "randevu": "Randevu AL"
   },
   "de": {
     "anasayfa": "Home",
     "kurumsal": "Geschäft",
+    "hakkimizda": "Über uns",
+    "misyonumuz": "Unsere Mission",
+    "vizyonumuz": "Unsere Vision",
+    "kalite-politikamiz": "Unsere Qualitätspolitik",
+    "degerlerimiz": "Unsere Werte",
     "doktorlar": "Ärzte",
     "tedaviler": "Behandlungen",
     "anlasmali": "Vertragsinstitutionen",
     "iletisim": "Kontakt",
-    "hakkimizda": "Über uns",
     "randevu": "Termin machen"
   }
 }
@@ -36,7 +48,8 @@
 <template>
   <div>
     <!-- nav -->
-    <div class="navbar navbar-default navbar-fixed-top" :class="{'sticky-nav': !showNavbar}">
+    <div id="nav" :class="{ sticky:active }">
+      <div class="navbar navbar-default navbar-fixed-top" :class="toggleNavClass()">
       <div class="container">
         <div class="row">
           <!-- menu mobile display -->
@@ -58,8 +71,10 @@
                 <li><a href="#">{{ $t('kurumsal') }}</a>
                   <ul>
                     <li><nuxt-link :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link></li>
-                    <li><a href="about-2.html">About Us - 2</a></li>
-                    <li><a href="about-3.html">Our History</a></li>
+                    <li><nuxt-link :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link></li>
+                    <li><nuxt-link :to="localePath('vizyonumuz')">{{ $t('vizyonumuz') }}</nuxt-link></li>
+                    <li><nuxt-link :to="localePath('kalite-politikamiz')">{{ $t('kalite-politikamiz') }}</nuxt-link></li>
+                    <li><nuxt-link :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link></li>
                   </ul>
                 </li>
                 <li><a href="#">{{ $t('doktorlar') }}</a>
@@ -107,40 +122,37 @@
       </div>
       <!-- container -->
     </div>
+    </div>
     <!-- nav end -->
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'header-field',
   data() {
     return {
-      showNavbar: true,
-      lastScrollPosition: 0
+      active: false
+    }
+  },
+  methods: {
+    toggleNavClass() {
+      if (this.active === false) {
+        return 'nav'
+      } else {
+        return 'sticky-nav'
+      }
     }
   },
   mounted() {
-    window.addEventListener('scroll', this.onScroll)
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.onScroll)
-  },
-  methods: {
-    onScroll() {
-      // Get the current scroll position
-      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
-      // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
-      if (currentScrollPosition < 0) {
-        return
+    window.document.onscroll = () => {
+      const navBar = document.getElementById('nav');
+      if (window.scrollY > navBar.offsetTop) {
+        this.active = true;
+      } else {
+        this.active = false;
       }
-      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 50) {
-        return
-      }
-      // Here we determine whether we need to show or hide the navbar
-      // this.showNavbar = currentScrollPosition < this.lastScrollPosition
-      // Set the current scroll position as the last scroll position
-      this.lastScrollPosition = currentScrollPosition
     }
   }
 }

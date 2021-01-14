@@ -69,7 +69,7 @@ $(window).on("load", function() {
       navdefault.toggleClass('fullHeight');
     });
 
-    // animation block menu on scroll
+    /* animation block menu on scroll
     $(window).scroll(function() {
       if ($(".navbar").offset().top > 10) {
         sTick.addClass("sticky-nav");
@@ -90,7 +90,7 @@ $(window).on("load", function() {
         	totop.fadeOut(100);
         }
 	 });
-
+*/
   });
 
   totop.on("click", function(e) {
