@@ -9,6 +9,7 @@
     "kalite-politikamiz": "Our Quality Policy",
     "degerlerimiz": "Our Values",
     "doktorlar": "Doctors",
+    "banu-uysal": "Assist Prf Dr Banu UYSAL",
     "tedaviler": "Treatments",
     "anlasmali": "Contracted Institutions",
     "iletisim": "Contact",
@@ -23,6 +24,7 @@
     "kalite-politikamiz": "Kalite Politikamız",
     "degerlerimiz": "Değerlerimiz",
     "doktorlar": "Doktorlar",
+    "banu-uysal": "Prf. Dr. Banu UYSAL",
     "tedaviler": "Tedaviler",
     "anlasmali": "Anlaşmalı Kurumlar",
     "iletisim": "İletişim",
@@ -37,6 +39,7 @@
     "kalite-politikamiz": "Unsere Qualitätspolitik",
     "degerlerimiz": "Unsere Werte",
     "doktorlar": "Ärzte",
+    "banu-uysal": "Helfen Prf Dr Banu UYSAL",
     "tedaviler": "Behandlungen",
     "anlasmali": "Vertragsinstitutionen",
     "iletisim": "Kontakt",
@@ -79,11 +82,12 @@
                 </li>
                 <li><a href="#">{{ $t('doktorlar') }}</a>
                   <ul>
-                    <li><a href="service.html">CONSULTING BUILDING</a></li>
-                    <li><a href="service-1.html">ARCHITECTURE BUILDING</a></li>
-                    <li><a href="service-2.html">DESIGN & BUILD</a></li>
-                    <li><a href="service-3.html">RENOVATION BUILDING</a></li>
-                    <li><a href="service-4.html">CONSTRUCTION BUILDING</a></li>
+                    <li>
+                      <nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('banu-uysal')">{{ $t('banu-uysal') }}</nuxt-link>
+                    </li>
                   </ul>
                 </li>
                 <li><a  href="#">{{ $t('tedaviler')}}</a> <ul>

@@ -1632,7 +1632,7 @@ ul#services-list{padding-left:0px;}
   width: 100%;
   padding: 15px 20px 15px 20px;
 }
-#services-list li.active {
+#services-list a.nuxt-link-exact-active {
   background: #333333;
   color: #fff;
 }
