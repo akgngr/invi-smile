@@ -79,14 +79,7 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extractCSS: true,
-    plugins: [
-      new webpack.ProvidePlugin({
-        // global modules
-        $: 'jquery',
-        jQuery: 'jquery',
-        _: 'lodash'
-      })
-    ]
+    plugins: []
   },
   dependencies: {
     // Replace <jquery.version> with the jquery version you want.

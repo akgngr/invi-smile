@@ -64,7 +64,7 @@ $(window).on("load", function() {
     }
 
     // mobile icon
-    $(".navbar-toggle").on("click", function() {
+    window.onload = $(".navbar-toggle").on("click", function() {
       menumobile.toggleClass('menu-show');
       navdefault.toggleClass('fullHeight');
     });

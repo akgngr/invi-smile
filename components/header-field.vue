@@ -11,6 +11,21 @@
     "doktorlar": "Doctors",
     "banu-uysal": "Assist Prf Dr Banu UYSAL",
     "tedaviler": "Treatments",
+    "dental-implant": "Dental Implant",
+    "check-up": "Invismile Check-up",
+    "kanal": "Root Canal Treatment (Endodontics)",
+    "lazer": "Laser Aesthetic Filling",
+    "gulus": "Digital Smile Design",
+    "seffaf-plak": "Orth. with Trans. Plaques",
+    "estetik-lamina": "Aesthetic Lamina Veneers",
+    "zikronyum": "Zirconium Porcelain Coating",
+    "dis-sikma": "Tooth Tightening Treatment",
+    "cocuk": "Children's Dentistry",
+    "radyoloji": "Radiology",
+    "cene-eklemi": "Jaw Joint (TMJ) Treatment",
+    "dis-beyazlatma": "Teeth whitening",
+    "diseti": "Gum Treatments",
+    "gorunmez-teller": "Orthodontics with Invisible Wires",
     "anlasmali": "Contracted Institutions",
     "iletisim": "Contact",
     "randevu": "Get Appointment"
@@ -26,6 +41,21 @@
     "doktorlar": "Doktorlar",
     "banu-uysal": "Prf. Dr. Banu UYSAL",
     "tedaviler": "Tedaviler",
+    "dental-implant": "Dental İmplant",
+    "check-up": "Invismile Check-up",
+    "kanal": "Kanal Tedavisi (Endodonti)",
+    "lazer": "Lazerle Estetik Dolgu",
+    "gulus": "Dijital Gülüş Tasarımı ",
+    "seffaf-plak": "Şeffaf Plaklarla Ortodonti",
+    "estetik-lamina": "Estetik Lamina Veneerler",
+    "zikronyum": "Zirkonyum Porselen Kaplama",
+    "dis-sikma": "Diş Sıkma Tedavisi",
+    "cocuk": "Çocuk Diş Hekimliği",
+    "radyoloji": "Radyoloji",
+    "cene-eklemi": "Çene Eklemi (TME) Tedavisi",
+    "dis-beyazlatma": "Diş Beyazlatma",
+    "diseti": "Dişeti Tedavileri",
+    "gorunmez-teller": "Görünmez Tellerle Ortodonti",
     "anlasmali": "Anlaşmalı Kurumlar",
     "iletisim": "İletişim",
     "randevu": "Randevu AL"
@@ -41,6 +71,21 @@
     "doktorlar": "Ärzte",
     "banu-uysal": "Helfen Prf Dr Banu UYSAL",
     "tedaviler": "Behandlungen",
+    "dental-implant": "Zahnimplantat",
+    "check-up": "Invismile Check-up",
+    "kanal": "Wurzelkanalbehandlung (Endodontie)",
+    "lazer": "Ästhetische Füllung mit Laser",
+    "gulus": "Digital Smile Design",
+    "seffaf-plak": "Kieferortho. mit trans. Plaques",
+    "estetik-lamina": "Ästhetische Lamina-Furniere",
+    "zikronyum": "Zirkonium-Porzellanbeschichtung",
+    "dis-sikma": "Zahnstraffungsbehandlung",
+    "cocuk": "Kinderzahnheilkunde",
+    "radyoloji": "Radiologie",
+    "cene-eklemi": "Kiefergelenkbehandlung",
+    "dis-beyazlatma": "Zahnaufhellung",
+    "diseti": "Zahnfleischbehandlungen",
+    "gorunmez-teller": "KFO mit unsichtbaren Drähten",
     "anlasmali": "Vertragsinstitutionen",
     "iletisim": "Kontakt",
     "randevu": "Termin machen"
@@ -59,10 +104,11 @@
           <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
             <span class="icon icon-bar"></span>
             <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span></button>
+            <span class="icon icon-bar"></span>
+          </button>
 
           <!-- logo -->
-          <a class="navbar-brand" href="index.html"><img alt="logo" src="image/logo.png"></a>
+          <nuxt-link :to="localePath('/')" class="navbar-brand"><img alt="logo" src="image/logo.png"></nuxt-link>
 
           <!-- mainmenu start -->
           <div class="menu-init" id="main-menu">
@@ -90,21 +136,65 @@
                     </li>
                   </ul>
                 </li>
-                <li><a  href="#">{{ $t('tedaviler')}}</a> <ul>
-                  <li><a href="result.html">PROJECTS FLUID</a></li>
-                  <li><a href="#">PROJECTS GRID</a> <ul>
-                    <li><a href="projects-grid-2.html">PROJECTS 2 COL</a></li>
-                    <li><a href="projects-grid-3.html">PROJECTS 3 COL</a></li>
-                    <li><a href="projects-grid-4.html">PROJECTS 4 COL</a></li>
+                <li>
+                  <a  href="#">{{ $t('tedaviler')}}</a>
+                  <ul style="z-index: 1000">
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/dental-implant')">Dental İmplant</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/check-up')">Check-Up</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/kanal-tedavisi-endodonti')">Kanal Tedavisi (Endodonti)</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/lazerle-estetik-dolgu')">Lazerle Estetik Dolgu</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/dijital-gulus-tasarimi')">Dijital Gülüş Tasarımı</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/seffaf-plaklarla-ortodonti')">Şeffaf Plaklarla Ortodonti</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/estetik-lamina-veneerler')">Estetik Lamina Veneerler</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/zirkonyum-porselen-kaplama')">Zirkonyum Porselen Kaplama</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/dis-sikma-tedavisi')">Diş Sıkma Tedavisi</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/cocuk-dis-hekimligi')">Çocuk Diş Hekimliği</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/radyoloji')">Radyoloji</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/cene-eklemi-tme-tedavisi')">Çene Eklemi (TME) Tedavisi</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/dis-beyazlatma')">Diş Beyazlatma</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/diseti-tedavileri')">Dişeti Tedavileri</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link :to="localePath('/tedaviler/gorunmez-tellerle-ortodonti')">Görünmez Tellerle Ortodonti</nuxt-link>
+                    </li>
                   </ul>
-                  </li>
-                  <li><a href="#">{{ $t('anlasmali')}}</a><ul>
+                </li>
+                <!--
+                <li>
+                  <a href="#">{{ $t('anlasmali')}}</a>
+                  <ul>
                     <li><a href="project-detail.html">PROJECT DETAILS 1</a></li>
                     <li><a href="project-detail-2.html">PROJECT DETAILS 2</a></li>
                   </ul>
-                  </li>
-                </ul>
                 </li>
+                -->
                 <li><a  href="#">Blog</a>
                   <ul>
                     <li><a href="blog.html">Blog Single</a></li>

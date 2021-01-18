@@ -8,7 +8,7 @@
           <div class="team-wrapper">
             <img alt="team img 4" class="img-responsive" src="image/tancan-uysal.webp">
             <div class="team-des">
-              <h3>Prof. Dr. Tancan Uysal</h3>
+              <nuxt-link :to="localePath('tancan-uysal')"><h3>Prof. Dr. Tancan Uysal</h3></nuxt-link>
               <span>Ortodonti Uzmanı</span>
               <a href="#"><span class="ti-facebook"></span></a>
               <a href="#"><span class="ti-twitter"></span></a>
@@ -20,7 +20,7 @@
           <div class="team-wrapper">
             <img alt="team img 1" class="img-responsive" src="image/banu-uysal.webp">
             <div class="team-des">
-              <h3>Yrd. Doç. Dr. Banu Uysal</h3>
+              <nuxt-link :to="localePath('banu-uysal')"><h3>Yrd. Doç. Dr. Banu Uysal</h3></nuxt-link>
               <span>Endodonti Uzmanı</span>
               <a href="#"><span class="ti-facebook"></span></a>
               <a href="#"><span class="ti-twitter"></span></a>

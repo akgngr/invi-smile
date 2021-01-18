@@ -1,11 +1,13 @@
 <template>
-  <div class="content-wrapper">
-    <Subnav />
-    <HeaderField />
-    <Nuxt />
-    <FooterField />
-    <Subscribe />
-  </div>
+  <transition name="home" mode="out-in">
+    <div class="content-wrapper">
+      <Subnav />
+      <HeaderField />
+      <Nuxt />
+      <FooterField />
+      <Subscribe />
+    </div>
+  </transition>
 </template>
 
 <script>
