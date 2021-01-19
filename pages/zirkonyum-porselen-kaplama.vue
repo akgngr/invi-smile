@@ -57,7 +57,7 @@
 <script>
 import SocialHead from '@/components/SocialHead'
 import Subheader from '@/components/subheader'
-import Tedavilerrightwidget from '~/components/tedavilerrightwidget'
+import Tedavilerrightwidget from '@/components/tedavilerrightwidget'
 
 export default {
   name: 'zirkonyum-porselen-kaplama',
@@ -70,9 +70,9 @@ export default {
   nuxtI18n: {
     seo: true,
     paths: {
-      tr: '/tedaviler/zirkonyum-porselen-kaplama',
-      en: '/treatments/check-up',
-      de: '/behandlungen/untersuchung'
+      tr: '/zirkonyum-porselen-kaplama',
+      en: '/zirconium-porcelain-coating',
+      de: '/untersuchung'
     }
   }
 }

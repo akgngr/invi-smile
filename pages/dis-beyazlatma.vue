@@ -117,9 +117,9 @@
 <script>
 import SocialHead from '@/components/SocialHead'
 import Subheader from '@/components/subheader'
-import Accordion from '~/components/tekrarlayan/accordion'
-import AccordionLayout from '~/components/tekrarlayan/accorlayout'
-import Tedavilerrightwidget from '~/components/tedavilerrightwidget'
+import Accordion from '@/components/tekrarlayan/accordion'
+import AccordionLayout from '@/components/tekrarlayan/accorlayout'
+import Tedavilerrightwidget from '@/components/tedavilerrightwidget'
 
 export default {
   name: 'dis-beyazlatma',
@@ -134,9 +134,9 @@ export default {
   nuxtI18n: {
     seo: true,
     paths: {
-      tr: '/tedaviler/dis-beyazlatma',
-      en: '/treatments/teeth-whitening',
-      de: '/behandlungen/zahnaufhellung'
+      tr: '/dis-beyazlatma',
+      en: '/teeth-whitening',
+      de: '/zahnaufhellung'
     }
   }
 }

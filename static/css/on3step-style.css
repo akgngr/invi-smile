@@ -2396,24 +2396,6 @@ textarea:focus:-ms-input-placeholder {
     position: absolute;
     left: 15px;
     top: 15px;
-    font-family: "FontAwesome";
-    color: #dadada;
-    }
-
-.user-name::after {
-    content: "\f007";
-    }
-.user-email::after {
-    content: "\f003";
-    }
-.user-phone::after {
-    content: "\f095";
-    }
-.user-url::after {
-    content: "\f0ac";
-    }
-.user-message::after {
-    content: "\f086";
     }
 
 /* contact end */

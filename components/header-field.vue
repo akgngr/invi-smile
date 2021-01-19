@@ -12,20 +12,20 @@
     "banu-uysal": "Assist Prf Dr Banu UYSAL",
     "tedaviler": "Treatments",
     "dental-implant": "Dental Implant",
-    "check-up": "Invismile Check-up",
-    "kanal": "Root Canal Treatment (Endodontics)",
-    "lazer": "Laser Aesthetic Filling",
-    "gulus": "Digital Smile Design",
+    "check-up": "Check-Up",
+    "kanal-tedavisi": "Root Canal Treatment (Endodontics)",
+    "lazer-estetik": "Laser Aesthetic Filling",
+    "gulus-tasarimi": "Digital Smile Design",
     "seffaf-plak": "Orth. with Trans. Plaques",
     "estetik-lamina": "Aesthetic Lamina Veneers",
     "zikronyum": "Zirconium Porcelain Coating",
     "dis-sikma": "Tooth Tightening Treatment",
-    "cocuk": "Children's Dentistry",
+    "cocuk-dis": "Children's Dentistry",
     "radyoloji": "Radiology",
-    "cene-eklemi": "Jaw Joint (TMJ) Treatment",
+    "cene-eklemi":  "Jaw Joint (TMJ) Treatment",
     "dis-beyazlatma": "Teeth whitening",
-    "diseti": "Gum Treatments",
-    "gorunmez-teller": "Orthodontics with Invisible Wires",
+    "diseti":  "Gum Treatments",
+    "gorunmez-teller": "Orth. with Invisible Wires",
     "anlasmali": "Contracted Institutions",
     "iletisim": "Contact",
     "randevu": "Get Appointment"
@@ -42,19 +42,19 @@
     "banu-uysal": "Prf. Dr. Banu UYSAL",
     "tedaviler": "Tedaviler",
     "dental-implant": "Dental İmplant",
-    "check-up": "Invismile Check-up",
-    "kanal": "Kanal Tedavisi (Endodonti)",
-    "lazer": "Lazerle Estetik Dolgu",
-    "gulus": "Dijital Gülüş Tasarımı ",
+    "check-up": "Check-Up",
+    "kanal-tedavisi": "Kanal Tedavisi (Endodonti)",
+    "lazer-estetik": "Lazerle Estetik Dolgu",
+    "gulus-tasarimi": "Dijital Gülüş Tasarımı",
     "seffaf-plak": "Şeffaf Plaklarla Ortodonti",
     "estetik-lamina": "Estetik Lamina Veneerler",
     "zikronyum": "Zirkonyum Porselen Kaplama",
     "dis-sikma": "Diş Sıkma Tedavisi",
-    "cocuk": "Çocuk Diş Hekimliği",
+    "cocuk-dis": "Çocuk Diş Hekimliği",
     "radyoloji": "Radyoloji",
-    "cene-eklemi": "Çene Eklemi (TME) Tedavisi",
+    "cene-eklemi":  "Çene Eklemi (TME) Tedavisi",
     "dis-beyazlatma": "Diş Beyazlatma",
-    "diseti": "Dişeti Tedavileri",
+    "diseti":  "Dişeti Tedavileri",
     "gorunmez-teller": "Görünmez Tellerle Ortodonti",
     "anlasmali": "Anlaşmalı Kurumlar",
     "iletisim": "İletişim",
@@ -72,20 +72,20 @@
     "banu-uysal": "Helfen Prf Dr Banu UYSAL",
     "tedaviler": "Behandlungen",
     "dental-implant": "Zahnimplantat",
-    "check-up": "Invismile Check-up",
-    "kanal": "Wurzelkanalbehandlung (Endodontie)",
-    "lazer": "Ästhetische Füllung mit Laser",
-    "gulus": "Digital Smile Design",
-    "seffaf-plak": "Kieferortho. mit trans. Plaques",
+    "check-up": "Check-Up",
+    "kanal-tedavisi": "Wurzelkanalbehandlung (Endodontie)",
+    "lazer-estetik": "Laserästhetische Füllung",
+    "gulus-tasarimi": "Digital Smile Design",
+    "seffaf-plak": "KFO mit Transparent-Plaketten",
     "estetik-lamina": "Ästhetische Lamina-Furniere",
     "zikronyum": "Zirkonium-Porzellanbeschichtung",
     "dis-sikma": "Zahnstraffungsbehandlung",
-    "cocuk": "Kinderzahnheilkunde",
+    "cocuk-dis": "Kinderzahnheilkunde",
     "radyoloji": "Radiologie",
-    "cene-eklemi": "Kiefergelenkbehandlung",
+    "cene-eklemi":  "Kiefergelenkbehandlung",
     "dis-beyazlatma": "Zahnaufhellung",
-    "diseti": "Zahnfleischbehandlungen",
-    "gorunmez-teller": "KFO mit unsichtbaren Drähten",
+    "diseti":  "Zahnfleischbehandlungen",
+    "gorunmez-teller": "Kiefer. mit unsich. Drähten",
     "anlasmali": "Vertragsinstitutionen",
     "iletisim": "Kontakt",
     "randevu": "Termin machen"
@@ -140,49 +140,49 @@
                   <a  href="#">{{ $t('tedaviler')}}</a>
                   <ul style="z-index: 1000">
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/dental-implant')">Dental İmplant</nuxt-link>
+                      <nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/check-up')">Check-Up</nuxt-link>
+                      <nuxt-link :to="localePath( '/tedaviler/check-up' )">{{ $t('check-up')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/kanal-tedavisi-endodonti')">Kanal Tedavisi (Endodonti)</nuxt-link>
+                      <nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/lazerle-estetik-dolgu')">Lazerle Estetik Dolgu</nuxt-link>
+                      <nuxt-link :to="localePath('lazerle-estetik-dolgu')">{{ $t('lazer-estetik')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/dijital-gulus-tasarimi')">Dijital Gülüş Tasarımı</nuxt-link>
+                      <nuxt-link :to="localePath('dijital-gulus-tasarimi')">{{ $t('gulus-tasarimi')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/seffaf-plaklarla-ortodonti')">Şeffaf Plaklarla Ortodonti</nuxt-link>
+                      <nuxt-link :to="localePath('seffaf-plaklarla-ortodonti')">{{ $t('seffaf-plak')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/estetik-lamina-veneerler')">Estetik Lamina Veneerler</nuxt-link>
+                      <nuxt-link :to="localePath('estetik-lamina-veneerler')">{{ $t('estetik-lamina')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/zirkonyum-porselen-kaplama')">Zirkonyum Porselen Kaplama</nuxt-link>
+                      <nuxt-link :to="localePath('zirkonyum-porselen-kaplama')">{{ $t('zikronyum')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/dis-sikma-tedavisi')">Diş Sıkma Tedavisi</nuxt-link>
+                      <nuxt-link :to="localePath('dis-sikma-tedavisi')">{{ $t('dis-sikma')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/cocuk-dis-hekimligi')">Çocuk Diş Hekimliği</nuxt-link>
+                      <nuxt-link :to="localePath('cocuk-dis-hekimligi')">{{ $t('cocuk-dis')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/radyoloji')">Radyoloji</nuxt-link>
+                      <nuxt-link :to="localePath('radyoloji')">{{ $t('radyoloji')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/cene-eklemi-tme-tedavisi')">Çene Eklemi (TME) Tedavisi</nuxt-link>
+                      <nuxt-link :to="localePath('cene-eklemi-tme-tedavisi')">{{ $t('cene-eklemi')}}i</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/dis-beyazlatma')">Diş Beyazlatma</nuxt-link>
+                      <nuxt-link :to="localePath('dis-beyazlatma')">{{ $t('dis-beyazlatma')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/diseti-tedavileri')">Dişeti Tedavileri</nuxt-link>
+                      <nuxt-link :to="localePath('diseti-tedavileri')">{{ $t('diseti')}}</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('/tedaviler/gorunmez-tellerle-ortodonti')">Görünmez Tellerle Ortodonti</nuxt-link>
+                      <nuxt-link :to="localePath('gorunmez-tellerle-ortodonti')">{{ $t('gorunmez-teller')}}</nuxt-link>
                     </li>
                   </ul>
                 </li>
@@ -194,18 +194,15 @@
                     <li><a href="project-detail-2.html">PROJECT DETAILS 2</a></li>
                   </ul>
                 </li>
-                -->
                 <li><a  href="#">Blog</a>
                   <ul>
                     <li><a href="blog.html">Blog Single</a></li>
                     <li><a href="blog-post.html">Blog Post</a></li>
                   </ul>
                 </li>
-                <li><a href="#">{{ $t('iletisim')}}</a>
-                  <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact-1.html">Contact - 1</a></li>
-                  </ul>
+                -->
+                <li>
+                  <nuxt-link :to="localePath('iletisim')">{{ $t('iletisim')}}</nuxt-link>
                 </li>
                 <li class="btn"><a class="popup-form" href="#subwrap">{{ $t('randevu') }}</a></li>
               </ul>

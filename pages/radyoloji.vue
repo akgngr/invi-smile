@@ -117,9 +117,9 @@
 <script>
 import SocialHead from '@/components/SocialHead'
 import Subheader from '@/components/subheader'
-import Accordion from '~/components/tekrarlayan/accordion'
-import AccordionLayout from '~/components/tekrarlayan/accorlayout'
-import Tedavilerrightwidget from '~/components/tedavilerrightwidget'
+import Accordion from '@/components/tekrarlayan/accordion'
+import AccordionLayout from '@/components/tekrarlayan/accorlayout'
+import Tedavilerrightwidget from '@/components/tedavilerrightwidget'
 
 export default {
   name: 'radyoloji',
@@ -134,9 +134,9 @@ export default {
   nuxtI18n: {
     seo: true,
     paths: {
-      tr: '/tedaviler/radyoloji',
-      en: '/treatments/radiology',
-      de: '/behandlungen/radiologie'
+      tr: '/radyoloji',
+      en: '/radiology',
+      de: '/radiologie'
     }
   }
 }

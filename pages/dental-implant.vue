@@ -91,9 +91,9 @@
 <script>
 import SocialHead from '@/components/SocialHead'
 import Subheader from '@/components/subheader'
-import Accordion from '~/components/tekrarlayan/accordion'
-import AccordionLayout from '~/components/tekrarlayan/accorlayout'
-import Tedavilerrightwidget from '~/components/tedavilerrightwidget'
+import Accordion from '@/components/tekrarlayan/accordion'
+import AccordionLayout from '@/components/tekrarlayan/accorlayout'
+import Tedavilerrightwidget from '@/components/tedavilerrightwidget'
 
 export default {
   name: 'dental-implant',
@@ -108,9 +108,9 @@ export default {
   nuxtI18n: {
     seo: true,
     paths: {
-      tr: '/tedaviler/dental-implant',
-      en: '/treatments/dental-implant',
-      de: '/behandlungen/dental-implant'
+      tr: '/dental-implant',
+      en: '/dental-implant',
+      de: '/zahnimplantat'
     }
   }
 }

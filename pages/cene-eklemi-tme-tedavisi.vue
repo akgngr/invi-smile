@@ -138,9 +138,9 @@
 <script>
 import SocialHead from '@/components/SocialHead'
 import Subheader from '@/components/subheader'
-import Accordion from '~/components/tekrarlayan/accordion'
-import AccordionLayout from '~/components/tekrarlayan/accorlayout'
-import Tedavilerrightwidget from '~/components/tedavilerrightwidget'
+import Accordion from '@/components/tekrarlayan/accordion'
+import AccordionLayout from '@/components/tekrarlayan/accorlayout'
+import Tedavilerrightwidget from '@/components/tedavilerrightwidget'
 
 export default {
   name: 'cene-eklemi-tme-tedavisi',
@@ -155,9 +155,9 @@ export default {
   nuxtI18n: {
     seo: true,
     paths: {
-      tr: '/tedaviler/cene-eklemi-tme-tedavisi',
-      en: '/treatments/orthodontics-with-transparent-plaques',
-      de: '/behandlungen/kieferorthopadie-mit-transparenten-plaques'
+      tr: '/cene-eklemi-tme-tedavisi',
+      en: '/orthodontics-with-transparent-plaques',
+      de: '/kieferorthopadie-mit-transparenten-plaques'
     }
   }
 }

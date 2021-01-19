@@ -96,9 +96,9 @@
 <script>
 import SocialHead from '@/components/SocialHead'
 import Subheader from '@/components/subheader'
-import Accordion from '~/components/tekrarlayan/accordion'
-import AccordionLayout from '~/components/tekrarlayan/accorlayout'
-import Tedavilerrightwidget from '~/components/tedavilerrightwidget'
+import Accordion from '@/components/tekrarlayan/accordion'
+import AccordionLayout from '@/components/tekrarlayan/accorlayout'
+import Tedavilerrightwidget from '@/components/tedavilerrightwidget'
 
 export default {
   name: 'lazerle-estetik-dolgu',
@@ -113,9 +113,9 @@ export default {
   nuxtI18n: {
     seo: true,
     paths: {
-      tr: '/tedaviler/lazerle-estetik-dolgu',
-      en: '/treatments/laser-aesthetic-filling',
-      de: '/behandlungen/laserasthetische-fullung'
+      tr: '/lazerle-estetik-dolgu',
+      en: '/laser-aesthetic-filling',
+      de: '/laserasthetische-fullung'
     }
   }
 }

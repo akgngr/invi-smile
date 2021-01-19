@@ -32,8 +32,7 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    "@nuxtjs/eslint-module",
-    "@nuxtjs/fontawesome"
+    "@nuxtjs/eslint-module"
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -70,7 +69,6 @@ export default {
     ]
   ],
   i18n: {
-    strategy: "prefix_except_default",
     defaultLocale: "tr",
     vueI18n: {
       fallbackLocale: "tr",
@@ -90,6 +88,6 @@ export default {
     linkActiveClass: 'active-link'
   },
   server: {
-    port: 9090,
+    port: 9091,
   }
 };
