@@ -14,7 +14,6 @@ export default {
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
       { rel: 'stylesheet', href: process.env.HOST || 'css/on3step-style.css' },
       { rel: 'stylesheet', href: process.env.HOST || 'css/queries-on3step.css' },
-      { rel: 'stylesheet', href: process.env.HOST || '/css/themify-icons.css' },
       { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
       { rel: "apple-touch-icon", type: "image/x-icon", href: "/apple-touch-icon.png" },
       { rel: "apple-touch-icon", sizes: "72x72", type: "image/x-icon", href: "/apple-touch-icon-72x72.png" },
