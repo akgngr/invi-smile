@@ -14,8 +14,13 @@ export default {
       { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
       { rel: "apple-touch-icon", type: "image/x-icon", href: "/apple-touch-icon.png" },
       { rel: "apple-touch-icon", sizes: "72x72", type: "image/x-icon", href: "/apple-touch-icon-72x72.png" },
-      { rel: "apple-touch-icon", sizes: "114x114", type: "image/x-icon", href: "/apple-touch-icon-114x114.png" },
-
+      { rel: "apple-touch-icon", sizes: "114x114", type: "image/x-icon", href: "/apple-touch-icon-114x114.png" }
+    ],
+    script: [
+      { ssr: true, src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' },
+      { ssr: true, src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' },
+      { ssr: true, src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' },
+      { ssr: true, src: 'js/on3step.js' }
     ]
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)

@@ -55,18 +55,6 @@ export default {
         rel: 'stylesheet',
         href: process.env.HOST || 'css/queries-on3step.css'
       }
-    ],
-    script: [
-      {
-        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'
-      },
-      {
-        src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
-      },
-      {
-        ssr: true,
-        src: 'js/on3step.js'
-      }
     ]
   }
 }

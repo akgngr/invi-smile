@@ -97,122 +97,121 @@
   <div>
     <!-- nav -->
     <div id="nav" :class="{ sticky:active }">
-      <div class="navbar navbar-default navbar-fixed-top" :class="toggleNavClass()">
-      <div class="container">
-        <div class="row">
-          <!-- menu mobile display -->
-          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-            <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span>
-          </button>
+      <div class="navbar navbar-default navbar-fixed-top" :class="[toggleNavClass(), fullHeightClass()]">
+        <div class="container">
+            <div class="row">
+              <!-- menu mobile display -->
+              <button class="navbar-toggle" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+              </button>
 
-          <!-- logo -->
-          <nuxt-link :to="localePath('/')" class="navbar-brand"><img alt="logo" src="image/logo.png"></nuxt-link>
+              <!-- logo -->
+              <nuxt-link :to="localePath('/')" class="navbar-brand"><img alt="logo" src="image/logo.png"></nuxt-link>
 
-          <!-- mainmenu start -->
-          <div class="menu-init" id="main-menu">
-            <nav id="menu-center">
-              <ul>
-                <li>
-                  <nuxt-link :to="localePath('/')">{{ $t('anasayfa') }}</nuxt-link>
-                </li>
-                <li><a href="#">{{ $t('kurumsal') }}</a>
-                  <ul>
-                    <li><nuxt-link :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link></li>
-                    <li><nuxt-link :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link></li>
-                    <li><nuxt-link :to="localePath('vizyonumuz')">{{ $t('vizyonumuz') }}</nuxt-link></li>
-                    <li><nuxt-link :to="localePath('kalite-politikamiz')">{{ $t('kalite-politikamiz') }}</nuxt-link></li>
-                    <li><nuxt-link :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link></li>
-                  </ul>
-                </li>
-                <li><a href="#">{{ $t('doktorlar') }}</a>
+              <!-- mainmenu start -->
+              <div class="menu-init" id="main-menu" :class="mobilMenuClasses()">
+                <nav id="menu-center">
                   <ul>
                     <li>
-                      <nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link>
+                      <nuxt-link :to="localePath('/')">{{ $t('anasayfa') }}</nuxt-link>
+                    </li>
+                    <li><a class="disabled" href="#">{{ $t('kurumsal') }}</a>
+                      <ul>
+                        <li><nuxt-link :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('vizyonumuz')">{{ $t('vizyonumuz') }}</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('kalite-politikamiz')">{{ $t('kalite-politikamiz') }}</nuxt-link></li>
+                        <li><nuxt-link :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">{{ $t('doktorlar') }}</a>
+                      <ul>
+                        <li>
+                          <nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('banu-uysal')">{{ $t('banu-uysal') }}</nuxt-link>
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      <nuxt-link :to="localePath('banu-uysal')">{{ $t('banu-uysal') }}</nuxt-link>
+                      <a  href="#">{{ $t('tedaviler')}}</a>
+                      <ul style="z-index: 1000">
+                        <li>
+                          <nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath( '/tedaviler/check-up' )">{{ $t('check-up')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('lazerle-estetik-dolgu')">{{ $t('lazer-estetik')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('dijital-gulus-tasarimi')">{{ $t('gulus-tasarimi')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('seffaf-plaklarla-ortodonti')">{{ $t('seffaf-plak')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('estetik-lamina-veneerler')">{{ $t('estetik-lamina')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('zirkonyum-porselen-kaplama')">{{ $t('zikronyum')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('dis-sikma-tedavisi')">{{ $t('dis-sikma')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('cocuk-dis-hekimligi')">{{ $t('cocuk-dis')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('radyoloji')">{{ $t('radyoloji')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('cene-eklemi-tme-tedavisi')">{{ $t('cene-eklemi')}}i</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('dis-beyazlatma')">{{ $t('dis-beyazlatma')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('diseti-tedavileri')">{{ $t('diseti')}}</nuxt-link>
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('gorunmez-tellerle-ortodonti')">{{ $t('gorunmez-teller')}}</nuxt-link>
+                        </li>
+                      </ul>
                     </li>
+                    <!--
+                    <li>
+                      <a href="#">{{ $t('anlasmali')}}</a>
+                      <ul>
+                        <li><a href="project-detail.html">PROJECT DETAILS 1</a></li>
+                        <li><a href="project-detail-2.html">PROJECT DETAILS 2</a></li>
+                      </ul>
+                    </li>
+                    <li><a  href="#">Blog</a>
+                      <ul>
+                        <li><a href="blog.html">Blog Single</a></li>
+                        <li><a href="blog-post.html">Blog Post</a></li>
+                      </ul>
+                    </li>
+                    -->
+                    <li>
+                      <nuxt-link :to="localePath('iletisim')">{{ $t('iletisim')}}</nuxt-link>
+                    </li>
+                    <li class="btn"><a class="popup-form" href="#subwrap">{{ $t('randevu') }}</a></li>
                   </ul>
-                </li>
-                <li>
-                  <a  href="#">{{ $t('tedaviler')}}</a>
-                  <ul style="z-index: 1000">
-                    <li>
-                      <nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath( '/tedaviler/check-up' )">{{ $t('check-up')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('lazerle-estetik-dolgu')">{{ $t('lazer-estetik')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('dijital-gulus-tasarimi')">{{ $t('gulus-tasarimi')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('seffaf-plaklarla-ortodonti')">{{ $t('seffaf-plak')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('estetik-lamina-veneerler')">{{ $t('estetik-lamina')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('zirkonyum-porselen-kaplama')">{{ $t('zikronyum')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('dis-sikma-tedavisi')">{{ $t('dis-sikma')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('cocuk-dis-hekimligi')">{{ $t('cocuk-dis')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('radyoloji')">{{ $t('radyoloji')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('cene-eklemi-tme-tedavisi')">{{ $t('cene-eklemi')}}i</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('dis-beyazlatma')">{{ $t('dis-beyazlatma')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('diseti-tedavileri')">{{ $t('diseti')}}</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link :to="localePath('gorunmez-tellerle-ortodonti')">{{ $t('gorunmez-teller')}}</nuxt-link>
-                    </li>
-                  </ul>
-                </li>
-                <!--
-                <li>
-                  <a href="#">{{ $t('anlasmali')}}</a>
-                  <ul>
-                    <li><a href="project-detail.html">PROJECT DETAILS 1</a></li>
-                    <li><a href="project-detail-2.html">PROJECT DETAILS 2</a></li>
-                  </ul>
-                </li>
-                <li><a  href="#">Blog</a>
-                  <ul>
-                    <li><a href="blog.html">Blog Single</a></li>
-                    <li><a href="blog-post.html">Blog Post</a></li>
-                  </ul>
-                </li>
-                -->
-                <li>
-                  <nuxt-link :to="localePath('iletisim')">{{ $t('iletisim')}}</nuxt-link>
-                </li>
-                <li class="btn"><a class="popup-form" href="#subwrap">{{ $t('randevu') }}</a></li>
-              </ul>
-            </nav>
-          </div>
-          <!-- mainmenu end -->
+                </nav>
+              </div>
+              <!-- mainmenu end -->
+            </div>
         </div>
       </div>
-      <!-- container -->
-    </div>
     </div>
     <!-- nav end -->
   </div>
@@ -224,7 +223,9 @@ export default {
   name: 'header-field',
   data() {
     return {
-      active: false
+      active: false,
+      menuShow: false,
+      fullHeight: false
     }
   },
   methods: {
@@ -233,6 +234,20 @@ export default {
         return 'nav'
       } else {
         return 'sticky-nav'
+      }
+    },
+    mobilMenuClasses() {
+      if (this.menuShow === false) {
+        return ''
+      } else {
+        return 'menu-show'
+      }
+    },
+    fullHeightClass() {
+      if (this.fullHeight === false) {
+        return ''
+      } else {
+        return 'fullHeight'
       }
     }
   },

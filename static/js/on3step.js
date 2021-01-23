@@ -39,7 +39,7 @@ $(window).on("load", function() {
 
     // animated transition & scroll onStep
     () => { onStep() }
-
+    /*
     // responsive part
     if ($(window).width() < 1025) {
       // scroll navigation
@@ -69,7 +69,7 @@ $(window).on("load", function() {
       navdefault.toggleClass('fullHeight');
     });
 
-    /* animation block menu on scroll
+ animation block menu on scroll
     $(window).scroll(function() {
       if ($(".navbar").offset().top > 10) {
         sTick.addClass("sticky-nav");
