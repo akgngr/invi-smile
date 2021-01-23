@@ -305,6 +305,11 @@ export default {
         autoplayHoverPause: true,
         gutter: 50,
         responsive: {
+          320: {
+            edgePadding: 0,
+            items: 1,
+            gutter: 0
+          },
           375: {
             edgePadding: 0,
             items: 1,

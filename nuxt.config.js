@@ -11,6 +11,10 @@ export default {
       { hid: "description", name: "description", content: "" }
     ],
     link: [
+      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
+      { rel: 'stylesheet', href: process.env.HOST || 'css/on3step-style.css' },
+      { rel: 'stylesheet', href: process.env.HOST || 'css/queries-on3step.css' },
+      { rel: 'stylesheet', href: process.env.HOST || '/css/themify-icons.css' },
       { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
       { rel: "apple-touch-icon", type: "image/x-icon", href: "/apple-touch-icon.png" },
       { rel: "apple-touch-icon", sizes: "72x72", type: "image/x-icon", href: "/apple-touch-icon-72x72.png" },
@@ -18,9 +22,7 @@ export default {
     ],
     script: [
       { ssr: true, src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' },
-      { ssr: true, src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' },
-      { ssr: true, src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' },
-      { ssr: true, src: 'js/on3step.js' }
+      { ssr: true, src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' }
     ]
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)

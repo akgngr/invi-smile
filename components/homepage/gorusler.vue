@@ -100,6 +100,8 @@ export default {
 }
 .testi-page, section.testi-page{
   padding: 0 !important;
+  height: 90%;
+  overflow: hidden;
 }
 .testi-page .golge{
   background: #3f3f3f;
@@ -168,6 +170,13 @@ export default {
 .testi-page .tns-controls button:hover{
   opacity: 1;
 }
+@media(max-width:320px) {
+  .testi-page p{
+    padding: 0;
+    font-size: 12pt;
+  }
+}
+
 .tns-controls > button:focus{
   outline: none;
 }

@@ -31,8 +31,6 @@
       </div>
     </div>
     <!-- team end -->
-    <!-- space mobile -->
-    <div class="space-double-mobile"></div>
   </section>
   <!-- section team end -->
 </template>
