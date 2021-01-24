@@ -232,7 +232,7 @@
     </div>
     <!-- nav end -->
     <!-- ScrolltoTop -->
-    <go-top :size="30" :right="10" :bottom="10" :radius="5">
+    <go-top :size="30" :right="10" :bottom="10" :radius="5" style="display: 'none'; ">
       <span class="ti-angle-up"></span>
     </go-top>
   </div>
