@@ -62,31 +62,19 @@
               </div>
               <div class="col-md-12" v-html="$t('content1')"></div>
               <div class="col-md-12">
-      <AccordionLayout>
-        <Accordion :title="$t('accord1title')" :content="$t('accord1')" />
-        <Accordion :title="$t('accord2title')" :content="$t('accord2')" />
-        <Accordion :title="$t('accord3title')" :content="$t('accord3')" />
-        <Accordion :title="$t('accord4title')" :content="$t('accord4')" />
-        <Accordion :title="$t('accord5title')" :content="$t('accord5')" />
-      </AccordionLayout>
-    </div>
+                <AccordionLayout>
+                  <Accordion :title="$t('accord1title')" :content="$t('accord1')" />
+                  <Accordion :title="$t('accord2title')" :content="$t('accord2')" />
+                  <Accordion :title="$t('accord3title')" :content="$t('accord3')" />
+                  <Accordion :title="$t('accord4title')" :content="$t('accord4')" />
+                  <Accordion :title="$t('accord5title')" :content="$t('accord5')" />
+                </AccordionLayout>
+              </div>
             </div>
           </div>
           <div class="col-md-3 onStep">
-              <Tedavilerrightwidget />
-
-              <div class="widget">
-                <div class="download-brochure">
-                  <h3>
-                    DOWNLOAD BROCHURE
-                  </h3>
-
-                  <div class="btn-download onStep" data-animation="fadeInRight" data-time="600">
-                    <a class="link-class" href="#">DOWNLOAD NOW</a>
-                  </div>
-                </div>
-              </div>
-        </div>
+            <Tedavilerrightwidget />
+          </div>
         </div>
       </div>
     </section>

@@ -1,13 +1,26 @@
 <template>
-  <div class="widget">
-    <ul id="services-list">
-      <li>
-        <nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('banu-uysal')">Yrd. Doç. Dr. Banu UYSAL</nuxt-link>
-      </li>
-    </ul>
+  <div>
+    <div class="widget">
+      <ul id="services-list">
+        <li>
+          <nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('banu-uysal')">Yrd. Doç. Dr. Banu UYSAL</nuxt-link>
+        </li>
+      </ul>
+    </div>
+    <div class="widget">
+      <div class="download-brochure">
+        <h3>
+          DOWNLOAD BROCHURE
+        </h3>
+
+        <div class="btn-download onStep" data-animation="fadeInRight" data-time="600">
+          <a class="link-class" href="#">DOWNLOAD NOW</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

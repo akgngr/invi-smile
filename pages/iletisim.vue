@@ -66,20 +66,38 @@
 
         <div class="col-md-8">
 
-          <form id="form-contact1" class="iletisim">
+          <form id="form-contact1" class="iletisim" @submit.prevent="mesajGonder">
             <div class="form-group user-name">
               <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-              <input type="text" class="form-control" required="" id="name-contact-1" :placeholder="$t('isim')">
+              <input
+                v-model="name"
+                type="text"
+                class="form-control"
+                required=""
+                id="name-contact-1"
+                :placeholder="$t('isim')">
             </div>
 
             <div class="form-group user-email">
               <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-              <input type="email" class="form-control" required="" id="email-contact" :placeholder="$t('eposta')">
+              <input
+                v-model="email"
+                type="email"
+                class="form-control"
+                required=""
+                id="email-contact"
+                :placeholder="$t('eposta')">
             </div>
 
             <div class="form-group user-message">
               <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-              <textarea class="form-control" required="" id="message-contact" :placeholder="$t('mesaj')"></textarea>
+              <textarea
+                v-model="mesaj"
+                class="form-control"
+                required=""
+                id="message-contact"
+                :placeholder="$t('mesaj')">
+              </textarea>
             </div>
             <button type="submit" id="send-contact-1" class="btn-contact">{{ $t('gonder') }}</button>
           </form>
@@ -109,6 +127,27 @@ import Subheader from '~/components/subheader'
 export default {
   name: 'iletisim',
   components: { SocialHead, Subheader },
+  data() {
+    return {
+      name: "",
+      email: "",
+      mesaj: ""
+    }
+  },
+  methods: {
+    mesajGonder() {
+      this.$axios.post('https://v1.nocodeapi.com/akgngr/telegram/GcAkldTGZcwOqGdY', {
+        isim: this.name,
+        email: this.email,
+        mesaj: this.mesaj
+      }).then(() => {
+        alert("Mesajınız Başarılı bir şeilde gönderildi.")
+        this.$router.push("/")
+      }).catch((error) => {
+        alert("Mesajınız gönderilirken bir hata ile karşılaşıldı.", error)
+      })
+    }
+  },
   nuxtI18n: {
     seo: true,
     paths: {

@@ -35,10 +35,12 @@
                 <div class="hovereffect">
                   <img :alt="$t('doktor-bilgi')" class="img-responsive" src="image/doctor-info.jpg" />
                   <div class="overlay">
-                    <h3>{{ $t('doktor-bilgi') }}
-                      <span class="devider"></span>
-                    </h3>
-                    <p>{{ $t('devami') }}</p>
+                    <nuxt-link :to="localeRoute('iletisim')">
+                      <h3>{{ $t('doktor-bilgi') }}
+                        <span class="devider"></span>
+                      </h3>
+                      <p>{{ $t('devami') }}</p>
+                    </nuxt-link>
                   </div>
                 </div>
               </div>
@@ -57,10 +59,12 @@
                 <div class="hovereffect">
                   <img :alt="$t('randevu')" class="img-responsive" src="image/tenth-appointment.jpg" />
                   <div class="overlay">
-                    <h3>{{ $t('randevu') }}
-                      <span class="devider"></span>
-                    </h3>
-                    <p>{{ $t('devami') }}</p>
+                    <a data-toggle="modal" data-target="#subwrap">
+                      <h3>{{ $t('randevu') }}
+                        <span class="devider"></span>
+                      </h3>
+                      <p>{{ $t('devami') }}</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -68,10 +72,12 @@
                 <div class="hovereffect">
                   <img :alt="$t('biz')" class="img-responsive" src="image/image-galery.jpg" />
                   <div class="overlay">
-                    <h3>{{ $t('biz') }}
-                      <span class="devider"></span>
-                    </h3>
-                    <p>{{ $t('devami') }}</p>
+                    <nuxt-link :to="localeRoute('hakkimizda')">
+                      <h3>{{ $t('biz') }}
+                        <span class="devider"></span>
+                      </h3>
+                      <p>{{ $t('devami') }}</p>
+                    </nuxt-link>
                   </div>
                 </div>
               </div>

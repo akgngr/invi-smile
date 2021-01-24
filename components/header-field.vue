@@ -94,14 +94,14 @@
 </i18n>
 
 <template>
-  <div>
+  <div id="page">
     <!-- nav -->
     <div id="nav" :class="{ sticky:active }">
       <div class="navbar navbar-default navbar-fixed-top" :class="[toggleNavClass(), fullHeightClass()]">
         <div class="container">
             <div class="row">
               <!-- menu mobile display -->
-              <button class="navbar-toggle" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+              <button class="navbar-toggle" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight, fixed = !fixed]">
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
@@ -117,7 +117,7 @@
                     <li>
                       <nuxt-link :to="localePath('/')">{{ $t('anasayfa') }}</nuxt-link>
                     </li>
-                    <li><a class="disabled" href="#">{{ $t('kurumsal') }}</a>
+                    <li> <a class="disabled" href="#">{{ $t('kurumsal') }}</a>
                       <ul>
                         <li><nuxt-link :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link></li>
                         <li><nuxt-link :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link></li>
@@ -143,7 +143,7 @@
                           <nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath( '/tedaviler/check-up' )">{{ $t('check-up')}}</nuxt-link>
+                          <nuxt-link :to="localePath( 'check-up' )">{{ $t('check-up')}}</nuxt-link>
                         </li>
                         <li>
                           <nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link>
@@ -204,7 +204,24 @@
                     <li>
                       <nuxt-link :to="localePath('iletisim')">{{ $t('iletisim')}}</nuxt-link>
                     </li>
-                    <li class="btn"><a class="popup-form" href="#subwrap">{{ $t('randevu') }}</a></li>
+                    <li class="btn">
+                      <a class="popup-form" data-toggle="modal" data-target="#subwrap">
+                        {{ $t('randevu') }}
+                      </a>
+                    </li>
+                    <li class="dil-degistirme-mobil" :class="fixedClass()">
+                      <nuxt-link
+                        v-for="locale in availableLocales"
+                        :key="locale.code"
+                        :to="switchLocalePath(locale.code)"
+                        :class="locale.name">
+                        {{ locale.code }}
+                      </nuxt-link>
+                      <a href="#"><span class="ti-facebook"></span></a>
+                      <a href="#"><span class="ti-dribbble"></span></a>
+                      <a href="#"><span class="ti-twitter"></span></a>
+                      <a href="#"><span class="ti-linkedin"></span></a>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -214,18 +231,31 @@
       </div>
     </div>
     <!-- nav end -->
+    <!-- ScrolltoTop -->
+    <go-top :size="30" :right="10" :bottom="10" :radius="5">
+      <span class="ti-angle-up"></span>
+    </go-top>
   </div>
 </template>
 
 <script>
+const GoTop = process.client ? require('@inotom/vue-go-top').default : null;
 
 export default {
   name: 'header-field',
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+  },
+  components: { GoTop },
   data() {
     return {
       active: false,
       menuShow: false,
-      fullHeight: false
+      fullHeight: false,
+      totop: false,
+      fixed: false
     }
   },
   methods: {
@@ -249,6 +279,24 @@ export default {
       } else {
         return 'fullHeight'
       }
+    },
+    tooTop() {
+      if (this.totop === false) {
+        return {
+          display: 'none'
+        }
+      } else {
+        return {
+          display: 'block'
+        }
+      }
+    },
+    fixedClass() {
+      if (this.fixed === false) {
+        return ''
+      } else {
+        return 'fixed'
+      }
     }
   },
   mounted() {
@@ -256,10 +304,33 @@ export default {
       const navBar = document.getElementById('nav');
       if (window.scrollY > navBar.offsetTop) {
         this.active = true;
+        this.totop = true;
       } else {
         this.active = false;
+        this.totop = false;
       }
     }
   }
 }
 </script>
+<style>
+.disabled{
+  pointer-events: none;
+}
+.dil-degistirme-mobil{
+  display: none;
+}
+@media(max-width:370px) {
+  .dil-degistirme-mobil{
+    display: flex;
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 90%;
+    border-top: 1px solid #af8340;
+  }
+  .fixed{
+    position: fixed;
+    bottom: 10px;
+  }
+}
+</style>

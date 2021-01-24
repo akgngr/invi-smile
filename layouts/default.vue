@@ -3,9 +3,9 @@
     <div class="content-wrapper">
       <Subnav />
       <HeaderField />
+      <Subscribe />
       <Nuxt />
       <FooterField />
-      <Subscribe />
     </div>
   </transition>
 </template>

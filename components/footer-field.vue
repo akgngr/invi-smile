@@ -99,10 +99,6 @@
       </div>
     </footer>
     <!-- footer end -->
-    <!-- ScrolltoTop -->
-    <div id="totop">
-      <span class="ti-angle-up"></span>
-    </div>
   </div>
 </template>
 

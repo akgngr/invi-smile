@@ -122,39 +122,27 @@
               </div>
               <div class="col-md-12" v-html="$t('content1')"></div>
               <div class="col-md-12">
-      <AccordionLayout>
-        <Accordion :title="$t('accord1title')" :content="$t('accord1')" />
-        <Accordion :title="$t('accord2title')" :content="$t('accord2')" />
-        <Accordion :title="$t('accord3title')" :content="$t('accord3')" />
-        <Accordion :title="$t('accord4title')" :content="$t('accord4')" />
-        <Accordion :title="$t('accord5title')" :content="$t('accord5')" />
-        <Accordion :title="$t('accord6title')" :content="$t('accord6')" />
-        <Accordion :title="$t('accord7title')" :content="$t('accord7')" />
-        <Accordion :title="$t('accord8title')" :content="$t('accord8')" />
-        <Accordion :title="$t('accord9title')" :content="$t('accord9')" />
-        <Accordion :title="$t('accord10title')" :content="$t('accord10')" />
-        <Accordion :title="$t('accord11title')" :content="$t('accord11')" />
-        <Accordion :title="$t('accord12title')" :content="$t('accord12')" />
-        <Accordion :title="$t('accord13title')" :content="$t('accord13')" />
-        <Accordion :title="$t('accord14title')" :content="$t('accord14')" />
-      </AccordionLayout>
-    </div>
+                <AccordionLayout>
+                  <Accordion :title="$t('accord1title')" :content="$t('accord1')" />
+                  <Accordion :title="$t('accord2title')" :content="$t('accord2')" />
+                  <Accordion :title="$t('accord3title')" :content="$t('accord3')" />
+                  <Accordion :title="$t('accord4title')" :content="$t('accord4')" />
+                  <Accordion :title="$t('accord5title')" :content="$t('accord5')" />
+                  <Accordion :title="$t('accord6title')" :content="$t('accord6')" />
+                  <Accordion :title="$t('accord7title')" :content="$t('accord7')" />
+                  <Accordion :title="$t('accord8title')" :content="$t('accord8')" />
+                  <Accordion :title="$t('accord9title')" :content="$t('accord9')" />
+                  <Accordion :title="$t('accord10title')" :content="$t('accord10')" />
+                  <Accordion :title="$t('accord11title')" :content="$t('accord11')" />
+                  <Accordion :title="$t('accord12title')" :content="$t('accord12')" />
+                  <Accordion :title="$t('accord13title')" :content="$t('accord13')" />
+                  <Accordion :title="$t('accord14title')" :content="$t('accord14')" />
+                </AccordionLayout>
+             </div>
             </div>
           </div>
           <div class="col-md-3 onStep">
               <Tedavilerrightwidget />
-
-              <div class="widget">
-                <div class="download-brochure">
-                  <h3>
-                    DOWNLOAD BROCHURE
-                  </h3>
-
-                  <div class="btn-download onStep" data-animation="fadeInRight" data-time="600">
-                    <a class="link-class" href="#">DOWNLOAD NOW</a>
-                  </div>
-                </div>
-              </div>
         </div>
         </div>
       </div>

@@ -124,7 +124,7 @@
     font-size: 8pt;
   }
   /*menu block end*/
-  
+
 .navbar-default-white .navbar-toggle {
   border-color: transparent; /* Removes border color */
   float: left; /* Move navbar toggle to left */
@@ -141,7 +141,7 @@
     border-bottom: 1px groove rgba(255, 255, 255, 0);
     top: 0px;
   }
-  
+
   .navbar-brand.white {
     position: fixed;
     left: 30px;
@@ -243,7 +243,7 @@
     font-size: 8pt;
   }
   /*menu block white end*/
-  
+
   .mainbg {
     background-attachment: scroll;
   }
@@ -267,7 +267,7 @@
   #spacer {
     display: none;
   }
-  
+
 /****** revolution slider queries *****/
 .big-heading{
 font-size: 40pt;
@@ -416,7 +416,7 @@ font-size: 30pt;
   .bot-home, .bot-home-text {
     margin-bottom: -90px;
   }
-  
+
 /****** revolution slider queries *****/
 .big-heading{
 font-size: 52pt;
@@ -453,4 +453,12 @@ font-size: 60pt;
 }
 
 /****** revolution slider queries end *****/
+}
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.5s;
+}
+.layout-enter,
+.layout-leave-active {
+  opacity: 0;
 }

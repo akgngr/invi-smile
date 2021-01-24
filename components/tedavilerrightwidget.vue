@@ -54,54 +54,67 @@
 }
 </i18n>
 <template>
-  <div class="widget">
-    <ul id="services-list">
-      <li>
-        <nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('check-up')">{{ $t('check-up')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('lazerle-estetik-dolgu')">{{ $t('lazer-estetik')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('dijital-gulus-tasarimi')">{{ $t('gulus-tasarimi')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('seffaf-plaklarla-ortodonti')">{{ $t('seffaf-plak')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('estetik-lamina-veneerler')">{{ $t('estetik-lamina')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('zirkonyum-porselen-kaplama')">{{ $t('zikronyum')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('dis-sikma-tedavisi')">{{ $t('dis-sikma')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('cocuk-dis-hekimligi')">{{ $t('cocuk-dis')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('radyoloji')">{{ $t('radyoloji')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('cene-eklemi-tme-tedavisi')">{{ $t('cene-eklemi')}}i</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('dis-beyazlatma')">{{ $t('dis-beyazlatma')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('diseti-tedavileri')">{{ $t('diseti')}}</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="localePath('gorunmez-tellerle-ortodonti')">{{ $t('gorunmez-teller')}}</nuxt-link>
-      </li>
-    </ul>
+  <div>
+    <div class="widget">
+      <ul id="services-list">
+        <li>
+          <nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('check-up')">{{ $t('check-up')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('lazerle-estetik-dolgu')">{{ $t('lazer-estetik')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('dijital-gulus-tasarimi')">{{ $t('gulus-tasarimi')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('seffaf-plaklarla-ortodonti')">{{ $t('seffaf-plak')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('estetik-lamina-veneerler')">{{ $t('estetik-lamina')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('zirkonyum-porselen-kaplama')">{{ $t('zikronyum')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('dis-sikma-tedavisi')">{{ $t('dis-sikma')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('cocuk-dis-hekimligi')">{{ $t('cocuk-dis')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('radyoloji')">{{ $t('radyoloji')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('cene-eklemi-tme-tedavisi')">{{ $t('cene-eklemi')}}i</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('dis-beyazlatma')">{{ $t('dis-beyazlatma')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('diseti-tedavileri')">{{ $t('diseti')}}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('gorunmez-tellerle-ortodonti')">{{ $t('gorunmez-teller')}}</nuxt-link>
+        </li>
+      </ul>
+    </div>
+    <div class="widget">
+      <div class="download-brochure">
+        <h3>
+          DOWNLOAD BROCHURE
+        </h3>
+
+        <div class="btn-download onStep" data-animation="fadeInRight" data-time="600">
+          <a class="link-class" href="#">DOWNLOAD NOW</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

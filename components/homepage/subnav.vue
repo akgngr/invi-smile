@@ -18,12 +18,14 @@
                 <a href="#"><span class="ti-dribbble"></span></a>
                 <a href="#"><span class="ti-twitter"></span></a>
                 <a href="#"><span class="ti-linkedin"></span></a>
-                <ul class="nav navbar-nav navbar-right">
+                /
+                <ul class="nav navbar-nav navbar-right dil-degistirme">
                   <nuxt-link
                     v-for="locale in availableLocales"
                     :key="locale.code"
-                    :to="switchLocalePath(locale.code)">
-                    {{ locale.name }}
+                    :to="switchLocalePath(locale.code)"
+                    :class="locale.name">
+                    {{ locale.code }}
                   </nuxt-link>
                 </ul>
               </div>
@@ -47,6 +49,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
+.dil-degistirme a{
+  padding-left: 10px;
+}
 </style>

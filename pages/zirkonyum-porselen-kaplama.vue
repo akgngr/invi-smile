@@ -35,18 +35,6 @@
           </div>
           <div class="col-md-3 onStep">
               <Tedavilerrightwidget />
-
-              <div class="widget">
-                <div class="download-brochure">
-                  <h3>
-                    DOWNLOAD BROCHURE
-                  </h3>
-
-                  <div class="btn-download onStep" data-animation="fadeInRight" data-time="600">
-                    <a class="link-class" href="#">DOWNLOAD NOW</a>
-                  </div>
-                </div>
-              </div>
         </div>
         </div>
       </div>

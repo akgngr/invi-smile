@@ -58,7 +58,7 @@
           <div class="col-md-5">
             <div class="right">
               <div class="btn-content" >
-                <a class="link-class " href="#">{{ $t('iletisim') }}</a>
+                <nuxt-link class="link-class " :to="localeRoute('iletisim')">{{ $t('iletisim') }}</nuxt-link>
               </div>
             </div>
           </div>
