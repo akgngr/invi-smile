@@ -110,6 +110,7 @@ export default {
         controlsPosition: "bottom",
         slideBy: "page",
         autoplayHoverPause: true,
+        lazy: true,
         responsive: {
           576: {
             edgePadding: 0,

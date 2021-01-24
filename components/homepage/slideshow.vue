@@ -155,7 +155,8 @@ export default {
         speed: 400,
         animateIn: "tns-fadeIn",
         loop: true,
-        rewind: true
+        rewind: true,
+        lazy: true
       }
     }
   }

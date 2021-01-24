@@ -304,6 +304,7 @@ export default {
         slideBy: "page",
         autoplayHoverPause: true,
         gutter: 50,
+        lazy: true,
         responsive: {
           320: {
             edgePadding: 0,

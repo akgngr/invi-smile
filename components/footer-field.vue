@@ -86,7 +86,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            Buildstate &copy; Copyright 2017 by on3-step
+            Invismile &copy; Copyright 2021 by <a target="_blank" href="https://akgngr.github.com/">akgngr</a>
           </div>
           <div class="col-md-6">
             <div class="right">

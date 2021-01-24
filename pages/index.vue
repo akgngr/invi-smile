@@ -1,5 +1,19 @@
+<i18n>
+{
+  "tr": {
+    "description": "Ağız ve diş sorunlarınıza yenilikçi çözüm yollarıyla tedavi ediyoruz."
+  },
+  "en": {
+    "description": "We treat your oral and dental problems with innovative solutions."
+  },
+  "de": {
+    "description": "Wir behandeln Ihre Mund- und Zahnprobleme mit innovativen Lösungen."
+  }
+}
+</i18n>
 <template>
   <div class="layout">
+    <SocialHead title="Invi Smile" :description="$t('description')"/>
     <Slideshow />
     <About />
     <Doktorlar />
@@ -13,6 +27,7 @@ import Doktorlar from '~/components/homepage/doktorlar'
 import Gorusler from '~/components/homepage/gorusler'
 import About from '~/components/homepage/about'
 import Tedaviler from '~/components/homepage/tedaviler'
+import SocialHead from '~/components/SocialHead'
 
 export default {
   layout: 'default',
@@ -20,7 +35,8 @@ export default {
     Doktorlar,
     Gorusler,
     About,
-    Tedaviler
+    Tedaviler,
+    SocialHead
   },
   head: {
     link: [
