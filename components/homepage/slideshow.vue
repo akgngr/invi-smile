@@ -284,7 +284,7 @@ export default {
 .mobil {
   display: none;
 }
-@media(max-width:370px) {
+@media(max-width:320px) and (max-width: 370px) {
   #home h1 {
     font-size: 22pt;
     letter-spacing: 1px;
