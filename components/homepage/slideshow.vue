@@ -1,7 +1,7 @@
 <i18n>
 {
   "tr": {
-    "slider": "images-slider/desktop/invisalign.png",
+    "slider": "images-slider/desktop/invisalign.webp",
     "slider2": "images-slider/desktop/slider2.webp",
     "slider3": "images-slider/desktop/slider3.webp",
     "slider4": "images-slider/desktop/slider4.webp",
