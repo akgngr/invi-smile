@@ -320,7 +320,7 @@ export default {
 .dil-degistirme-mobil{
   display: none;
 }
-@media(max-width:320px) and (max-width: 370px){
+@media(max-width: 540px){
   .dil-degistirme-mobil{
     display: flex;
     margin-top: 20px;
