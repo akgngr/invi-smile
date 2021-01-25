@@ -119,6 +119,12 @@ export default {
       en: '/pediatric-dentistry',
       de: '/kinderzahnheilkunde'
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   }
 }
 </script>

@@ -111,7 +111,7 @@
               <nuxt-link :to="localePath('/')" class="navbar-brand"><img alt="logo" src="image/logo.png"></nuxt-link>
 
               <!-- mainmenu start -->
-              <div class="menu-init" id="main-menu" :class="mobilMenuClasses()">
+              <div class="menu-init" id="main-menu" :class="[mobilMenuClasses(), mobilMenuHide()]">
                 <nav id="menu-center">
                   <ul>
                     <li>
@@ -119,14 +119,14 @@
                     </li>
                     <li> <a class="disabled" href="#">{{ $t('kurumsal') }}</a>
                       <ul>
-                        <li><nuxt-link :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('vizyonumuz')">{{ $t('vizyonumuz') }}</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('kalite-politikamiz')">{{ $t('kalite-politikamiz') }}</nuxt-link></li>
-                        <li><nuxt-link :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link></li>
+                        <li><nuxt-link v-on:click="menuHide = !menuHide" :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link></li>
+                        <li><nuxt-link v-on:click="menuHide = !menuHide" :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link></li>
+                        <li><nuxt-link v-on:click="menuHide = !menuHide" :to="localePath('vizyonumuz')">{{ $t('vizyonumuz') }}</nuxt-link></li>
+                        <li><nuxt-link v-on:click="menuHide = !menuHide" :to="localePath('kalite-politikamiz')">{{ $t('kalite-politikamiz') }}</nuxt-link></li>
+                        <li><nuxt-link v-on:click="menuHide = !menuHide" :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link></li>
                       </ul>
                     </li>
-                    <li><a href="#">{{ $t('doktorlar') }}</a>
+                    <li><a class="disabled" href="#">{{ $t('doktorlar') }}</a>
                       <ul>
                         <li>
                           <nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link>
@@ -137,7 +137,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a  href="#">{{ $t('tedaviler')}}</a>
+                      <a class="disabled" href="#">{{ $t('tedaviler')}}</a>
                       <ul style="z-index: 1000">
                         <li>
                           <nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link>
@@ -232,7 +232,7 @@
     </div>
     <!-- nav end -->
     <!-- ScrolltoTop -->
-    <go-top :size="30" :right="10" :bottom="10" :radius="5" style="display: 'none'; ">
+    <go-top :size="30" :right="10" :bottom="10" :radius="5">
       <span class="ti-angle-up"></span>
     </go-top>
   </div>
@@ -255,7 +255,8 @@ export default {
       menuShow: false,
       fullHeight: false,
       totop: false,
-      fixed: false
+      fixed: false,
+      menuHide: false
     }
   },
   methods: {
@@ -271,6 +272,13 @@ export default {
         return ''
       } else {
         return 'menu-show'
+      }
+    },
+    mobilMenuHide() {
+      if (this.menuHide === false) {
+        return 'deneme'
+      } else {
+        return 'show'
       }
     },
     fullHeightClass() {

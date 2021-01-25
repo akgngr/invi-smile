@@ -57,6 +57,7 @@ import DoktorRightWidget from '~/components/doktorrightwidget'
 export default {
   name: 'banu-uysal',
   layout: "page",
+  transition: 'fade',
   components: {
     DoktorRightWidget,
     SocialHead,
@@ -69,6 +70,12 @@ export default {
       tr: '/banu-uysal',
       de: '/banu-uysal'
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   }
 }
 </script>

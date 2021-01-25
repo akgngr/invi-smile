@@ -96,7 +96,7 @@ export default {
 <style scoped>
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 500px;
+    width: 480px;
     margin: 30px auto;
   }
 }

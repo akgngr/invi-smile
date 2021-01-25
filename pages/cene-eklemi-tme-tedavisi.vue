@@ -133,6 +133,7 @@ import Tedavilerrightwidget from '@/components/tedavilerrightwidget'
 export default {
   name: 'cene-eklemi-tme-tedavisi',
   layout: "page",
+  transition: 'fade',
   components: {
     SocialHead,
     Subheader,
@@ -147,6 +148,12 @@ export default {
       en: '/orthodontics-with-transparent-plaques',
       de: '/kieferorthopadie-mit-transparenten-plaques'
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   }
 }
 </script>

@@ -174,6 +174,12 @@ export default {
       en: '/orthodontics-with-transparent-plaques',
       de: '/kieferorthopadie-mit-transparenten-plaques'
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   }
 }
 </script>

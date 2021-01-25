@@ -105,6 +105,12 @@ export default {
       en: '/laser-aesthetic-filling',
       de: '/laserasthetische-fullung'
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   }
 }
 </script>

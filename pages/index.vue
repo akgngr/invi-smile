@@ -38,25 +38,11 @@ export default {
     Tedaviler,
     SocialHead
   },
-  head: {
-    link: [
-      {
-        rel: 'stylesheet',
-        href: process.env.HOST || 'css/rev-settings.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: process.env.HOST || 'css/owl.carousel.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: process.env.HOST || 'css/owl.theme.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: process.env.HOST || 'css/owl.transitions.css'
-      }
-    ]
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   }
 }
 </script>

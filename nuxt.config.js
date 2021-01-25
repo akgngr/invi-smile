@@ -12,8 +12,8 @@ export default {
     ],
     link: [
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
-      { rel: 'stylesheet', href: process.env.HOST || 'css/on3step-style.css' },
-      { rel: 'stylesheet', href: process.env.HOST || 'css/queries-on3step.css' },
+      { rel: 'stylesheet', href: process.env.HOST || '/css/on3step-style.css' },
+      { rel: 'stylesheet', href: process.env.HOST || '/css/queries-on3step.css' },
       { rel: 'stylesheet', href: process.env.HOST || '/css/themify-icons.css' },
       { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
       { rel: "apple-touch-icon", type: "image/x-icon", href: "/apple-touch-icon.png" },
@@ -85,7 +85,23 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extractCSS: true,
-    plugins: []
+    plugins: [],
+    html:{
+      minify:{
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+        minifyURLs: true,
+        removeComments: true,
+        removeEmptyElements: true
+      }
+    }
   },
   dependencies: {
     // Replace <jquery.version> with the jquery version you want.

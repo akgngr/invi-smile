@@ -91,6 +91,12 @@ export default {
       en: '/tooth-tightening-treatment',
       de: '/zahnstraffungsbehandlung'
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   }
 }
 </script>
