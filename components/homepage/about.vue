@@ -2,18 +2,21 @@
 {
   "tr": {
     "hakkimizda": "Hakkımızda",
-    "baslik": "Randevu almak için Bizimle İletişime Geçin.",
+    "baslik": "Invismile Estetik Ağız ve Diş Sağlığı Polikliniği",
+    "icerik1": "Invismile Estetik Dental ve Medikal Sanayi ve Ticaret  Ltd. Şti tarafından, Prof. Dr. Tancan UYSAL ve Yrd. Doç. Dr. Banu UYSAL ortak girişimiyle 2020 yılında açılan Ağız ve Diş Sağlığı Polikliniğimiz Bayraklı’da hizmet vermeye başlamıştır.",
     "iletisim": "İletişim"
   },
   "en": {
     "hakkimizda": "About Us",
-    "baslik": "Contact us to make an appointment.",
-    "iletisim": "Contact"
+    "baslik": "Invismile Aesthetic Oral and Dental Health Polyclinic",
+    "iletisim": "Contact",
+    "icerik1": "Invismile Estetik Dental ve Medikal Sanayi ve Ticaret Ltd. Şti by Prof. Dr. Tancan UYSAL and Asst. Assoc. Dr. Our Oral and Dental Health Polyclinic, which was opened in 2020 with the joint venture of Banu UYSAL, has started to serve in Bayraklı."
   },
   "de": {
     "hakkimizda": "Über uns",
-    "baslik": "Kontaktieren Sie uns, um einen Termin zu vereinbaren.",
-    "iletisim": "Kontaktieren"
+    "baslik": "Invismile ästhetische Mund- und Zahngesundheitspoliklinik",
+    "iletisim": "Kontaktieren",
+    "icerik1": "Invismile Estetik Dental ve Medikal Sanayi ve Ticaret Ltd. Şti von Prof. DR. Tancan UYSAL und Asst. Assoc. DR. Unsere Poliklinik für Mund- und Zahngesundheit, die 2020 mit dem Joint Venture von Banu UYSAL eröffnet wurde, hat ihren Dienst in Bayraklı aufgenommen."
   }
 }
 </i18n>
@@ -32,10 +35,9 @@
           <div class="col-md-6">
             <div class="wrap-news onStep">
               <h2>{{ $t('hakkimizda') }}</h2>
-              <span><strong>Invismile' Estetik Ağız ve Diş Sağlığı Polikliniği</strong></span>
+              <span><strong>{{ $t('baslik') }}</strong></span>
               <span class="devider-cont"></span>
-              <p>Pros’ Estetik Dental ve Medikal Ltd. Şti tarafından, Prof. Dr. Tancan UYSAL ve Yrd. Doç. Dr. Banu UYSAL ortak girişimiyle 2020 yılında açılan Ağız ve Diş Sağlığı Polikliniğimiz Alsancak’ta hizmet vermeye başlamıştır.</p>
-              <p> Tüm diş hekimliği uzmanlık branşlarından oluşan akademisyen kadrosuyla, tam kapsamlı 6 diş ünitesi ile 500 metrekare modern çalışma alanıyla ulusal ve uluslararası alanda hizmet vermektedir.</p>
+              <p>{{ $t('icerik1') }}</p>
               <nuxt-link class="link-class" :to="localePath('hakkimizda')">
                 {{ $t('devami') }}
                 <span class="devider"></span>

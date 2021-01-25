@@ -6,18 +6,17 @@
         <div class="row">
           <div class="col-md-8">
             <div class="social-icons-subnav">
-              <a href="#"><span class="ti-location-pin"></span>129 Park street, New York City, NY 10903</a>
-              <a href="#"><span class="ti-mobile"></span>+02151 7778 009</a>
-              <a href="#"><span class="ti-time"></span>Monday - Friday 08:00am ~ 05:00pm</a>
+              <a target="_blank" href="https://goo.gl/maps/KrSZWwHNMmWMqpNk8"><span class="ti-location-pin"></span>Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B Bayraklı/İzmir</a>
+              <a href="tel:+902323454141"><span class="ti-mobile"></span>+902323454141</a>
+              <a href="#"><span class="ti-time disabled"></span>Pazartesi - Cumartesi 09:30 ~ 18:30</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="right">
               <div class="social-icons-subnav">
-                <a href="#"><span class="ti-facebook"></span></a>
-                <a href="#"><span class="ti-dribbble"></span></a>
-                <a href="#"><span class="ti-twitter"></span></a>
-                <a href="#"><span class="ti-linkedin"></span></a>
+                <a target="_blank" href="https://www.instagram.com/invismileizmir/"><span class="ti-instagram"></span></a>
+                <a target="_blank" href="#"><span class="ti-facebook"></span></a>
+                <a target="_blank" href="#"><span class="ti-linkedin"></span></a>
                 /
                 <ul class="nav navbar-nav navbar-right dil-degistirme">
                   <nuxt-link

@@ -8,7 +8,9 @@
     "vizyonumuz": "Vizyonumuz",
     "kalite-politikamiz": "Kalite Politikamız",
     "degerlerimiz": "Değerlerimiz",
-    "iletisim-bilgileri": "İletişim Bilgileri"
+    "iletisim-bilgileri": "İletişim Bilgileri",
+    "telefon": "TELEFON",
+    "mobil": "CEP"
   },
   "en": {
     "hakkimizda": "Estetik Dental ve Medikal Ltd. Şti by Prof. Dr. Tancan UYSAL and Asst. Assoc. Dr. Our Oral and Dental Health Polyclinic, which was opened in 2020 with the joint venture of Banu UYSAL, started to serve in Alsancak.",
@@ -18,7 +20,9 @@
     "vizyonumuz": "Our vision",
     "kalite-politikamiz": "Our Quality Policy",
     "degerlerimiz": "Our Values",
-    "iletisim-bilgileri": "Contact Info"
+    "iletisim-bilgileri": "Contact Info",
+    "telefon": "PHONE",
+    "mobil": "MOBILE"
   },
   "de": {
     "hakkimizda": "Estetik Dental ve Medikal Ltd. Şti von Prof. DR. Tancan UYSAL und Asst. Assoc. DR. Unsere Poliklinik für Mund- und Zahngesundheit, die 2020 mit dem Joint Venture von Banu UYSAL eröffnet wurde, wurde in Alsancak in Betrieb genommen.",
@@ -28,7 +32,9 @@
     "vizyonumuz": "Unsere Vision",
     "kalite-politikamiz": "Unsere Qualitätspolitik",
     "degerlerimiz": "Unsere Werte",
-    "iletisim-bilgileri": "Kontakt Info"
+    "iletisim-bilgileri": "Kontakt Info",
+    "telefon": "TELEFON",
+    "mobil": "MOBİLE"
   }
 }
 </i18n>
@@ -61,7 +67,7 @@
               {{ $t('iletisim-bilgileri') }}
             </h3>
             <address>
-              <span>129 Park street, New York City, NY 10903</span> <span><strong>PHONE:</strong> (+6221) 000 888 999</span> <span><strong>EMAIL:</strong> <a href="mailto:companyname@gmail.com">companyname@gmail.com</a></span> <span><strong>SITE:</strong> <a href="#">www.companyname.com</a></span>
+              <span>Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B Bayraklı/İzmir</span> <span><strong>{{ $t('telefon') }}: </strong> <a href="tel:+902323454141">(+90) 232 345 4141</a> </span> <span><strong>EMAIL:</strong> <a href="mailto:info@invismile.com">info@invismile.com</a></span> <span><strong>{{ $t('mobil') }}:</strong> <a href="tel:+905539355141">+90 553 9355141</a></span>
             </address>
           </div>
           <div class="col-md-3 col-xs-12">
@@ -91,7 +97,9 @@
           <div class="col-md-6">
             <div class="right">
               <div class="social-icons">
-                <a href="#"><span class="ti-facebook"></span></a> <a href="#"><span class="ti-dribbble"></span></a> <a href="#"><span class="ti-twitter"></span></a> <a href="#"><span class="ti-linkedin"></span></a>
+                <a target="_blank" href="https://www.instagram.com/invismileizmir/"><span class="ti-instagram"></span></a>
+                <a href="#"><span class="ti-facebook"></span></a>
+                <a href="#"><span class="ti-linkedin"></span></a>
               </div>
             </div>
           </div>
