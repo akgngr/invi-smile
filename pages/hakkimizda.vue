@@ -32,7 +32,7 @@
 
             <div class="col-md-6 col-xs-12">
               <div class="onStep">
-                <img src="/image/about.png" :alt="$t('title')">
+                <img src="/image/digital-dentistry.png" width="100%" :alt="$t('title')">
               </div>
             </div>
 
