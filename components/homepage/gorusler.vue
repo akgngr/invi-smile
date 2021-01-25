@@ -170,7 +170,7 @@ export default {
 .testi-page .tns-controls button:hover{
   opacity: 1;
 }
-@media(max-width:320px) {
+@media(max-width: 540px) {
   .testi-page p{
     padding: 0;
     font-size: 12pt;
