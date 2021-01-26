@@ -11,6 +11,7 @@ export default {
       { hid: "description", name: "description", content: "" }
     ],
     link: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap' },
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
       { rel: 'stylesheet', href: process.env.HOST || '/css/on3step-style.css' },
       { rel: 'stylesheet', href: process.env.HOST || '/css/queries-on3step.css' },
