@@ -3,19 +3,19 @@
   "tr": {
     "title": "Değerlerimiz",
     "description": "Invismile olarak değerlerimiz başta Hasta ve Çalışan Haklarına Saygı Duymak, Bilimsel Esasları Temel Almak vd.",
-    "subtitle": "Invismile' Estetik Ağız ve Diş Sağlığı Polikliniği",
+    "subtitle": "Invismile Estetik Ağız ve Diş Sağlığı Polikliniği",
     "content": "<ul><li>Hasta ve Çalışan Haklarına Saygı Duymak,</li> <li>Bilimsel Esasları Temel Almak,</li> <li>Hasta Tedavilerinde Yüksek Kalite Standardını yakalamak,</li> <li>Tüm Aktivitelerinde Hesap Verebilir ve Şeffaf Olmak,</li> <li>Katılımcı, Hoşgörülü, Yenilikçi Bir Yönetim Anlayışı İçerisinde Olmak,</li> <li>İnsan Odaklı Hizmet Anlayışına Sahip Olmak,</li> <li>Çevreye Duyarlı Olmak,</li> <li>Etik ve Hukuki Kurallara Uymak,</li></ul>"
   },
   "en": {
     "title": "Our Values",
     "description": "As Invismile, our values are Respecting Patient and Employee Rights, Taking Scientific Principles as a Basis, etc.",
-    "subtitle": "Invismile' Aesthetic Oral and Dental Health Polyclinic",
+    "subtitle": "Invismile Aesthetic Oral and Dental Health Polyclinic",
     "content": "<ul><li> Respecting Patient and Employee Rights, </li> <li> Based on Scientific Principles, </li> <li> Achieving the High Quality Standard in Patient Treatments, </li> <li> Being Accountable and Transparent in All Activities , </li> <li>To have a Participatory, Tolerant, Innovative Management Approach, </li> <li> To Have a Human-Oriented Service Approach, </li> <li> To Be Environmentally Sensitive, </li> <li> Complying with Ethical and Legal Rules, </li></ul>"
   },
   "de": {
     "title": "Unsere Werte",
     "description": "Als Invismile sind unsere Werte: Achtung der Rechte von Patienten und Mitarbeitern, Berücksichtigung wissenschaftlicher Grundsätze usw.",
-    "subtitle": "Invismile 'Aesthetic Oral and Dental Health Polyclinic",
+    "subtitle": "Invismile Aesthetic Oral and Dental Health Polyclinic",
     "content": "<ul><li> Achtung der Patienten- und Mitarbeiterrechte, </li> <li> basierend auf wissenschaftlichen Grundsätzen, </li> <li> Erreichen des hohen Qualitätsstandards bei Patientenbehandlungen, </li> <li> Rechenschaftspflicht und Transparenz bei allen Aktivitäten , </li> <li> einen partizipativen, toleranten, innovativen Managementansatz zu haben, </li> <li> einen menschenorientierten Serviceansatz zu haben,</li> <li>umweltbewusst zu sein,</li> <li>Einhaltung ethischer und rechtlicher Regeln,</li></ul>"
   }
 }

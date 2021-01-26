@@ -3,17 +3,17 @@
   "tr": {
     "title": "Kalite Politikamız",
     "description": "Sağlık hizmetlerine bakış açısı, hizmeti sunuş şekli ve sürekli kalite iyileştirme faaliyetleriyle alanında örnek gösterilen bir Ağız ve Diş Sağlığı Polikliniği olmak kalite politikamızdır.",
-    "subtitle": "Invismile' Estetik Ağız ve Diş Sağlığı Polikliniği"
+    "subtitle": "Invismile Estetik Ağız ve Diş Sağlığı Polikliniği"
   },
   "en": {
     "title": "Our Quality Policy",
     "description": "It is our quality policy to be an Oral and Dental Health Polyclinic, which is exemplified in its field with its perspective on healthcare services, the way it provides service and its continuous quality improvement activities.",
-    "subtitle": "Invismile' Aesthetic Oral and Dental Health Polyclinic"
+    "subtitle": "Invismile Aesthetic Oral and Dental Health Polyclinic"
   },
   "de": {
     "title": "Unsere Qualitätspolitik",
     "description": "Es ist unsere Qualitätspolitik, eine Poliklinik für Mund- und Zahngesundheit zu sein, die in ihrem Bereich mit ihrer Perspektive auf Gesundheitsdienstleistungen, der Art und Weise, wie sie Dienstleistungen erbringt, und ihren kontinuierlichen Aktivitäten zur Qualitätsverbesserung beispielhaft dargestellt wird.",
-    "subtitle": "Invismile 'Aesthetic Oral and Dental Health Polyclinic"
+    "subtitle": "Invismile Aesthetic Oral and Dental Health Polyclinic"
   }
 }
 </i18n>

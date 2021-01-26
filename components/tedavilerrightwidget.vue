@@ -12,10 +12,11 @@
     "dis-sikma": "Diş Sıkma Tedavisi",
     "cocuk-dis": "Çocuk Diş Hekimliği",
     "radyoloji": "Radyoloji",
-    "cene-eklemi":  "Çene Eklemi (TME) Tedavisi",
+    "cene-eklemi": "Çene Eklemi (TME) Tedavisi",
     "dis-beyazlatma": "Diş Beyazlatma",
-    "diseti":  "Dişeti Tedavileri",
-    "gorunmez-teller": "Görünmez Tellerle Ortodonti"
+    "diseti": "Dişeti Tedavileri",
+    "gorunmez-teller": "Görünmez Tellerle Ortodonti",
+    "randevu": "Randevu Alın"
   },
   "en": {
     "dental-implant": "Dental Implant",
@@ -29,10 +30,11 @@
     "dis-sikma": "Tooth Tightening Treatment",
     "cocuk-dis": "Children's Dentistry",
     "radyoloji": "Radiology",
-    "cene-eklemi":  "Jaw Joint (TMJ) Treatment",
+    "cene-eklemi": "Jaw Joint (TMJ) Treatment",
     "dis-beyazlatma": "Teeth whitening",
-    "diseti":  "Gum Treatments",
-    "gorunmez-teller": "Orth. with Invisible Wires"
+    "diseti": "Gum Treatments",
+    "gorunmez-teller": "Orth. with Invisible Wires",
+    "randevu": "Get Appointment"
   },
   "de": {
     "dental-implant": "Zahnimplantat",
@@ -46,10 +48,11 @@
     "dis-sikma": "Zahnstraffungsbehandlung",
     "cocuk-dis": "Kinderzahnheilkunde",
     "radyoloji": "Radiologie",
-    "cene-eklemi":  "Kiefergelenkbehandlung",
+    "cene-eklemi": "Kiefergelenkbehandlung",
     "dis-beyazlatma": "Zahnaufhellung",
-    "diseti":  "Zahnfleischbehandlungen",
-    "gorunmez-teller": "Kiefer. mit unsich. Drähten"
+    "diseti": "Zahnfleischbehandlungen",
+    "gorunmez-teller": "Kiefer. mit unsich. Drähten",
+    "randevu": "Termin machen"
   }
 }
 </i18n>
@@ -111,7 +114,7 @@
         </h3>
 
         <div class="btn-download onStep" data-animation="fadeInRight" data-time="600">
-          <a class="link-class" href="#">DOWNLOAD NOW</a>
+          <a class="link-class" href="#subwrap">{{ $t('randevu') }}</a>
         </div>
       </div>
     </div>

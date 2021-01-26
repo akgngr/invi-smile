@@ -1,3 +1,17 @@
+<i18n>
+{
+  "tr": {
+    "randevu": "Randevu Alın"
+  },
+  "en": {
+    "randevu": "Get Appointment"
+  },
+  "de": {
+    "randevu": "Termin machen"
+  }
+}
+</i18n>
+
 <template>
   <div>
     <div class="widget">
@@ -13,11 +27,11 @@
     <div class="widget">
       <div class="download-brochure">
         <h3>
-          DOWNLOAD BROCHURE
+          {{ $t('randevu') }}
         </h3>
 
         <div class="btn-download onStep" data-animation="fadeInRight" data-time="600">
-          <a class="link-class" href="#">DOWNLOAD NOW</a>
+          <a class="link-class" href="#subwrap">{{ $t('randevu') }}</a>
         </div>
       </div>
     </div>
