@@ -209,18 +209,23 @@
                         {{ $t('randevu') }}
                       </a>
                     </li>
-                    <li class="dil-degistirme-mobil" :class="fixedClass()">
-                      <nuxt-link
-                        v-for="locale in availableLocales"
-                        :key="locale.code"
-                        :to="switchLocalePath(locale.code)"
-                        :class="locale.name">
-                        {{ locale.code }}
-                      </nuxt-link>
-                      <a href="#"><span class="ti-facebook"></span></a>
-                      <a href="#"><span class="ti-dribbble"></span></a>
-                      <a href="#"><span class="ti-twitter"></span></a>
-                      <a href="#"><span class="ti-linkedin"></span></a>
+                    <li class="fixed" :class="fixedClass()">
+                      <div class="dil-degistirme-mobil">
+                        <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" class="d-flex">
+                        <nuxt-link
+                          v-for="locale in availableLocales"
+                          :key="locale.code"
+                          :to="switchLocalePath(locale.code)"
+                          :class="locale.name">
+                          {{ locale.code }}
+                        </nuxt-link>
+                      </span>
+                        <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><a href="#"><span class="ti-facebook"></span></a></span>
+                        <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><a href="#"><span class="ti-dribbble"></span></a></span>
+                        <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><a href="#"><span class="ti-twitter"></span></a></span>
+                        <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><a href="#"><span class="ti-linkedin"></span></a></span>
+
+                      </div>
                     </li>
                   </ul>
                 </nav>
@@ -327,10 +332,14 @@ export default {
     padding-top: 10px;
     width: 90%;
     border-top: 1px solid #af8340;
+    justify-content: space-around;
   }
   .fixed{
-    position: fixed;
-    bottom: 10px;
+    position: absolute;
+    bottom: -37vh;
+  }
+  .d-flex{
+    display: flex;
   }
 }
 </style>
