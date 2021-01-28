@@ -3,12 +3,12 @@
   "tr": {
     "slider": "images-slider/desktop/invisalign.webp",
     "slider2": "images-slider/desktop/slider2.webp",
-    "slider3": "images-slider/desktop/slider3.webp",
+    "slider3": "images-slider/desktop/gijital-gulus-tasarimi.png",
     "slider4": "images-slider/desktop/slider4.webp",
-    "slider5": "images-slider/desktop/slider5.webp",
+    "slider5": "images-slider/desktop/kanal-tedavisi.png",
     "slider6": "images-slider/desktop/slider6.webp",
-    "slider7": "images-slider/desktop/slider7.webp",
-    "slider8": "images-slider/desktop/slider8.webp",
+    "slider7": "images-slider/desktop/dis-beyazlatma.png",
+    "slider8": "images-slider/desktop/itero-agiz-ici-tarama-sistemi.png",
     "mobileSlider": "images-slider/mobile/slider1-mobile.webp",
     "mobileSlider2": "images-slider/mobile/slider2-mobile.webp",
     "mobileSlider3": "images-slider/mobile/slider3-mobile.webp",
@@ -19,14 +19,14 @@
     "mobileSlider8": "images-slider/mobile/slider8-mobile.webp"
   },
   "en": {
-    "slider": "images-slider/desktop/en/slider-1.jpg",
-    "slider2": "images-slider/desktop/en/slider-2.jpg",
-    "slider3": "images-slider/desktop/en/slider-3.jpg",
+    "slider": "images-slider/desktop/en/invisalign.png",
+    "slider2": "images-slider/desktop/en/dental-implant-application.png",
+    "slider3": "images-slider/desktop/en/digital-smile-design.png",
     "slider4": "images-slider/desktop/en/slider-4.jpg",
-    "slider5": "images-slider/desktop/en/slider-5.jpg",
+    "slider5": "images-slider/desktop/en/root-treatment.png",
     "slider6": "images-slider/desktop/en/slider-6.jpg",
-    "slider7": "images-slider/desktop/en/slider-7.jpg",
-    "slider8": "images-slider/desktop/en/slider-8.jpg",
+    "slider7": "images-slider/desktop/en/teeth-whiting.png",
+    "slider8": "images-slider/desktop/en/itero-intraoral-scanning-system.png",
     "mobileSlider": "images-slider/mobile/en/mobil-slider-1.jpg",
     "mobileSlider2": "images-slider/mobile/en/mobil-slider-2.jpg",
     "mobileSlider3": "images-slider/mobile/en/mobil-slider-3.jpg",
@@ -37,14 +37,14 @@
     "mobileSlider8": "images-slider/mobile/en/mobil-slider-8.jpg"
   },
   "de": {
-    "slider": "images-slider/desktop/en/slider-1.jpg",
-    "slider2": "images-slider/desktop/en/slider-2.jpg",
-    "slider3": "images-slider/desktop/en/slider-3.jpg",
+    "slider": "images-slider/desktop/de/invisalign.png",
+    "slider2": "images-slider/desktop/de/zahnimplantat-anwendungen.png",
+    "slider3": "images-slider/desktop/en/digital-smile-design.png",
     "slider4": "images-slider/desktop/en/slider-4.jpg",
-    "slider5": "images-slider/desktop/en/slider-5.jpg",
+    "slider5": "images-slider/desktop/de/kanalbehandlung.png",
     "slider6": "images-slider/desktop/en/slider-6.jpg",
-    "slider7": "images-slider/desktop/en/slider-7.jpg",
-    "slider8": "images-slider/desktop/en/slider-8.jpg",
+    "slider7": "images-slider/desktop/de/zahnaufhellung.png",
+    "slider8": "images-slider/desktop/de/itero-intraorales-scansystem.png",
     "mobileSlider": "images-slider/mobile/en/mobil-slider-1.jpg",
     "mobileSlider2": "images-slider/mobile/en/mobil-slider-2.jpg",
     "mobileSlider3": "images-slider/mobile/en/mobil-slider-3.jpg",
@@ -61,56 +61,123 @@
   <!-- background slider -->
   <div id="home">
     <!-- tiny slider -->
-    <section class="fullwidthbanner-container no-bottom no-top" aria-label="section-slider">
+    <section
+      class="fullwidthbanner-container no-bottom no-top"
+      aria-label="section-slider"
+    >
       <div id="slider" class="slider">
         <no-ssr>
           <vue-tiny-slider v-bind="tinySliderOptions">
             <div class="tini-item">
               <div class="slotholder">
-                <img :src="$t('slider')" alt="Slider image" class="defaultimg desktop" />
-                <img :src="$t('mobileSlider')" alt="Slider image" class="defaultimg mobil" />
+                <img
+                  :src="$t('slider')"
+                  alt="Slider image"
+                  class="defaultimg desktop"
+                />
+                <img
+                  :src="$t('mobileSlider')"
+                  alt="Slider image"
+                  class="defaultimg mobil"
+                />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
-                <img :src="$t('slider2')" alt="Slider image" class="defaultimg desktop" />
-                <img :src="$t('mobileSlider2')" alt="Slider image" class="defaultimg mobil" />
+                <img
+                  :src="$t('slider2')"
+                  alt="Slider image"
+                  class="defaultimg desktop"
+                />
+                <img
+                  :src="$t('mobileSlider2')"
+                  alt="Slider image"
+                  class="defaultimg mobil"
+                />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
-                <img :src="$t('slider3')" alt="Slider image" class="defaultimg desktop" />
-                <img :src="$t('mobileSlider3')" alt="Slider image" class="defaultimg mobil" />
+                <img
+                  :src="$t('slider3')"
+                  alt="Slider image"
+                  class="defaultimg desktop"
+                />
+                <img
+                  :src="$t('mobileSlider3')"
+                  alt="Slider image"
+                  class="defaultimg mobil"
+                />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
-                <img :src="$t('slider4')" alt="Slider image" class="defaultimg desktop" />
-                <img :src="$t('mobileSlider4')" alt="Slider image" class="defaultimg mobil" />
+                <img
+                  :src="$t('slider4')"
+                  alt="Slider image"
+                  class="defaultimg desktop"
+                />
+                <img
+                  :src="$t('mobileSlider4')"
+                  alt="Slider image"
+                  class="defaultimg mobil"
+                />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
-                <img :src="$t('slider5')" alt="Slider image" class="defaultimg desktop" />
-                <img :src="$t('mobileSlider5')" alt="Slider image" class="defaultimg mobil" />
+                <img
+                  :src="$t('slider5')"
+                  alt="Slider image"
+                  class="defaultimg desktop"
+                />
+                <img
+                  :src="$t('mobileSlider5')"
+                  alt="Slider image"
+                  class="defaultimg mobil"
+                />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
-                <img :src="$t('slider6')" alt="Slider image" class="defaultimg desktop" />
-                <img :src="$t('mobileSlider6')" alt="Slider image" class="defaultimg mobil" />
+                <img
+                  :src="$t('slider6')"
+                  alt="Slider image"
+                  class="defaultimg desktop"
+                />
+                <img
+                  :src="$t('mobileSlider6')"
+                  alt="Slider image"
+                  class="defaultimg mobil"
+                />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
-                <img :src="$t('slider7')" alt="Slider image" class="defaultimg desktop" />
-                <img :src="$t('mobileSlider7')" alt="Slider image" class="defaultimg mobil" />
+                <img
+                  :src="$t('slider7')"
+                  alt="Slider image"
+                  class="defaultimg desktop"
+                />
+                <img
+                  :src="$t('mobileSlider7')"
+                  alt="Slider image"
+                  class="defaultimg mobil"
+                />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
-                <img :src="$t('slider8')" alt="Slider image" class="defaultimg desktop" />
-                <img :src="$t('mobileSlider8')" alt="Slider image" class="defaultimg mobil" />
+                <img
+                  :src="$t('slider8')"
+                  alt="Slider image"
+                  class="defaultimg desktop"
+                />
+                <img
+                  :src="$t('mobileSlider8')"
+                  alt="Slider image"
+                  class="defaultimg mobil"
+                />
               </div>
             </div>
           </vue-tiny-slider>
@@ -125,11 +192,11 @@
 </template>
 
 <script>
-import Caraosel from "./caraosel"
+import Caraosel from "./caraosel";
 
 export default {
   comments: { Caraosel },
-  name: 'slideshow',
+  name: "slideshow",
   head() {
     return {
       link: [
@@ -139,7 +206,7 @@ export default {
             "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css"
         }
       ]
-    }
+    };
   },
   data() {
     return {
@@ -158,42 +225,44 @@ export default {
         rewind: true,
         lazy: true
       }
-    }
+    };
   }
-}
+};
 </script>
 
 <style>
-.slider .tns-slider, .slider .tns-outer{
+.slider .tns-slider,
+.slider .tns-outer {
   height: 100vh;
 }
-.slider .tns-ovh, .tini-item{
+.slider .tns-ovh,
+.tini-item {
   height: calc(100vh - 41px);
   position: relative;
 }
-.tini-item .tp-caption{
+.tini-item .tp-caption {
   position: absolute;
   z-index: 100;
 }
-.tini-item .big-heading{
+.tini-item .big-heading {
   left: 9%;
   top: 25%;
   font-size: 53px;
 }
-.tini-item .sub-heading{
+.tini-item .sub-heading {
   left: 9%;
   top: 38%;
   font-size: 40px;
 }
-.tini-item .sfb{
+.tini-item .sfb {
   left: 9%;
   top: 55%;
   font-size: 14px;
 }
-.tini-item .sfb a{
-  color: #FFFFFF;
+.tini-item .sfb a {
+  color: #ffffff;
 }
-.tini-item .sfb a:hover{
+.tini-item .sfb a:hover {
   color: #111111;
   background: #fff;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -202,34 +271,35 @@ export default {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.tini-item img.defaultimg, .slotholder{
+.tini-item img.defaultimg,
+.slotholder {
   height: 100%;
   width: 100%;
 }
-@media(max-width:320px) {
-  .tini-item{
+@media (max-width: 320px) {
+  .tini-item {
     height: 100vh;
   }
   .tini-item .big-heading {
     font-size: 14pt;
     letter-spacing: 1px;
   }
-  .tini-item .sub-heading{
+  .tini-item .sub-heading {
     font-size: 11pt;
     letter-spacing: 1px;
   }
 }
-@media(max-width: 768px){
-  .tini-item{
+@media (max-width: 768px) {
+  .tini-item {
     height: 100vh;
   }
 }
-.fullwidthbanner-container{
+.fullwidthbanner-container {
   height: 100%;
   overflow: hidden;
   transition: height 1s ease;
 }
-.slider .tns-controls{
+.slider .tns-controls {
   position: absolute;
   z-index: 1000;
   top: 50%;
@@ -237,35 +307,33 @@ export default {
   width: 100%;
   justify-content: space-between;
 }
-.slider .tns-controls button{
+.slider .tns-controls button {
   display: none;
 }
-.slider:hover .tns-controls button{
+.slider:hover .tns-controls button {
   display: block;
   transition: opacity 0.2s;
 }
 .tns-autowidth {
   display: block;
 }
-.tns-controls > button:nth-child(1){
-  z-index:100;
-  cursor:pointer;
-  position:relative;
-  background:url(/rs-plugin/assets/large_left.png)
-  no-Repeat 0 0;
-  width:40px;
-  height:40px;
+.tns-controls > button:nth-child(1) {
+  z-index: 100;
+  cursor: pointer;
+  position: relative;
+  background: url(/rs-plugin/assets/large_left.png) no-Repeat 0 0;
+  width: 40px;
+  height: 40px;
 }
-.tns-controls > button:nth-child(2){
-  z-index:100;
-  cursor:pointer;
-  position:relative;
-  background:url(/rs-plugin/assets/large_right.png)
-  no-Repeat 0 0;
-  width:40px;
-  height:40px;
+.tns-controls > button:nth-child(2) {
+  z-index: 100;
+  cursor: pointer;
+  position: relative;
+  background: url(/rs-plugin/assets/large_right.png) no-Repeat 0 0;
+  width: 40px;
+  height: 40px;
 }
-.tns-controls > button:focus{
+.tns-controls > button:focus {
   outline: none;
 }
 .slider-content {
@@ -284,7 +352,7 @@ export default {
 .mobil {
   display: none;
 }
-@media(max-width: 540px) {
+@media (max-width: 540px) {
   #home h1 {
     font-size: 22pt;
     letter-spacing: 1px;
@@ -295,7 +363,7 @@ export default {
   .mobil {
     display: block;
   }
-  img.mobil{
+  img.mobil {
     height: 80vh !important;
   }
   .fullwidthbanner-container {

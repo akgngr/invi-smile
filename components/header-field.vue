@@ -101,7 +101,7 @@
         <div class="container">
             <div class="row">
               <!-- menu mobile display -->
-              <button class="navbar-toggle" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight, fixed = !fixed]">
+              <button class="navbar-toggle" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
@@ -111,7 +111,7 @@
               <nuxt-link :to="localePath('/')" class="navbar-brand"><img alt="logo" src="image/logo.png"></nuxt-link>
 
               <!-- mainmenu start -->
-              <div class="menu-init" id="main-menu" :class="[mobilMenuClasses(), mobilMenuHide()]">
+              <div class="menu-init" id="main-menu" :class="mobilMenuClasses()">
                 <nav id="menu-center">
                   <ul>
                     <li>
@@ -119,20 +119,20 @@
                     </li>
                     <li> <a class="disabled" href="#">{{ $t('kurumsal') }}</a>
                       <ul>
-                        <li><nuxt-link v-on:click="menuHide = !menuHide" :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link></li>
-                        <li><nuxt-link v-on:click="menuHide = !menuHide" :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link></li>
-                        <li><nuxt-link v-on:click="menuHide = !menuHide" :to="localePath('vizyonumuz')">{{ $t('vizyonumuz') }}</nuxt-link></li>
-                        <li><nuxt-link v-on:click="menuHide = !menuHide" :to="localePath('kalite-politikamiz')">{{ $t('kalite-politikamiz') }}</nuxt-link></li>
-                        <li><nuxt-link v-on:click="menuHide = !menuHide" :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link></li>
+                        <li><span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link></span></li>
+                        <li><span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link></span></li>
+                        <li><span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" :to="localePath('vizyonumuz')">{{ $t('vizyonumuz') }}</nuxt-link></span></li>
+                        <li><span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" :to="localePath('kalite-politikamiz')">{{ $t('kalite-politikamiz') }}</nuxt-link></span></li>
+                        <li><span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link></span></li>
                       </ul>
                     </li>
                     <li><a class="disabled" href="#">{{ $t('doktorlar') }}</a>
                       <ul>
                         <li>
-                          <nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('banu-uysal')">{{ $t('banu-uysal') }}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('banu-uysal')">{{ $t('banu-uysal') }}</nuxt-link></span>
                         </li>
                       </ul>
                     </li>
@@ -140,49 +140,49 @@
                       <a class="disabled" href="#">{{ $t('tedaviler')}}</a>
                       <ul style="z-index: 1000">
                         <li>
-                          <nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath( 'check-up' )">{{ $t('check-up')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath( 'check-up' )">{{ $t('check-up')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('lazerle-estetik-dolgu')">{{ $t('lazer-estetik')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('lazerle-estetik-dolgu')">{{ $t('lazer-estetik')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('dijital-gulus-tasarimi')">{{ $t('gulus-tasarimi')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('dijital-gulus-tasarimi')">{{ $t('gulus-tasarimi')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('seffaf-plaklarla-ortodonti')">{{ $t('seffaf-plak')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('seffaf-plaklarla-ortodonti')">{{ $t('seffaf-plak')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('estetik-lamina-veneerler')">{{ $t('estetik-lamina')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('estetik-lamina-veneerler')">{{ $t('estetik-lamina')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('zirkonyum-porselen-kaplama')">{{ $t('zikronyum')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('zirkonyum-porselen-kaplama')">{{ $t('zikronyum')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('dis-sikma-tedavisi')">{{ $t('dis-sikma')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('dis-sikma-tedavisi')">{{ $t('dis-sikma')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('cocuk-dis-hekimligi')">{{ $t('cocuk-dis')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('cocuk-dis-hekimligi')">{{ $t('cocuk-dis')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('radyoloji')">{{ $t('radyoloji')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('radyoloji')">{{ $t('radyoloji')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('cene-eklemi-tme-tedavisi')">{{ $t('cene-eklemi')}}i</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('cene-eklemi-tme-tedavisi')">{{ $t('cene-eklemi')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('dis-beyazlatma')">{{ $t('dis-beyazlatma')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('dis-beyazlatma')">{{ $t('dis-beyazlatma')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('diseti-tedavileri')">{{ $t('diseti')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('diseti-tedavileri')">{{ $t('diseti')}}</nuxt-link></span>
                         </li>
                         <li>
-                          <nuxt-link :to="localePath('gorunmez-tellerle-ortodonti')">{{ $t('gorunmez-teller')}}</nuxt-link>
+                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('gorunmez-tellerle-ortodonti')">{{ $t('gorunmez-teller')}}</nuxt-link></span>
                         </li>
                       </ul>
                     </li>
@@ -202,7 +202,7 @@
                     </li>
                     -->
                     <li>
-                      <nuxt-link :to="localePath('iletisim')">{{ $t('iletisim')}}</nuxt-link>
+                      <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('iletisim')">{{ $t('iletisim')}}</nuxt-link></span>
                     </li>
                     <li class="btn">
                       <a class="popup-form" data-toggle="modal" data-target="#subwrap">
@@ -255,8 +255,7 @@ export default {
       menuShow: false,
       fullHeight: false,
       totop: false,
-      fixed: false,
-      menuHide: false
+      fixed: false
     }
   },
   methods: {
@@ -272,13 +271,6 @@ export default {
         return ''
       } else {
         return 'menu-show'
-      }
-    },
-    mobilMenuHide() {
-      if (this.menuHide === false) {
-        return 'deneme'
-      } else {
-        return 'show'
       }
     },
     fullHeightClass() {
