@@ -4,40 +4,43 @@
     "title": "İletişim",
     "subtitle": "Invismile' Estetik Ağız ve Diş Sağlığı Polikliniği İletişim",
     "description": "Bizimle iletişime geçin, aklınıza takılan soruları sorun ve cevabınızı alın.",
-    "adresimiz": "129 Park street, New York 10903",
+    "adresimiz": "Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B Bayraklı/İzmir",
     "isim": "İsminiz",
     "eposta": "E-Posta",
     "mesaj": "Mesajınız",
     "gonder": "Gönder",
-    "iletisim-bilgileri": "İletişim Bilgileriniz",
+    "iletisim-bilgileri": "İletişim Bilgilerimiz",
     "adres": "Adresiniz",
-    "telefon": "Telefonunuz"
+    "telefon": "Telefonunuz",
+    "mobil": "Cep"
   },
   "en": {
     "title": "Contact Us",
     "subtitle": "Invismile' Aesthetic Oral and Dental Health Polyclinic Contact",
     "description": "Contact us, ask any questions you have and get your answers.",
-    "adresimiz": "129 Park street, New York 10903",
+    "adresimiz": "Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B Bayraklı/İzmir",
     "isim": "Your Name",
     "eposta": "E-Mail",
     "mesaj": "Your Message",
     "gonder": "Send",
     "iletisim-bilgileri": "Our Contact Information",
     "adres": "Address",
-    "telefon": "Phone"
+    "telefon": "Phone",
+    "mobil": "Mobile"
   },
   "de": {
     "title": "Kontakt uns",
     "subtitle": "Invismile 'Aesthetic Oral and Dental Health Polyclinic, Kontakt",
     "description": "Kontaktieren Sie uns, stellen Sie Ihre Fragen und erhalten Sie Ihre Antworten.",
-    "adresimiz": "129 Park street, New York 10903",
+    "adresimiz": "Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B Bayraklı/İzmir",
     "isim": "Dein Name",
     "eposta": "E-Mail",
     "mesaj": "Botschaft",
     "gonder": "Senden",
     "iletisim-bilgileri": "Kontakt Informationen",
     "adres": "Adresse",
-    "telefon": "Telefon"
+    "telefon": "Telefon",
+    "mobil": "Mobile"
   }
 }
 </i18n>
@@ -106,10 +109,12 @@
         <div class="col-md-3 col-md-offset-1">
           <h3 class="heading-cont">{{ $t('iletisim-bilgileri') }}</h3>
           <address class="cont-1">
-                    <span>{{ $t('adresimiz') }}</span>
-            <span><strong>{{ $t('telefon') }}:</strong> (+6221) 000 888 999</span>
-            <span><strong>{{ $t('eposta') }}:</strong><a href="mailto:companyname@gmail.com"> youremail@gmail.com</a></span>
-            <span><strong>WEB:</strong><a href="#"> www.yourdomain.com</a></span>
+            <span>{{ $t('adresimiz') }}</span>
+            <span><strong>{{ $t('telefon') }}:</strong> <a href="tel:+902323454141"> (+90)2323454141</a></span>
+            <span><strong>{{ $t('eposta') }}:</strong><a href="mailto:info@invismile.com"> info@invismile.com</a></span>
+            <span><strong>{{ $t('mobil') }}:</strong> <a href="tel:+905539355141"> +905539355141</a></span>
+            <span><strong>Whatsapp:</strong> <a href="https://wa.me/905539355141"> +905539355141</a></span>
+            <span><strong>Telegram:</strong> <a href="https://t.me/invismile"> @invismile</a></span>
           </address>
         </div>
         <!-- address end -->
@@ -171,5 +176,9 @@ export default {
   top: 30px;
   left: 13px;
   color: #dadada;
+}
+address.cont-1 span{
+  display: flex;
+  justify-content: space-between;
 }
 </style>

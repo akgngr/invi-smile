@@ -5,21 +5,25 @@
     "telefon": "Telefon Numaranız",
     "tarih": "Randevu Tarihi",
     "kvkk": "KVKK ",
-    "buton": "Gönder"
+    "buton": "Gönder",
+    "help": "Belirttiğiniz tarihte tarafınıza randevu oluşturulup bilgilendirileceksiniz.",
+    "mesaj": "Randevunuz Başarılı bir şeilde alındı. Size en kısa zamanda dönüş yapacağız."
   },
   "en": {
     "isim": "Name Surname",
     "telefon": "Phone Number",
     "tarih": "Date",
     "kvkk": "KVKK",
-    "buton": "Send"
+    "buton": "Send",
+    "help": "You will be informed by creating an appointment on the date you specified."
   },
   "de": {
     "isim": "Vorname Nachname",
     "telefon": "Telefonnummer",
     "date": "Datum",
     "kvkk": "KVKK",
-    "buton": "Senden"
+    "buton": "Senden",
+    "help": "Sie werden informiert, indem Sie einen Termin an dem von Ihnen angegebenen Datum erstellen."
   }
 }
 </i18n>
@@ -46,7 +50,7 @@
               <div class="form-group">
                 <label for="exampleInputFile">{{ $t('tarih') }}</label>
                 <input v-model="tarih" class="date-input" type="date" id="exampleInputFile">
-                <p class="help-block">Belirttiğiniz tarihte tarafınıza randevu oluşturulup bilgilendirileceksiniz.</p>
+                <p class="help-block">{{ $t('help') }}</p>
               </div>
 
               <div class="checkbox">
@@ -82,7 +86,7 @@ export default {
         telefon: this.telefon,
         tarih: this.tarih
       }).then(() => {
-        alert("Randevunuz Başarılı bir şeilde alındı. Size en kısa zamanda dönüş yapacağız.")
+        alert("$('mesaj')")
         this.$router.push("/")
       }).catch((error) => {
         alert("Randevu kaydı oluşturulurken bir hata ile karşılaşıldı. Lütfen daha sonra tekrar deneyin.", error)

@@ -119,20 +119,65 @@
                     </li>
                     <li> <a class="disabled" href="#">{{ $t('kurumsal') }}</a>
                       <ul>
-                        <li><span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link></span></li>
-                        <li><span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link></span></li>
-                        <li><span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" :to="localePath('vizyonumuz')">{{ $t('vizyonumuz') }}</nuxt-link></span></li>
-                        <li><span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" :to="localePath('kalite-politikamiz')">{{ $t('kalite-politikamiz') }}</nuxt-link></span></li>
-                        <li><span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link></span></li>
+                        <li>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('hakkimizda')">{{ $t('hakkimizda') }}</nuxt-link>
+                          </span>
+                        </li>
+                        <li>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('misyonumuz')">{{ $t('misyonumuz') }}</nuxt-link>
+                          </span>
+                        </li>
+                        <li>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('vizyonumuz')">{{ $t('vizyonumuz') }}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('vizyonumuz')">{{ $t('vizyonumuz') }}</nuxt-link>
+                          </span>
+                        </li>
+                        <li>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('kalite-politikamiz')">{{ $t('kalite-politikamiz') }}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('kalite-politikamiz')">{{ $t('kalite-politikamiz') }}</nuxt-link>
+                          </span>
+                        </li>
+                        <li>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link>
+                          </span>
+                        </li>
                       </ul>
                     </li>
                     <li><a class="disabled" href="#">{{ $t('doktorlar') }}</a>
                       <ul>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('tancan-uysal')">Prf. Dr. Tancan UYSAL</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('banu-uysal')">{{ $t('banu-uysal') }}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('banu-uysal')">{{ $t('banu-uysal') }}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('banu-uysal')">{{ $t('banu-uysal') }}</nuxt-link>
+                          </span>
                         </li>
                       </ul>
                     </li>
@@ -140,49 +185,124 @@
                       <a class="disabled" href="#">{{ $t('tedaviler')}}</a>
                       <ul style="z-index: 1000">
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('dental-implant' )">{{ $t('dental-implant')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath( 'check-up' )">{{ $t('check-up')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath( 'check-up' )">{{ $t('check-up')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath( 'check-up' )">{{ $t('check-up')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('kanal-tedavisi-endodonti')">{{ $t('kanal-tedavisi')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('lazerle-estetik-dolgu')">{{ $t('lazer-estetik')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('lazerle-estetik-dolgu')">{{ $t('lazer-estetik')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('lazerle-estetik-dolgu')">{{ $t('lazer-estetik')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('dijital-gulus-tasarimi')">{{ $t('gulus-tasarimi')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('dijital-gulus-tasarimi')">{{ $t('gulus-tasarimi')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('dijital-gulus-tasarimi')">{{ $t('gulus-tasarimi')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('seffaf-plaklarla-ortodonti')">{{ $t('seffaf-plak')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('seffaf-plaklarla-ortodonti')">{{ $t('seffaf-plak')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('seffaf-plaklarla-ortodonti')">{{ $t('seffaf-plak')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('estetik-lamina-veneerler')">{{ $t('estetik-lamina')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('estetik-lamina-veneerler')">{{ $t('estetik-lamina')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('estetik-lamina-veneerler')">{{ $t('estetik-lamina')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('zirkonyum-porselen-kaplama')">{{ $t('zikronyum')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('zirkonyum-porselen-kaplama')">{{ $t('zikronyum')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('zirkonyum-porselen-kaplama')">{{ $t('zikronyum')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('dis-sikma-tedavisi')">{{ $t('dis-sikma')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('dis-sikma-tedavisi')">{{ $t('dis-sikma')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('dis-sikma-tedavisi')">{{ $t('dis-sikma')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('cocuk-dis-hekimligi')">{{ $t('cocuk-dis')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('cocuk-dis-hekimligi')">{{ $t('cocuk-dis')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('cocuk-dis-hekimligi')">{{ $t('cocuk-dis')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('radyoloji')">{{ $t('radyoloji')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('radyoloji')">{{ $t('radyoloji')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('radyoloji')">{{ $t('radyoloji')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('cene-eklemi-tme-tedavisi')">{{ $t('cene-eklemi')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('cene-eklemi-tme-tedavisi')">{{ $t('cene-eklemi')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('cene-eklemi-tme-tedavisi')">{{ $t('cene-eklemi')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('dis-beyazlatma')">{{ $t('dis-beyazlatma')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('dis-beyazlatma')">{{ $t('dis-beyazlatma')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('dis-beyazlatma')">{{ $t('dis-beyazlatma')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('diseti-tedavileri')">{{ $t('diseti')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('diseti-tedavileri')">{{ $t('diseti')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('diseti-tedavileri')">{{ $t('diseti')}}</nuxt-link>
+                          </span>
                         </li>
                         <li>
-                          <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('gorunmez-tellerle-ortodonti')">{{ $t('gorunmez-teller')}}</nuxt-link></span>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('gorunmez-tellerle-ortodonti')">{{ $t('gorunmez-teller')}}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('gorunmez-tellerle-ortodonti')">{{ $t('gorunmez-teller')}}</nuxt-link>
+                          </span>
                         </li>
                       </ul>
                     </li>
@@ -202,7 +322,12 @@
                     </li>
                     -->
                     <li>
-                      <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><nuxt-link :to="localePath('iletisim')">{{ $t('iletisim')}}</nuxt-link></span>
+                      <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                        <nuxt-link :to="localePath('iletisim')">{{ $t('iletisim')}}</nuxt-link>
+                      </span>
+                      <span v-if="!menuShow">
+                        <nuxt-link :to="localePath('iletisim')">{{ $t('iletisim')}}</nuxt-link>
+                      </span>
                     </li>
                     <li class="btn">
                       <a class="popup-form" data-toggle="modal" data-target="#subwrap">
@@ -211,7 +336,7 @@
                     </li>
                     <li class="fixed" :class="fixedClass()">
                       <div class="dil-degistirme-mobil">
-                        <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" class="d-flex">
+                        <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]" class="d-flex">
                         <nuxt-link
                           v-for="locale in availableLocales"
                           :key="locale.code"
@@ -219,12 +344,40 @@
                           :class="locale.name">
                           {{ locale.code }}
                         </nuxt-link>
-                      </span>
-                        <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><a href="#"><span class="ti-facebook"></span></a></span>
-                        <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><a href="#"><span class="ti-dribbble"></span></a></span>
-                        <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><a href="#"><span class="ti-twitter"></span></a></span>
-                        <span v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]"><a href="#"><span class="ti-linkedin"></span></a></span>
-
+                        </span>
+                        <span v-if="!menuShow" class="d-flex">
+                        <nuxt-link
+                          v-for="locale in availableLocales"
+                          :key="locale.code"
+                          :to="switchLocalePath(locale.code)"
+                          :class="locale.name">
+                          {{ locale.code }}
+                        </nuxt-link>
+                        </span>
+                        <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                          <a href="#"><span class="ti-facebook"></span></a>
+                        </span>
+                        <span v-if="!menuShow">
+                          <a href="#"><span class="ti-facebook"></span></a>
+                        </span>
+                        <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                          <a href="#"><span class="ti-dribbble"></span></a>
+                        </span>
+                        <span v-if="!menuShow">
+                          <a href="#"><span class="ti-dribbble"></span></a>
+                        </span>
+                        <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                          <a href="#"><span class="ti-twitter"></span></a>
+                        </span>
+                        <span v-if="!menuShow">
+                          <a href="#"><span class="ti-twitter"></span></a>
+                        </span>
+                        <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                          <a href="#"><span class="ti-linkedin"></span></a>
+                        </span>
+                        <span v-if="!menuShow">
+                          <a href="#"><span class="ti-linkedin"></span></a>
+                        </span>
                       </div>
                     </li>
                   </ul>

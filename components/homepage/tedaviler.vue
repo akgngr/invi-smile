@@ -113,7 +113,7 @@
           <vue-tiny-slider v-bind="tinyTedaviOptions">
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/dental-implant-cerrahisi.jpg">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/dental-implant-cerrahisi.webp">
                 <h3>{{ $t('ted1_baslik') }}</h3>
                 <p>{{ $t('ted1_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('dental-implant')">
@@ -124,7 +124,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/invismile-check-up.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/invismile-check-up.webp">
                 <h3>{{ $t('ted2_baslik') }}</h3>
                 <p>{{ $t('ted2_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('check-up')">
@@ -135,7 +135,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/kanal-tedavisi.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/kanal-tedavisi.webp">
                 <h3>{{ $t('ted3_baslik') }}</h3>
                 <p>{{ $t('ted3_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('kanal-tedavisi-endodonti')">
@@ -146,7 +146,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/lazerle-estetik-dolgu.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/lazerle-estetik-dolgu.webp">
                 <h3>{{ $t('ted4_baslik') }}</h3>
                 <p>{{ $t('ted4_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('lazerle-estetik-dolgu')">
@@ -157,7 +157,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/dijital-gulus-tasarimi.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/dijital-gulus-tasarimi.webp">
                 <h3>{{ $t('ted5_baslik') }}</h3>
                 <p>{{ $t('ted5_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('dijital-gulus-tasarimi')">
@@ -168,7 +168,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/seffaf-plaklarla-ortodontik-tedaviler.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/seffaf-plaklarla-ortodontik-tedaviler.webp">
                 <h3>{{ $t('ted6_baslik') }}</h3>
                 <p>{{ $t('ted6_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('seffaf-plaklarla-ortodonti')">
@@ -179,7 +179,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/estetik-lamina-veneerler.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/estetik-lamina-veneerler.webp">
                 <h3>{{ $t('ted7_baslik') }}</h3>
                 <p>{{ $t('ted7_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('estetik-lamina-veneerler')">
@@ -190,7 +190,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/zirkonyum-porselen-kaplama.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/zirkonyum-porselen-kaplama.webp">
                 <h3>{{ $t('ted8_baslik') }}</h3>
                 <p>{{ $t('ted8_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('zirkonyum-porselen-kaplama')">
@@ -201,7 +201,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/dis-sikma-bruksizm-tedavisi.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/dis-sikma-bruksizm-tedavisi.webp">
                 <h3>{{ $t('ted9_baslik') }}</h3>
                 <p>{{ $t('ted9_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('dis-sikma-tedavisi')">
@@ -212,7 +212,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/cocuk-dis-hekimligi-pedodonti-.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/cocuk-dis-hekimligi-pedodonti-.webp">
                 <h3>{{ $t('ted10_baslik') }}</h3>
                 <p>{{ $t('ted10_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('cocuk-dis-hekimligi')">
@@ -223,7 +223,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/radyoloji.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/radyoloji.webp">
                 <h3>{{ $t('ted11_baslik') }}</h3>
                 <p>{{ $t('ted11_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('radyoloji')">
@@ -234,7 +234,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/cene-eklemi-tme-tedavisi.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/cene-eklemi-tme-tedavisi.webp">
                 <h3>{{ $t('ted12_baslik') }}</h3>
                 <p>{{ $t('ted12_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('cene-eklemi-tme-tedavisi')">
@@ -245,7 +245,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/dis-beyazlatma-bleaching-.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/dis-beyazlatma-bleaching-.webp">
                 <h3>{{ $t('ted13_baslik') }}</h3>
                 <p>{{ $t('ted13_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('dis-beyazlatma')">
@@ -256,7 +256,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/diseti-tedavileri-periodontoloji-.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/diseti-tedavileri-periodontoloji-.webp">
                 <h3>{{ $t('ted14_baslik') }}</h3>
                 <p>{{ $t('ted14_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('diseti-tedavileri')">
@@ -267,7 +267,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive" src="image/tedaviler/gorunmez-tellerle-ortodonti.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/gorunmez-tellerle-ortodonti.webp">
                 <h3>{{ $t('ted15_baslik') }}</h3>
                 <p>{{ $t('ted15_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('gorunmez-tellerle-ortodonti')">

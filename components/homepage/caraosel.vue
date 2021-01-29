@@ -33,7 +33,7 @@
             <vue-tiny-slider v-bind="tinyCarauselOptions">
               <div class="gal-home big-img">
                 <div class="hovereffect">
-                  <img :alt="$t('doktor-bilgi')" class="img-responsive" src="image/doctor-info.jpg" />
+                  <img :alt="$t('doktor-bilgi')" class="img-responsive lazyload" data-src="image/bilgi/dentist-looking-at-you.webp" />
                   <div class="overlay">
                     <nuxt-link :to="localeRoute('iletisim')">
                       <h3>{{ $t('doktor-bilgi') }}
@@ -46,7 +46,7 @@
               </div>
               <div class="gal-home big-img">
                 <div class="hovereffect">
-                  <img :alt="$t('sorular')" class="img-responsive" src="image/faq.jpg" />
+                  <img :alt="$t('sorular')" class="img-responsive lazyload" data-src="image/bilgi/question-mark.webp" />
                   <div class="overlay">
                     <h3>{{ $t('sorular') }}
                       <span class="devider"></span>
@@ -57,7 +57,7 @@
               </div>
               <div class="gal-home big-img">
                 <div class="hovereffect">
-                  <img :alt="$t('randevu')" class="img-responsive" src="image/tenth-appointment.jpg" />
+                  <img :alt="$t('randevu')" class="img-responsive lazyload" data-src="image/bilgi/randevu.webp" />
                   <div class="overlay">
                     <a data-toggle="modal" data-target="#subwrap">
                       <h3>{{ $t('randevu') }}
@@ -70,7 +70,7 @@
               </div>
               <div class="gal-home big-img">
                 <div class="hovereffect">
-                  <img :alt="$t('biz')" class="img-responsive" src="image/image-galery.jpg" />
+                  <img :alt="$t('biz')" class="img-responsive lazyload" data-src="image/bilgi/hakkimizda.webp" />
                   <div class="overlay">
                     <nuxt-link :to="localeRoute('hakkimizda')">
                       <h3>{{ $t('biz') }}

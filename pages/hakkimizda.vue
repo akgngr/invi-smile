@@ -35,7 +35,7 @@
 
             <div class="col-md-6 col-xs-12">
               <div class="onStep">
-                <img src="/image/digital-dentistry.png" width="100%" :alt="$t('title')">
+                <img src="/image/digital-dentistry.webp" width="100%" :alt="$t('title')">
               </div>
             </div>
 

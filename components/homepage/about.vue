@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <img src="/image/digital-dentistry.png" class="img-responsive" alt="About Invismile">
+            <img data-src="/image/digital-dentistry.webp" class="img-responsive lazyload" alt="About Invismile">
           </div>
         </div>
       </div>

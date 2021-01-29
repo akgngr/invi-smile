@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-md-4 col-md-offset-2 col-sm-6 ">
           <div class="team-wrapper">
-            <img alt="team img 4" class="img-responsive" src="image/tancan-uysal.webp">
+            <img alt="team img 4" class="img-responsive lazyload" data-src="image/tancan-uysal.webp">
             <div class="team-des">
               <nuxt-link class="doktor-link" :to="localePath('tancan-uysal')"><h3>Prof. Dr. Tancan Uysal</h3></nuxt-link>
               <span>Ortodonti Uzmanı</span>
@@ -18,7 +18,7 @@
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="team-wrapper">
-            <img alt="team img 1" class="img-responsive" src="image/banu-uysal.webp">
+            <img alt="team img 1" class="img-responsive lazyload" data-src="image/banu-uysal.webp">
             <div class="team-des">
               <nuxt-link class="doktor-link" :to="localePath('banu-uysal')"><h3>Yrd. Doç. Dr. Banu Uysal</h3></nuxt-link>
               <span>Endodonti Uzmanı</span>

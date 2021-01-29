@@ -40,9 +40,17 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    "@nuxtjs/eslint-module"
+    "@nuxtjs/eslint-module",
+    ['nuxt-lazysizes']
   ],
 
+  lazySizes: {
+    plugins: {
+      blurUp: true,
+      nativeLoading: true,
+      unveilhooks: true,
+    }
+  },
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     ['@nuxtjs/axios'],

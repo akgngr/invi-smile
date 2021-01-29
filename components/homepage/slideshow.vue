@@ -67,116 +67,116 @@
     >
       <div id="slider" class="slider">
         <no-ssr>
-          <vue-tiny-slider v-bind="tinySliderOptions">
+          <vue-tiny-slider v-bind="tinySliderOptions" data-ride="carousel" class="carousel lazyload">
             <div class="tini-item">
               <div class="slotholder">
                 <img
-                  :src="$t('slider')"
+                  :data-src="$t('slider')"
                   alt="Slider image"
-                  class="defaultimg desktop"
+                  class="defaultimg lazyload desktop"
                 />
                 <img
-                  :src="$t('mobileSlider')"
+                  :data-src="$t('mobileSlider')"
                   alt="Slider image"
-                  class="defaultimg mobil"
+                  class="defaultimg lazyload mobil"
                 />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
                 <img
-                  :src="$t('slider2')"
+                  :data-src="$t('slider2')"
                   alt="Slider image"
-                  class="defaultimg desktop"
+                  class="defaultimg lazyload desktop"
                 />
                 <img
-                  :src="$t('mobileSlider2')"
+                  :data-src="$t('mobileSlider2')"
                   alt="Slider image"
-                  class="defaultimg mobil"
-                />
-              </div>
-            </div>
-            <div class="tini-item">
-              <div class="slotholder">
-                <img
-                  :src="$t('slider3')"
-                  alt="Slider image"
-                  class="defaultimg desktop"
-                />
-                <img
-                  :src="$t('mobileSlider3')"
-                  alt="Slider image"
-                  class="defaultimg mobil"
+                  class="defaultimg lazyload mobil"
                 />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
                 <img
-                  :src="$t('slider4')"
+                  :data-src="$t('slider3')"
                   alt="Slider image"
-                  class="defaultimg desktop"
+                  class="defaultimg lazyload desktop"
                 />
                 <img
-                  :src="$t('mobileSlider4')"
+                  :data-src="$t('mobileSlider3')"
                   alt="Slider image"
-                  class="defaultimg mobil"
-                />
-              </div>
-            </div>
-            <div class="tini-item">
-              <div class="slotholder">
-                <img
-                  :src="$t('slider5')"
-                  alt="Slider image"
-                  class="defaultimg desktop"
-                />
-                <img
-                  :src="$t('mobileSlider5')"
-                  alt="Slider image"
-                  class="defaultimg mobil"
+                  class="defaultimg lazyload mobil"
                 />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
                 <img
-                  :src="$t('slider6')"
+                  :data-src="$t('slider4')"
                   alt="Slider image"
-                  class="defaultimg desktop"
+                  class="defaultimg lazyload desktop"
                 />
                 <img
-                  :src="$t('mobileSlider6')"
+                  :data-src="$t('mobileSlider4')"
                   alt="Slider image"
-                  class="defaultimg mobil"
-                />
-              </div>
-            </div>
-            <div class="tini-item">
-              <div class="slotholder">
-                <img
-                  :src="$t('slider7')"
-                  alt="Slider image"
-                  class="defaultimg desktop"
-                />
-                <img
-                  :src="$t('mobileSlider7')"
-                  alt="Slider image"
-                  class="defaultimg mobil"
+                  class="defaultimg lazyload mobil"
                 />
               </div>
             </div>
             <div class="tini-item">
               <div class="slotholder">
                 <img
-                  :src="$t('slider8')"
+                  :data-src="$t('slider5')"
                   alt="Slider image"
-                  class="defaultimg desktop"
+                  class="defaultimg lazyload desktop"
                 />
                 <img
-                  :src="$t('mobileSlider8')"
+                  :data-src="$t('mobileSlider5')"
                   alt="Slider image"
-                  class="defaultimg mobil"
+                  class="defaultimg lazyload mobil"
+                />
+              </div>
+            </div>
+            <div class="tini-item">
+              <div class="slotholder">
+                <img
+                  :data-src="$t('slider6')"
+                  alt="Slider image"
+                  class="defaultimg lazyload desktop"
+                />
+                <img
+                  :data-src="$t('mobileSlider6')"
+                  alt="Slider image"
+                  class="defaultimg lazyload mobil"
+                />
+              </div>
+            </div>
+            <div class="tini-item">
+              <div class="slotholder">
+                <img
+                  :data-src="$t('slider7')"
+                  alt="Slider image"
+                  class="defaultimg lazyload desktop"
+                />
+                <img
+                  :data-src="$t('mobileSlider7')"
+                  alt="Slider image"
+                  class="defaultimg lazyload mobil"
+                />
+              </div>
+            </div>
+            <div class="tini-item">
+              <div class="slotholder">
+                <img
+                  :data-src="$t('slider8')"
+                  alt="Slider image"
+                  class="defaultimg lazyload desktop"
+                />
+                <img
+                  :data-src="$t('mobileSlider8')"
+                  alt="Slider image"
+                  class="defaultimg lazyload mobil"
                 />
               </div>
             </div>
@@ -271,7 +271,7 @@ export default {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.tini-item img.defaultimg,
+.tini-item img.defaultimg lazyload,
 .slotholder {
   height: 100%;
   width: 100%;

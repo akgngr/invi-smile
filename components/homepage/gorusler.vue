@@ -95,6 +95,9 @@ export default {
 </script>
 
 <style>
+.testi-page{
+  background: url("/image/testimonials.webp") top fixed;
+}
 .tns-horizontal.tns-subpixel>.tns-item{
   vertical-align: middle;
 }
