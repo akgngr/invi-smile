@@ -365,6 +365,7 @@ export default {
   }
   img.mobil {
     height: 80vh !important;
+    width: 100%;
   }
   .fullwidthbanner-container {
     height: 80vh;
