@@ -121,7 +121,8 @@ export default {
     base: '/',
     linkActiveClass: 'active-link'
   },
-  server: {
-    port: 9091,
+  sitemap: {
+    hostname: 'https://invismile.com.tr',
+    i18n: true
   }
 };
