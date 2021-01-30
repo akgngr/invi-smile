@@ -1,5 +1,5 @@
 <template>
-  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
     <slot></slot>
   </div>
 </template>

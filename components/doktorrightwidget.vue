@@ -31,7 +31,7 @@
         </h3>
 
         <div class="btn-download onStep" data-animation="fadeInRight" data-time="600">
-          <a class="link-class" href="#subwrap">{{ $t('randevu') }}</a>
+          <a data-toggle="modal" class="popup-form" data-target="#subwrap">{{ $t('randevu') }}</a>
         </div>
       </div>
     </div>

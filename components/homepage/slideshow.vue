@@ -219,6 +219,7 @@ export default {
         controlsContainer: false,
         nav: false,
         controlsText: ["", ""],
+        autoplay: true,
         speed: 400,
         animateIn: "tns-fadeIn",
         loop: true,
@@ -348,6 +349,8 @@ export default {
 }
 .desktop {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 .mobil {
   display: none;
@@ -370,5 +373,8 @@ export default {
   .fullwidthbanner-container {
     height: 80vh;
   }
+}
+.slider .tns-outer button{
+  display: none;
 }
 </style>

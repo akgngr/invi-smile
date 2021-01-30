@@ -6,6 +6,7 @@
       <Nuxt />
       <FooterField />
       <Subscribe />
+      <Whatsapp />
     </div>
   </transition>
 </template>
@@ -15,13 +16,15 @@ import Subscribe from '~/components/subscribe'
 import Subnav from '~/components/homepage/subnav'
 import HeaderField from '~/components/header-field'
 import FooterField from '~/components/footer-field'
+import Whatsapp from '~/components/whatsapp'
 
 export default {
   components: {
     Subscribe,
     Subnav,
     FooterField,
-    HeaderField
+    HeaderField,
+    Whatsapp
   },
   mounted() {
     this.$nextTick(() => {

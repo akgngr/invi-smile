@@ -3,6 +3,7 @@
     <div class="panel-heading" role="tab" :id="idd">
       <h4 class="panel-title">
         <a
+          class="collapsed"
           role="button"
           data-toggle="collapse"
           data-parent="#accordion"
@@ -63,3 +64,33 @@ export default {
   }
 }
 </script>
+<style>
+.panel-default>.panel-heading {
+  color: #fff;
+  background-color: #af8442;
+  border-color: #af8442;
+  border-radius: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.panel-title a {
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.panel-title a.collapsed:after {
+  content: "+";
+  width: 10px;
+  height: 10px;
+  color: white;
+  transition: all 5s;
+}
+.panel-title a:after {
+  content: "-";
+  width: 10px;
+  height: 10px;
+  color: white;
+  transition: all 5s;
+}
+</style>

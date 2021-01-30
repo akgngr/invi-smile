@@ -52,7 +52,7 @@
   <!-- map -->
   <div class="onStep" data-animation="fadeIn" data-time="300" id="map-1">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100009.19233418225!2d27.098678627730003!3d38.434833271500445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5062be79493d2c2e!2sProf.%20Dr.%20Tancan%20Uysal%20Ortodontik%20Tedavi!5e0!3m2!1str!2str!4v1611085415434!5m2!1str!2str"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.596147064113!2d27.17649681533724!3d38.45079627964204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b962a8b762c5a5%3A0x34fdda67206a9bad!2zw4fEsW5hcmzEsSwgxZ5odC4gUG9saXMgRmV0aGkgU2VraW4gQ2QgTm86NCwgMzU1MzAgQmF5cmFrbMSxL8Swem1pcg!5e0!3m2!1str!2str!4v1612026315192!5m2!1str!2str"
       width="100%"
       height="500"
       frameborder="0"

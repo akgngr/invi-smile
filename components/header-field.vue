@@ -152,7 +152,7 @@
                           </span>
                         </li>
                         <li>
-                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                          <span v-if="menuShow" @v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
                             <nuxt-link :to="localePath('degerlerimiz')">{{ $t('degerlerimiz') }}</nuxt-link>
                           </span>
                           <span v-if="!menuShow">

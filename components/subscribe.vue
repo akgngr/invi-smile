@@ -7,7 +7,8 @@
     "kvkk": "KVKK ",
     "buton": "Gönder",
     "help": "Belirttiğiniz tarihte tarafınıza randevu oluşturulup bilgilendirileceksiniz.",
-    "mesaj": "Randevunuz Başarılı bir şeilde alındı. Size en kısa zamanda dönüş yapacağız."
+    "mesaj": "Randevunuz Başarılı bir şeilde alındı. Size en kısa zamanda dönüş yapacağız.",
+    "kapat": "Kapat"
   },
   "en": {
     "isim": "Name Surname",
@@ -15,7 +16,8 @@
     "tarih": "Date",
     "kvkk": "KVKK",
     "buton": "Send",
-    "help": "You will be informed by creating an appointment on the date you specified."
+    "help": "You will be informed by creating an appointment on the date you specified.",
+    "kapat": "Close"
   },
   "de": {
     "isim": "Vorname Nachname",
@@ -23,7 +25,8 @@
     "date": "Datum",
     "kvkk": "KVKK",
     "buton": "Senden",
-    "help": "Sie werden informiert, indem Sie einen Termin an dem von Ihnen angegebenen Datum erstellen."
+    "help": "Sie werden informiert, indem Sie einen Termin an dem von Ihnen angegebenen Datum erstellen.",
+    "kapat": "Schließen"
   }
 }
 </i18n>
@@ -58,8 +61,10 @@
                   <input type="checkbox"> {{ $t('kvkk') }}
                 </label>
               </div>
-
-              <button id="submit-2" class="btn-form" type="submit">{{ $t('buton') }}</button>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">{{ $t('kapat') }}</button>
+                <button id="submit-2" type="submit" class="btn btn-primary">{{ $t('buton') }}</button>
+              </div>
             </form>
           </div>
         </div>
@@ -98,6 +103,9 @@ export default {
 </script>
 
 <style scoped>
+#subwrap{
+  width: 100%;
+}
 @media (min-width: 768px) {
   .modal-dialog {
     width: 480px;
