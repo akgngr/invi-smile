@@ -4,13 +4,21 @@ export default {
   loading: '~/components/loader.vue',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "nuxt-invismile",
+    title: "Invi Smile İzmir",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" }
     ],
     link: [
+      { rel: "alternate", hreflang: "tr-en", href: "https://invismile.com.tr/en" },
+      { rel: "alternate", hreflang: "tr-TR", href: "https://invismile.com.tr" },
+      { rel: "alternate", hreflang: "en-GB", href: "https://invismile.com.tr/en" },
+      { rel: "alternate", hreflang: "tr-en", href: "https://invismile.com.tr/en" },
+      { rel: "alternate", hreflang: "tr-US", href: "https://invismile.com.tr" },
+      { rel: "alternate", hreflang: "en-US", href: "https://invismile.com.tr/en" },
+      { rel: "alternate", hreflang: "de-DE", href: "https://invismile.com.tr/de" },
+      { rel: "alternate", hreflang: "tr-de", href: "https://invismile.com.tr/de" },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap' },
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
       { rel: 'stylesheet', href: process.env.HOST || '/css/on3step-style.css' },
