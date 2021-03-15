@@ -1,19 +1,22 @@
 <i18n>
 {
   "tr": {
+    "title": "Anasayfa",
     "description": "Ağız ve diş sorunlarınıza yenilikçi çözüm yollarıyla tedavi ediyoruz."
   },
   "en": {
+    "title": "Home",
     "description": "We treat your oral and dental problems with innovative solutions."
   },
   "de": {
+    "title": "Home",
     "description": "Wir behandeln Ihre Mund- und Zahnprobleme mit innovativen Lösungen."
   }
 }
 </i18n>
 <template>
   <div class="layout">
-    <SocialHead title="Invi Smile" :description="$t('description')"/>
+    <SocialHead :title="$t('title')" :description="$t('description')"/>
     <Slideshow />
     <About />
     <Doktorlar />

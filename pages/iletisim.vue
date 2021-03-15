@@ -2,7 +2,7 @@
 {
   "tr": {
     "title": "İletişim",
-    "subtitle": "Invismile' Estetik Ağız ve Diş Sağlığı Polikliniği İletişim",
+    "subtitle": "smileizmir' Estetik Ağız ve Diş Sağlığı Polikliniği İletişim",
     "description": "Bizimle iletişime geçin, aklınıza takılan soruları sorun ve cevabınızı alın.",
     "adresimiz": "Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B Bayraklı/İzmir",
     "isim": "İsminiz",
@@ -16,7 +16,7 @@
   },
   "en": {
     "title": "Contact Us",
-    "subtitle": "Invismile' Aesthetic Oral and Dental Health Polyclinic Contact",
+    "subtitle": "smileizmir' Aesthetic Oral and Dental Health Polyclinic Contact",
     "description": "Contact us, ask any questions you have and get your answers.",
     "adresimiz": "Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B Bayraklı/İzmir",
     "isim": "Your Name",
@@ -30,7 +30,7 @@
   },
   "de": {
     "title": "Kontakt uns",
-    "subtitle": "Invismile 'Aesthetic Oral and Dental Health Polyclinic, Kontakt",
+    "subtitle": "smileizmir 'Aesthetic Oral and Dental Health Polyclinic, Kontakt",
     "description": "Kontaktieren Sie uns, stellen Sie Ihre Fragen und erhalten Sie Ihre Antworten.",
     "adresimiz": "Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B Bayraklı/İzmir",
     "isim": "Dein Name",
@@ -52,13 +52,14 @@
   <!-- map -->
   <div class="onStep" data-animation="fadeIn" data-time="300" id="map-1">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.596147064113!2d27.17649681533724!3d38.45079627964204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b962a8b762c5a5%3A0x34fdda67206a9bad!2zw4fEsW5hcmzEsSwgxZ5odC4gUG9saXMgRmV0aGkgU2VraW4gQ2QgTm86NCwgMzU1MzAgQmF5cmFrbMSxL8Swem1pcg!5e0!3m2!1str!2str!4v1612026315192!5m2!1str!2str"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200123.37955523265!2d26.902969988194908!3d38.396918278939005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b963738c1b4fbf%3A0x106ab0d78fd816f0!2sSmile%20%C4%B0zmir!5e0!3m2!1str!2str!4v1615820953300!5m2!1str!2str"
       width="100%"
       height="500"
       frameborder="0"
       style="border:0;"
       allowfullscreen=""
       aria-hidden="false"
+      loading="lazy"
       tabindex="0"></iframe>
   </div>
   <!-- map end -->
@@ -111,10 +112,10 @@
           <address class="cont-1">
             <span>{{ $t('adresimiz') }}</span>
             <span><strong>{{ $t('telefon') }}:</strong> <a href="tel:+902323454141"> (+90)2323454141</a></span>
-            <span><strong>{{ $t('eposta') }}:</strong><a href="mailto:info@invismile.com"> info@invismile.com</a></span>
+            <span><strong>{{ $t('eposta') }}:</strong><a href="mailto:info@smileizmir.com"> info@smileizmir.com</a></span>
             <span><strong>{{ $t('mobil') }}:</strong> <a href="tel:+905539355141"> +905539355141</a></span>
             <span><strong>Whatsapp:</strong> <a href="https://wa.me/905539355141"> +905539355141</a></span>
-            <span><strong>Telegram:</strong> <a href="https://t.me/invismile"> @invismile</a></span>
+            <span><strong>Telegram:</strong> <a href="https://t.me/smileizmir"> @smileizmir</a></span>
           </address>
         </div>
         <!-- address end -->

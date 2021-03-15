@@ -1,7 +1,7 @@
 <i18n>
 {
   "tr": {
-    "hakkimizda-bilgi": "Invismile Estetik Dental ve Medikal Sanayi ve Ticaret  Ltd. Şti tarafından, Prof. Dr. Tancan UYSAL ve Yrd. Doç. Dr. Banu UYSAL ortak girişimiyle 2020 yılında açılan Ağız ve Diş Sağlığı Polikliniğimiz Bayraklı’da hizmet vermeye başlamıştır.",
+    "hakkimizda-bilgi": "Smile İzmir Estetik Dental ve Medikal Sanayi ve Ticaret  Ltd. Şti tarafından, Prof. Dr. Tancan UYSAL ve Yrd. Doç. Dr. Banu UYSAL ortak girişimiyle 2020 yılında açılan Ağız ve Diş Sağlığı Polikliniğimiz Bayraklı’da hizmet vermeye başlamıştır.",
     "kurumsal": "Kurumsal",
     "hakkimizda": "Hakkımızda",
     "misyonumuz": "Misyonumuz",
@@ -18,7 +18,7 @@
     "iletisim": "İletişim"
   },
   "en": {
-    "hakkimizda": "Invismile Estetik Dental ve Medikal Sanayi ve Ticaret Ltd. Şti by Prof. Dr. Tancan UYSAL and Asst. Assoc. Dr. Our Oral and Dental Health Polyclinic, which was opened in 2020 with the joint venture of Banu UYSAL, has started to serve in Bayraklı.",
+    "hakkimizda": "Smile İzmir Estetik Dental ve Medikal Sanayi ve Ticaret Ltd. Şti by Prof. Dr. Tancan UYSAL and Asst. Assoc. Dr. Our Oral and Dental Health Polyclinic, which was opened in 2020 with the joint venture of Banu UYSAL, has started to serve in Bayraklı.",
     "kurumsal": "Business",
     "hakkimizda": "About Us",
     "misyonumuz": "Our Mission",
@@ -35,7 +35,7 @@
     "iletisim": "Contact"
   },
   "de": {
-    "hakkimizda": "Invismile Estetik Dental ve Medikal Sanayi ve Ticaret Ltd. Şti von Prof. DR. Tancan UYSAL und Asst. Assoc. DR. Unsere Poliklinik für Mund- und Zahngesundheit, die 2020 mit dem Joint Venture von Banu UYSAL eröffnet wurde, hat ihren Dienst in Bayraklı aufgenommen.",
+    "hakkimizda": "Smile İzmir Estetik Dental ve Medikal Sanayi ve Ticaret Ltd. Şti von Prof. DR. Tancan UYSAL und Asst. Assoc. DR. Unsere Poliklinik für Mund- und Zahngesundheit, die 2020 mit dem Joint Venture von Banu UYSAL eröffnet wurde, hat ihren Dienst in Bayraklı aufgenommen.",
     "kurumsal": "Geschäft",
     "hakkimizda": "Über uns",
     "misyonumuz": "Unsere Mission",
@@ -70,7 +70,7 @@
               {{ $t('iletisim-bilgileri') }}
             </h3>
             <address>
-              <span>Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B Bayraklı/İzmir</span> <span><strong>{{ $t('telefon') }}: </strong> <a href="tel:+902323454141">(+90) 232 345 4141</a> </span> <span><strong>EMAIL:</strong> <a href="mailto:info@invismile.com">info@invismile.com</a></span> <span><strong>{{ $t('mobil') }}:</strong> <a href="tel:+905539355141">+90 553 9355141</a></span>
+              <span>Adalet Mah. Şehit Polis Fethi Sekin Cad. No 4/B Bayraklı/İzmir</span> <span><strong>{{ $t('telefon') }}: </strong> <a href="tel:+902323454141">(+90) 232 345 4141</a> </span> <span><strong>EMAIL:</strong> <a href="mailto:info@smileizmir.com">info@smileizmir.com</a></span> <span><strong>{{ $t('mobil') }}:</strong> <a href="tel:+905539355141">+90 553 9355141</a></span>
             </address>
           </div>
           <div class="col-md-3 col-xs-12">
@@ -105,12 +105,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            Invismile &copy; Copyright 2021 by <a target="_blank" href="https://akgngr.github.com/">akgngr</a>
+            smileizmir &copy; Copyright 2021 by <a target="_blank" href="https://akgngr.github.com/">akgngr</a>
           </div>
           <div class="col-md-6">
             <div class="right">
               <div class="social-icons">
-                <a target="_blank" href="https://www.instagram.com/invismileizmir/"><span class="ti-instagram"></span></a>
+                <a target="_blank" href="https://www.instagram.com/smileizmirizmir/"><span class="ti-instagram"></span></a>
                 <a href="#"><span class="ti-facebook"></span></a>
                 <a href="#"><span class="ti-linkedin"></span></a>
               </div>

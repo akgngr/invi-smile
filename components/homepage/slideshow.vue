@@ -6,7 +6,7 @@
     "slider3": "images-slider/desktop/gijital-gulus-tasarimi.webp",
     "slider4": "images-slider/desktop/slider4.webp",
     "slider5": "images-slider/desktop/kanal-tedavisi.webp",
-    "slider6": "images-slider/desktop/slider6.webp",
+    "slider6": "images-slider/desktop/de/slider-6.webp",
     "slider7": "images-slider/desktop/dis-beyazlatma.webp",
     "slider8": "images-slider/desktop/itero-agiz-ici-tarama-sistemi.webp",
     "mobileSlider": "images-slider/mobile/invisalign.webp",

@@ -355,22 +355,16 @@
                         </nuxt-link>
                         </span>
                         <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
-                          <a href="#"><span class="ti-facebook"></span></a>
+                          <a target="_blank" href="https://www.facebook.com/smileizmir35"><span class="ti-facebook"></span></a>
                         </span>
                         <span v-if="!menuShow">
-                          <a href="#"><span class="ti-facebook"></span></a>
+                          <a target="_blank" href="https://www.facebook.com/smileizmir35"><span class="ti-facebook"></span></a>
                         </span>
                         <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
-                          <a href="#"><span class="ti-dribbble"></span></a>
+                          <a target="_blank" href="https://www.instagram.com/smile_izmir/"><span class="ti-instagram"></span></a>
                         </span>
                         <span v-if="!menuShow">
-                          <a href="#"><span class="ti-dribbble"></span></a>
-                        </span>
-                        <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
-                          <a href="#"><span class="ti-twitter"></span></a>
-                        </span>
-                        <span v-if="!menuShow">
-                          <a href="#"><span class="ti-twitter"></span></a>
+                          <a target="_blank" href="https://www.instagram.com/smile_izmir/"><span class="ti-instagram"></span></a>
                         </span>
                         <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
                           <a href="#"><span class="ti-linkedin"></span></a>

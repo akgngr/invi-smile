@@ -3,19 +3,19 @@
   "tr": {
     "title": "Misyonumuz",
     "description": "Ağız ve diş sağlığı ile ilgili üst düzeyde tanı ve tedavi hizmetini; çağdaş bilgi ve modern teknoloji ışığında, alanında sahip olduğu üstün nitelikli, eğitimli ve uzman kadrosu ile evrensel standartlarda hijyenik ortamda, kaliteli ve güvenilir bir şekilde gerçekleştirmektir.",
-    "subtitle": "Invismile Estetik Ağız ve Diş Sağlığı Polikliniği",
+    "subtitle": "Smile İzmir Estetik Ağız ve Diş Sağlığı Polikliniği",
     "content": "Ağız ve diş sağlığı ile ilgili üst düzeyde tanı ve tedavi hizmetini; çağdaş bilgi ve modern teknoloji ışığında, alanında sahip olduğu üstün nitelikli, eğitimli ve uzman kadrosu ile evrensel standartlarda hijyenik ortamda, kaliteli ve güvenilir bir şekilde gerçekleştirmektir."
   },
   "en": {
     "title": "Our Mission",
     "description": "To provide high level diagnosis and treatment services related to oral and dental health, in the light of contemporary knowledge and modern technology, with its highly qualified, educated and expert staff in a hygienic environment with universal standards, in a quality and reliable way.",
-    "subtitle": "Invismile Aesthetic Oral and Dental Health Polyclinic",
+    "subtitle": "Smile Izmir Aesthetic Oral and Dental Health Polyclinic",
     "content": "To provide high-level diagnosis and treatment services related to oral and dental health, in the light of contemporary knowledge and modern technology, with its high-quality, educated and expert staff in a hygienic environment at universal standards, in a quality and reliable manner."
   },
   "de": {
     "title": "Unsere Mission",
     "description": "Bereitstellung von Diagnose- und Behandlungsdiensten auf hohem Niveau im Zusammenhang mit Mund- und Zahngesundheit im Lichte des modernen Wissens und der modernen Technologie mit hochqualifiziertem, geschultem und fachkundigem Personal in universellen Standards, in einem hygienischen Umfeld, auf qualitativ hochwertige und zuverlässige Weise.",
-    "subtitle": "Invismile Aesthetic Oral and Dental Health Polyclinic",
+    "subtitle": "Smile Izmir Aesthetic Oral and Dental Health Polyclinic",
     "content": "Bereitstellung hochwertiger Diagnose- und Behandlungsdienste im Zusammenhang mit Mund- und Zahngesundheit im Lichte des modernen Wissens und der modernen Technologie mit hochqualifizierten, ausgebildeten und kompetenten Mitarbeitern in einem hygienischen Umfeld zu universellen Standards auf qualitativ hochwertige und zuverlässige Weise."
   }
 }

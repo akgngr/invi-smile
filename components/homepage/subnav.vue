@@ -14,8 +14,8 @@
           <div class="col-md-4">
             <div class="right">
               <div class="social-icons-subnav">
-                <a target="_blank" href="https://www.instagram.com/invismileizmir/"><span class="ti-instagram"></span></a>
-                <a target="_blank" href="#"><span class="ti-facebook"></span></a>
+                <a target="_blank" href="https://www.instagram.com/smile_izmir/"><span class="ti-instagram"></span></a>
+                <a target="_blank" href="https://www.facebook.com/smileizmir35"><span class="ti-facebook"></span></a>
                 <a target="_blank" href="#"><span class="ti-linkedin"></span></a>
                 /
                 <ul class="nav navbar-nav navbar-right dil-degistirme">

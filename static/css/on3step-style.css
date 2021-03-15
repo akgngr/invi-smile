@@ -783,7 +783,7 @@ nav ul li:hover>ul {
   animation-fill-mode: both;
 }
 nav ul ul li {
-  width: 230px;
+  width: 250px;
   float: none;
   margin-left: -5px;
   display: list-item;

@@ -1,4 +1,4 @@
-# nuxt-invismile
+# nuxt-smileizmir
 
 ## Build Setup
 

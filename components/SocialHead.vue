@@ -72,7 +72,8 @@ export default {
           content: this.description
         }
       ],
-      title: this.title
+      title: this.title + " | Smile İzmir",
+      description: this.description
     }
   }
 }
