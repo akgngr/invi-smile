@@ -40,7 +40,7 @@
     "degerlerimiz": "Değerlerimiz",
     "doktorlar": "Doktorlar",
     "banu-uysal": "Yrd. Doç. Dr. Banu UYSAL",
-    "bahar-sayin": "Dr. Dt. Bahar SAYIN",
+    "bahar-sayin": "Yrd. Doç. Dr. Bahar SAYIN",
     "seyfi-kelebek": "Dr. Dt. Seyfi KELEBEK",
     "tedaviler": "Tedaviler",
     "dental-implant": "Dental İmplant",

@@ -30,10 +30,10 @@
             </div>
 
             <div class="team-wrapper">
-              <img alt="team img 1" class="img-responsive lazyload" data-src="image/doktor/dr_dt_seyfi_kelebek.webp">
+              <img alt="team img 1" class="img-responsive lazyload" data-src="image/doktor/dr_dt_bahar_sayin.webp">
               <div class="team-des">
-                <nuxt-link class="doktor-link" :to="localePath('seyfi_kelebek')"><h3>Dr. Dt. Seyfi KELEBEK</h3></nuxt-link>
-                <span>Çene Cerrahisi Uzmanı</span>
+                <nuxt-link class="doktor-link" :to="localePath('bahar_sayin')"><h3>Yrd. Doç. Dr. Bahar SAYIN</h3></nuxt-link>
+                <span>Protez Uzmanı</span>
                 <a href="#"><span class="ti-facebook"></span></a>
                 <a href="#"><span class="ti-twitter"></span></a>
                 <a href="#"><span class="ti-linkedin"></span></a>
@@ -41,10 +41,10 @@
             </div>
 
             <div class="team-wrapper">
-              <img alt="team img 1" class="img-responsive lazyload" data-src="image/doktor/dr_dt_bahar_sayin.webp">
+              <img alt="team img 1" class="img-responsive lazyload" data-src="image/doktor/dr_dt_seyfi_kelebek.webp">
               <div class="team-des">
-                <nuxt-link class="doktor-link" :to="localePath('bahar_sayin')"><h3>Dr. Dt. Bahar SAYIN</h3></nuxt-link>
-                <span>Protez Uzmanı</span>
+                <nuxt-link class="doktor-link" :to="localePath('seyfi_kelebek')"><h3>Dr. Dt. Seyfi KELEBEK</h3></nuxt-link>
+                <span>Çene Cerrahisi Uzmanı</span>
                 <a href="#"><span class="ti-facebook"></span></a>
                 <a href="#"><span class="ti-twitter"></span></a>
                 <a href="#"><span class="ti-linkedin"></span></a>

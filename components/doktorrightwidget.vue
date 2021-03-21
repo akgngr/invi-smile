@@ -7,12 +7,12 @@
   },
   "en": {
     "randevu": "Get Appointment",
-    "bahar-sayin": "Dr. Dt. Bahar SAYIN",
+    "bahar-sayin": "Assist. Prf. Dr. Bahar SAYIN",
     "seyfi-kelebek": "Dr. Dt. Seyfi KELEBEK"
   },
   "de": {
     "randevu": "Termin machen",
-    "bahar-sayin": "Dr. Dt. Bahar SAYIN",
+    "bahar-sayin": "Helfen Prf Dr Bahar SAYIN",
     "seyfi-kelebek": "Dr. Dt. Seyfi KELEBEK"
   }
 }
