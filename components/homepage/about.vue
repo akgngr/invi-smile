@@ -1,20 +1,20 @@
 <i18n>
 {
   "tr": {
-    "hakkimizda": "Hakkımızda",
-    "baslik": "Smile İzmir Estetik Ağız ve Diş Sağlığı Polikliniği",
+    "hakkimizda": "Estetik Ağız ve Diş Sağlığı Polikliniği",
+    "baslik": "Smile İzmir",
     "icerik1": "Smile İzmir Estetik Dental ve Medikal Sanayi ve Ticaret  Ltd. Şti tarafından, Prof. Dr. Tancan UYSAL ve Yrd. Doç. Dr. Banu UYSAL ortak girişimiyle 2020 yılında açılan Ağız ve Diş Sağlığı Polikliniğimiz Bayraklı’da hizmet vermeye başlamıştır.",
     "iletisim": "İletişim"
   },
   "en": {
-    "hakkimizda": "About Us",
-    "baslik": "Smile İzmir Aesthetic Oral and Dental Health Polyclinic",
+    "hakkimizda": "Aesthetic Oral and Dental Health Polyclinic",
+    "baslik": "Smile İzmir",
     "iletisim": "Contact",
     "icerik1": "Smile İzmir Estetik Dental ve Medikal Sanayi ve Ticaret Ltd. Şti by Prof. Dr. Tancan UYSAL and Asst. Assoc. Dr. Our Oral and Dental Health Polyclinic, which was opened in 2020 with the joint venture of Banu UYSAL, has started to serve in Bayraklı."
   },
   "de": {
-    "hakkimizda": "Über uns",
-    "baslik": "Smile İzmir ästhetische Mund- und Zahngesundheitspoliklinik",
+    "hakkimizda": "ästhetische Mund- und Zahngesundheitspoliklinik",
+    "baslik": "Smile İzmir",
     "iletisim": "Kontaktieren",
     "icerik1": "Smile İzmir Estetik Dental ve Medikal Sanayi ve Ticaret Ltd. Şti von Prof. DR. Tancan UYSAL und Asst. Assoc. DR. Unsere Poliklinik für Mund- und Zahngesundheit, die 2020 mit dem Joint Venture von Banu UYSAL eröffnet wurde, hat ihren Dienst in Bayraklı aufgenommen."
   }
@@ -34,8 +34,8 @@
         <div class="row">
           <div class="col-md-6">
             <div class="wrap-news onStep">
-              <h2>{{ $t('hakkimizda') }}</h2>
-              <span><strong>{{ $t('baslik') }}</strong></span>
+              <h1>{{ $t('baslik') }}</h1>
+              <span><strong>{{ $t('hakkimizda') }}</strong></span>
               <span class="devider-cont"></span>
               <p>{{ $t('icerik1') }}</p>
               <nuxt-link class="link-class" :to="localePath('hakkimizda')">

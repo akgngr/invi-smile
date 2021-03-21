@@ -15,7 +15,7 @@ export default {
     },
     image: {
       type: String,
-      default: 'https://nuxtjs.org/nuxt-card.png'
+      default: '/image/share.png'
     }
   },
   head() {
@@ -65,6 +65,16 @@ export default {
           hid: 'og:image:alt',
           property: 'og:image:alt',
           content: this.title
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://smileizmir.com'
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
         },
         {
           hid: 'description',

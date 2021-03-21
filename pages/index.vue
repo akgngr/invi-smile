@@ -2,15 +2,15 @@
 {
   "tr": {
     "title": "Anasayfa",
-    "description": "Ağız ve diş sorunlarınıza yenilikçi çözüm yollarıyla tedavi ediyoruz."
+    "description": "Smile İzmir Estetik Dental ve Medikal Sanayi ve Ticaret  Ltd. Şti tarafından, Prof. Dr. Tancan UYSAL ve Yrd. Doç. Dr. Banu UYSAL ortak girişimiyle 2020 yılında açılan Ağız ve Diş Sağlığı Polikliniğimiz Bayraklı’da hizmet vermeye başlamıştır."
   },
   "en": {
     "title": "Home",
-    "description": "We treat your oral and dental problems with innovative solutions."
+    "description": "Smile İzmir Estetik Dental ve Medikal Sanayi ve Ticaret Ltd. Şti by Prof. Dr. Tancan UYSAL and Asst. Assoc. Dr. Our Oral and Dental Health Polyclinic, which was opened in 2020 with the joint venture of Banu UYSAL, has started to serve in Bayraklı."
   },
   "de": {
     "title": "Home",
-    "description": "Wir behandeln Ihre Mund- und Zahnprobleme mit innovativen Lösungen."
+    "description": "Smile İzmir Estetik Dental ve Medikal Sanayi ve Ticaret Ltd. Şti von Prof. DR. Tancan UYSAL und Asst. Assoc. DR. Unsere Poliklinik für Mund- und Zahngesundheit, die 2020 mit dem Joint Venture von Banu UYSAL eröffnet wurde, hat ihren Dienst in Bayraklı aufgenommen."
   }
 }
 </i18n>
