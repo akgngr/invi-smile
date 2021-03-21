@@ -1,13 +1,19 @@
 <i18n>
 {
   "tr": {
-    "randevu": "Randevu Alın"
+    "randevu": "Randevu Alın",
+    "bahar-sayin": "Dr. Dt. Bahar SAYIN",
+    "seyfi-kelebek": "Dr. Dt. Seyfi KELEBEK"
   },
   "en": {
-    "randevu": "Get Appointment"
+    "randevu": "Get Appointment",
+    "bahar-sayin": "Dr. Dt. Bahar SAYIN",
+    "seyfi-kelebek": "Dr. Dt. Seyfi KELEBEK"
   },
   "de": {
-    "randevu": "Termin machen"
+    "randevu": "Termin machen",
+    "bahar-sayin": "Dr. Dt. Bahar SAYIN",
+    "seyfi-kelebek": "Dr. Dt. Seyfi KELEBEK"
   }
 }
 </i18n>
@@ -21,6 +27,12 @@
         </li>
         <li>
           <nuxt-link :to="localePath('banu-uysal')">Yrd. Doç. Dr. Banu UYSAL</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('bahar_sayin')">{{ $t('bahar-sayin') }}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('seyfi_kelebek')">{{ $t('seyfi-kelebek') }}</nuxt-link>
         </li>
       </ul>
     </div>

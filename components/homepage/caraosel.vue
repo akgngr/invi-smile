@@ -48,10 +48,12 @@
                 <div class="hovereffect">
                   <img :alt="$t('sorular')" class="img-responsive lazyload" data-src="image/bilgi/question-mark.webp" />
                   <div class="overlay">
-                    <h3>{{ $t('sorular') }}
-                      <span class="devider"></span>
-                    </h3>
-                    <p>{{ $t('devami') }}</p>
+                    <nuxt-link :to="localeRoute('sss')">
+                      <h3>{{ $t('sorular') }}
+                        <span class="devider"></span>
+                      </h3>
+                      <p>{{ $t('devami') }}</p>
+                    </nuxt-link>
                   </div>
                 </div>
               </div>

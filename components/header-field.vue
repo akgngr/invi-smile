@@ -39,7 +39,9 @@
     "kalite-politikamiz": "Kalite Politikamız",
     "degerlerimiz": "Değerlerimiz",
     "doktorlar": "Doktorlar",
-    "banu-uysal": "Prf. Dr. Banu UYSAL",
+    "banu-uysal": "Yrd. Doç. Dr. Banu UYSAL",
+    "bahar-sayin": "Dr. Dt. Bahar SAYIN",
+    "seyfi-kelebek": "Dr. Dt. Seyfi KELEBEK",
     "tedaviler": "Tedaviler",
     "dental-implant": "Dental İmplant",
     "check-up": "Check-Up",
@@ -177,6 +179,22 @@
                           </span>
                           <span v-if="!menuShow">
                             <nuxt-link :to="localePath('banu-uysal')">{{ $t('banu-uysal') }}</nuxt-link>
+                          </span>
+                        </li>
+                        <li>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('bahar_sayin')">{{ $t('bahar-sayin') }}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('bahar_sayin')">{{ $t('bahar-sayin') }}</nuxt-link>
+                          </span>
+                        </li>
+                        <li>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('seyfi_kelebek')">{{ $t('seyfi-kelebek') }}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('seyfi_kelebek')">{{ $t('seyfi-kelebek') }}</nuxt-link>
                           </span>
                         </li>
                       </ul>

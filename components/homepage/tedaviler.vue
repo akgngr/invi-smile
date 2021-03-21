@@ -124,7 +124,7 @@
             </div>
             <div class="item">
               <div class="wrap-news">
-                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/smileizmir-check-up.webp">
+                <img alt="imageportofolio" class="img-responsive lazyload" data-src="image/tedaviler/invismile-check-up.webp">
                 <h3>{{ $t('ted2_baslik') }}</h3>
                 <p>{{ $t('ted2_acik') }}</p>
                 <nuxt-link class="link-class" :to="localeRoute('check-up')">
