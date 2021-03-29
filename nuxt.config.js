@@ -19,7 +19,6 @@ export default {
       { rel: "alternate", hreflang: "en-US", href: "https://smileizmir.com/en" },
       { rel: "alternate", hreflang: "de-DE", href: "https://smileizmir.com/de" },
       { rel: "alternate", hreflang: "tr-de", href: "https://smileizmir.com/de" },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap' },
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
       { rel: 'stylesheet', href: process.env.HOST || '/css/on3step-style.css' },
       { rel: 'stylesheet', href: process.env.HOST || '/css/queries-on3step.css' },
@@ -33,6 +32,11 @@ export default {
       { ssr: true, src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' },
       { ssr: true, src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' }
     ]
+  },
+  webfontloader: {
+    google: {
+      families: ['Montserrat:300,400,500']
+    }
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
@@ -61,6 +65,7 @@ export default {
   },
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    'nuxt-webfontloader',
     ['@nuxtjs/axios'],
     [
       "nuxt-i18n",
