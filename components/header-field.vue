@@ -60,7 +60,8 @@
     "gorunmez-teller": "Görünmez Tellerle Ortodonti",
     "anlasmali": "Anlaşmalı Kurumlar",
     "iletisim": "İletişim",
-    "randevu": "Randevu AL"
+    "randevu": "Randevu AL",
+    "sevgi-beril-keklik": "Dt. Sevgi Beril Keklik"
   },
   "de": {
     "anasayfa": "Home",
@@ -195,6 +196,14 @@
                           </span>
                           <span v-if="!menuShow">
                             <nuxt-link :to="localePath('seyfi_kelebek')">{{ $t('seyfi-kelebek') }}</nuxt-link>
+                          </span>
+                        </li>
+                        <li>
+                          <span v-if="menuShow" v-on:click="[menuShow = !menuShow, fullHeight = !fullHeight]">
+                            <nuxt-link :to="localePath('sevgi-beril-keklik')">{{ $t('sevgi-beril-keklik') }}</nuxt-link>
+                          </span>
+                          <span v-if="!menuShow">
+                            <nuxt-link :to="localePath('sevgi-beril-keklik')">{{ $t('sevgi-beril-keklik') }}</nuxt-link>
                           </span>
                         </li>
                       </ul>

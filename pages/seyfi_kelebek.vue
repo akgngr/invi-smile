@@ -31,7 +31,7 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-12 onStep">
-                <img alt="imgservices" class="img-responsive" src="/image/doktor/seyfi_kelebek.webp">
+                <img alt="imgservices" class="img-responsive" src="/image/doktor/profil/seyfi-kelebek.jpg">
                 <h2 v-html="$t('bahar-sayin-baslik')"></h2>
                 <p><em>{{ $t('description') }}</em></p>
               </div>

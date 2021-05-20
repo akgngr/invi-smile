@@ -3,7 +3,8 @@
   "tr": {
     "randevu": "Randevu Alın",
     "bahar-sayin": "Dr. Dt. Bahar SAYIN",
-    "seyfi-kelebek": "Dr. Dt. Seyfi KELEBEK"
+    "seyfi-kelebek": "Dr. Dt. Seyfi KELEBEK",
+    "sevgi-beril-keklik" : "Dt. Sevgi Beril KELEBEK"
   },
   "en": {
     "randevu": "Get Appointment",
@@ -33,6 +34,9 @@
         </li>
         <li>
           <nuxt-link :to="localePath('seyfi_kelebek')">{{ $t('seyfi-kelebek') }}</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('sevgi-beril-keklik')">{{ $t('sevgi-beril-keklik') }}</nuxt-link>
         </li>
       </ul>
     </div>

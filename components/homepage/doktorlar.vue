@@ -8,7 +8,7 @@
           <vue-tiny-slider v-bind="tinyCarauselOptions">
 
             <div class="team-wrapper">
-              <img alt="team img 4" class="img-responsive lazyload" data-src="image/tancan-uysal.webp">
+              <img alt="team img 4" class="img-responsive lazyload" data-src="image/doktor/tancan-uysal.jpg">
               <div class="team-des">
                 <nuxt-link class="doktor-link" :to="localePath('tancan-uysal')"><h3>Prof. Dr. Tancan UYSAL</h3></nuxt-link>
                 <span>Ortodonti Uzmanı</span>
@@ -19,7 +19,7 @@
             </div>
 
             <div class="team-wrapper">
-              <img alt="team img 1" class="img-responsive lazyload" data-src="image/banu-uysal.webp">
+              <img alt="team img 1" class="img-responsive lazyload" data-src="image/doktor/banu-uysal.jpg">
               <div class="team-des">
                 <nuxt-link class="doktor-link" :to="localePath('banu-uysal')"><h3>Yrd. Doç. Dr. Banu UYSAL</h3></nuxt-link>
                 <span>Endodonti Uzmanı</span>
@@ -30,7 +30,7 @@
             </div>
 
             <div class="team-wrapper">
-              <img alt="team img 1" class="img-responsive lazyload" data-src="image/doktor/dr_dt_bahar_sayin.webp">
+              <img alt="team img 1" class="img-responsive lazyload" data-src="image/doktor/bahar_sayin.jpg">
               <div class="team-des">
                 <nuxt-link class="doktor-link" :to="localePath('bahar_sayin')"><h3>Yrd. Doç. Dr. Bahar SAYIN</h3></nuxt-link>
                 <span>Protez Uzmanı</span>
@@ -41,10 +41,21 @@
             </div>
 
             <div class="team-wrapper">
-              <img alt="team img 1" class="img-responsive lazyload" data-src="image/doktor/dr_dt_seyfi_kelebek.webp">
+              <img alt="team img 1" class="img-responsive lazyload" data-src="image/doktor/dr_dt_seyfi_kelebek.jpg">
               <div class="team-des">
                 <nuxt-link class="doktor-link" :to="localePath('seyfi_kelebek')"><h3>Dr. Dt. Seyfi KELEBEK</h3></nuxt-link>
                 <span>Çene Cerrahisi Uzmanı</span>
+                <a href="#"><span class="ti-facebook"></span></a>
+                <a href="#"><span class="ti-twitter"></span></a>
+                <a href="#"><span class="ti-linkedin"></span></a>
+              </div>
+            </div>
+
+            <div class="team-wrapper">
+              <img alt="team img 1" class="img-responsive lazyload" data-src="image/doktor/sevgi-beril-keklik.jpg">
+              <div class="team-des">
+                <nuxt-link class="doktor-link" :to="localePath('sevgi-beril-keklik')"><h3>Dt. Sevgi Beril KEKLİK</h3></nuxt-link>
+                <span>Estetik Diş Hekimi</span>
                 <a href="#"><span class="ti-facebook"></span></a>
                 <a href="#"><span class="ti-twitter"></span></a>
                 <a href="#"><span class="ti-linkedin"></span></a>
