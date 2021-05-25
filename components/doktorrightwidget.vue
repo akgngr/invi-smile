@@ -4,7 +4,7 @@
     "randevu": "Randevu Alın",
     "bahar-sayin": "Dr. Dt. Bahar SAYIN",
     "seyfi-kelebek": "Dr. Dt. Seyfi KELEBEK",
-    "sevgi-beril-keklik" : "Dt. Sevgi Beril KELEBEK"
+    "sevgi-beril-keklik" : "Dt. Sevgi Beril KEKLİK"
   },
   "en": {
     "randevu": "Get Appointment",
